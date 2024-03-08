@@ -138,7 +138,7 @@
                     <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho1" data-text="" checked>
                         <label class="form-check-label" for="despacho1">
-                            <span contenteditable="false">Destinatário / confirmação de recebimento.</span>
+                            <span contenteditable="false">Destinatário / confirmação de recebimento</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal1"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal1"></i>
@@ -151,7 +151,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho2" data-toggle="collapse" href="#collapse-2"  data-text="">
                         <label class="form-check-label" for="despacho2">
                             <span contenteditable="false">
-                                Ref. Contrato Social.
+                                Ref. Contrato Social
                             </span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2"></i>
@@ -196,6 +196,16 @@
                                 </label>
                                 <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal6"></i>
                                 <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6"></i>
+                            </div>
+
+                            <!-- fora de ordem -->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="despacho24" data-text="">
+                                <label class="form-check-label" for="despacho24">
+                                    <span contenteditable="false">Contrato Social desatualizado</span>
+                                </label>
+                                <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal24"></i>
+                                <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal24"></i>
                             </div>
 
                                     
@@ -388,16 +398,6 @@
                                 <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal23"></i>
                             </div>
                                 
-                            <!--
-                            <div class="form-check ml-4">
-                                <input type="checkbox" class="form-check-input" id="despacho24" data-text="">
-                                <label class="form-check-label" for="despacho24">
-                                    <span contenteditable="false">XXXXXXXXXXXXXXXXXXXXXX</span>
-                                </label>
-                                <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal24"></i>
-                                <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal24"></i>
-                            </div>
-                            -->
                                     
                             <div class="form-check ml-4">
                                 <input type="checkbox" class="form-check-input" id="despacho25" data-text="">
@@ -1796,13 +1796,14 @@ O piso salarial é calculado com base no salário mínimo vigente no país. Cada
             document.getElementById('despacho23').setAttribute('data-text', texto_23);
             document.getElementById('editTextModal23').value = texto_23;
 
-            /*
+            
             var texto_24 = 
-`xxxxxxxxxxxxxxxxx`;
+`É necessário enviar na solicitação a última alteração consolidada do contrato social em um arquivo PDF salvo com certificação digital* da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br). O certificado é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) ou da Certidão de registro para fins de publicidade e eficácia contra terceiros (cartório).
+`;
 
             document.getElementById('despacho24').setAttribute('data-text', texto_24);
             document.getElementById('editTextModal24').value = texto_24;
-            */
+            
 
             var texto_25 = 
 `       Valor do Serviço/Honorários: preencher conforme a remuneração mensal estabelecida no contrato`;
