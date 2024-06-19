@@ -549,6 +549,16 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="despacho46" data-text="">
+                        <label class="form-check-label" for="despacho46">
+                            <span contenteditable="false">Ref. ao CNPJ</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal46"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal46"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho38" data-text="" checked>
                         <label class="form-check-label" for="despacho38">
                             <span contenteditable="false">Link da Solicitação</span>
@@ -1489,6 +1499,25 @@
             </div>
         </div>
 
+        <div class="modal" id="editModal46">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control" rows="12" id="editTextModal46" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(46)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             
         <!--------------------------------------- area do despacho  ---------------------------------------->
 
@@ -2071,6 +2100,16 @@ Atenciosamente,`;
 
             document.getElementById('despacho45').setAttribute('data-text', texto_45);
             document.getElementById('editTextModal45').value = texto_45;
+
+
+            var texto_46 = 
+`<u>Referente ao CNPJ (Cadastro Nacional de Pessoa Jurídica):</u> 
+
+Anexar à solicitação o arquivo PDF contendo o CNPJ atualizado da empresa.
+`;
+
+            document.getElementById('despacho46').setAttribute('data-text', texto_46);
+            document.getElementById('editTextModal46').value = texto_46;
 
 
 
