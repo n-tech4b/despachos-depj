@@ -208,6 +208,24 @@
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal8"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal8"></i>
                     </div>
+
+                    <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="despacho18" data-text="" >
+                        <label class="form-check-label" for="despacho18">
+                            <span contenteditable="false">Correção da data de término do RRT baixado (profissional)</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal18"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal18"></i>
+                    </div>
+
+                    <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="despacho19" data-text="" >
+                        <label class="form-check-label" for="despacho19">
+                            <span contenteditable="false">Correção da data de término do RRT baixado (empresa)</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal19"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal19"></i>
+                    </div>
                     
                     <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho9" data-text="" >
@@ -1428,6 +1446,32 @@ https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/
 
             document.getElementById('despacho17').setAttribute('data-text', texto_17);
             document.getElementById('editTextModal17').value = texto_17;
+
+            var texto_18 = 
+`Informamos que foi solicitada a baixa da sua responsabilidade técnica pela empresa XXXXXXXXXX e conforme a Alteração contratual/ Termo de homologação ou CTPS/ Contrato de prestação de serviços, a data do fim da responsabilidade técnica é XXXXXXXX. Portanto, diverge da data de término declarada no RRT nº XXXXXX.
+ 
+Para prosseguir com a baixa da reponsabilidade técnica, é necessário:
+ 
+- Retificar a Data de término da atividade do RRT baixado nº XXXXXXX conforme o comprovante apresentado pela empresa ou apresentar um documento comprobatório confirmando a data de término da responsabilidade técnica pela empresa na data declarada na baixa.
+ 
+Para retificar o RRT baixado, acesse o SICCAU profissional e na página inicial, clique Protocolo > Cadastrar Protocolo > Grupo de Assunto: Registro de Responsabilidade Técnica - RRT > Assunto: Permissão para retificação de RRT baixado e informe o número do RRT, os dados a serem retificados e o motivo (correção da data de término da responsabilidade técnica pela empresa).
+ 
+PRAZO PARA MANIFESTAÇÃO: 10 DIAS. Conforme a Resolução 91/2014 do CAU/BR, caso não haja manifestação no prazo definido, a data de término do RRT será retificada e a baixa da responsabilidade técnica será realizada conforme a data registrada no documento apresentado pela empresa.
+`;
+
+            document.getElementById('despacho18').setAttribute('data-text', texto_18);
+            document.getElementById('editTextModal18').value = texto_18;
+
+            var texto_19 = 
+`Informamos que a data de término do RRT nº XXXXX baixado diverge da data de término da responsabilidade técnica conforme a Alteração contratual/ Termo de homologação ou CTPS/ Contrato de prestação de serviços. 
+
+Para prosseguir com a baixa da reponsabilidade técnica, a retificação do RRT ou a apresentação de documento comprobatório que confirme a data da baixa do RRT nº XXXXX foi solicitada ao profissional.
+
+Por gentileza, aguardem a manifestação do profissional no prazo de 10 dias, conforme a Resolução 91/2014. Caso não haja manifestação no prazo definido, a responsabilidade técnica será baixada conforme a data registrada no documento apresentado pela empresa.
+`;
+
+            document.getElementById('despacho19').setAttribute('data-text', texto_19);
+            document.getElementById('editTextModal19').value = texto_19;
 
 
         </script>
