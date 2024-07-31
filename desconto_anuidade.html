@@ -364,7 +364,7 @@
 
             // Sua variável
             var texto_1 = 
-`Prezados,
+`<div><pre style="font-family: Verdana;" wrap="hard">Prezados,
 
 Considerando o Artigo 7º da Resolução nº 193 do CAU/BR, que concede desconto de 90% nos valores de anuidade para Empresas com um único sócio Arquiteto e Urbanista;
 
@@ -378,7 +378,7 @@ Atenciosamente.`;
 
 
             var texto_2 = 
-`Prezados responsáveis pela empresa XXXX,
+`<div><pre style="font-family: Verdana;" wrap="hard">Prezados responsáveis pela empresa XXXX,
 
 Conforme determinado pela Resolução nº 193 do CAU/BR, o prazo para solicitação de desconto na anuidade para empresas para o ano de 2023 encerrou-se após 30/06/2023.
 
@@ -399,7 +399,7 @@ Equipe CAU/SP.`;
 
 
             var texto_3 = 
-`Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXX,
+`<div><pre style="font-family: Verdana;" wrap="hard">Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXX,
 
 Verificamos que o quadro societário da empresa é composto por mais de um sócio. Assim, a Pessoa Jurídica não atende às condições impostas pela Resolução CAU/BR nº 193 para concessão do desconto de 90% (pessoas jurídicas com um único sócio e que este seja arquiteto e urbanista).
 
@@ -415,9 +415,15 @@ Equipe CAU/SP.`;
             document.getElementById('editTextModal3').value = texto_3;
 
             var texto_4 = 
-`Informamos que o desconto na anuidade da empresa para o ano de XXXXXXXX foi deferido através do protocolo XXXXXXXXXXXXX.
+`<div><pre style="font-family: Verdana;" wrap="hard">Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXX,
+    
+Informamos que o desconto na anuidade da empresa para o ano de XXXXXXXX foi deferido através do protocolo XXXXXXXXXXXXX.
 
-Caso não consiga emitir o boleto, por gentileza, abra um protocolo com o assunto "REVISÃO DE COBRANÇA DE ANUIDADE PJ" para verificação.`;
+Caso não consiga emitir o boleto, por gentileza, abra um protocolo com o assunto "REVISÃO DE COBRANÇA DE ANUIDADE PJ" para verificação.
+
+
+Atenciosamente,
+Equipe CAU/SP.`;
 
             document.getElementById('despacho4').setAttribute('data-text', texto_4);
             document.getElementById('editTextModal4').value = texto_4;

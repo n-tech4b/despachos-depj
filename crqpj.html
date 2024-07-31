@@ -124,7 +124,7 @@
         <div class="container-fluid" >
             <div class="row p-3" >
                 <div class="col-md-12">
-                    <h3 class="d-flex align-items-center mt-2">CRPPJ</h3>
+                    <h3 class="d-flex align-items-center mt-2">CRQPJ</h3>
 
                     <!-- button reiniciar e desmarcar -->
                     <div class="mb-3 mt-3">
@@ -137,15 +137,7 @@
                     <!-- checkbox -->
 
                     <!-- checkbox simples-->
-                    <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="despacho1" data-text="">
-                        <label class="form-check-label" for="despacho1">
-                            <span contenteditable="false">Destinatário.</span>
-                        </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal1"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal1"></i>
-                    </div>
-                    
+
                     <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho2" data-text="">
                         <label class="form-check-label" for="despacho2">
@@ -153,6 +145,15 @@
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2"></i>
+                    </div>
+
+                    <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="despacho1" data-text="">
+                        <label class="form-check-label" for="despacho1">
+                            <span contenteditable="false">Destinatário.</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal1"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal1"></i>
                     </div>
                     
                     <div class="form-check mb-1">
@@ -165,21 +166,21 @@
                     </div>
                     
                     <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="despacho4" data-text="" >
-                        <label class="form-check-label" for="despacho4">
-                            <span contenteditable="false">Orientação Cancelamento da Certidão.<strong>&nbsp;(Tramitação E-MAIL)</strong></span>
-                        </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4"></i>
-                    </div>
-                    
-                    <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho5" data-text="" >
                         <label class="form-check-label" for="despacho5">
                             <span contenteditable="false">Fechos e identificação do CAU/SP.</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5"></i>
+                    </div>
+              
+                    <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="despacho4" data-text="" >
+                        <label class="form-check-label" for="despacho4">
+                            <span contenteditable="false">Orientação Cancelamento da Certidão.<strong>&nbsp;(Tramitação E-MAIL)</strong></span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4"></i>
                     </div>
 
 
@@ -392,7 +393,7 @@
 
             // Sua variável
             var texto_1 = 
-`Prezados,
+`<div><pre style="font-family: Verdana;" wrap="hard">Prezados,
 `;
             document.getElementById('despacho1').setAttribute('data-text', texto_1);
             document.getElementById('editTextModal1').value = texto_1;
