@@ -219,21 +219,21 @@
                     </div>
 
                     <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="despacho15" data-text="" >
-                        <label class="form-check-label" for="despacho15">
-                            <span contenteditable="false">Correção da data de término do RRT baixado (profissional)</span>
-                        </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal15"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal15"></i>
-                    </div>
-
-                    <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho16" data-text="" >
                         <label class="form-check-label" for="despacho16">
-                            <span contenteditable="false">Correção da data de término do RRT baixado (empresa)</span>
+                            <span contenteditable="false">Correção da data de término do RRT baixado (profissional)</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16"></i>
+                    </div>
+
+                    <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="despacho17" data-text="" >
+                        <label class="form-check-label" for="despacho17">
+                            <span contenteditable="false">Correção da data de término do RRT baixado (empresa)</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal17"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal17"></i>
                     </div>
 
                     
@@ -605,6 +605,26 @@
             </div>
         </div>
 
+        <div class="modal" id="editModal17">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control" rows="12" id="editTextModal17" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(17)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
             
         <!--------------------------------------- area do despacho  ---------------------------------------->
@@ -624,6 +644,7 @@
                 </div>
             </div>
         </div>
+        
 
         <!--------------------------------------- footer  ---------------------------------------->
 
@@ -853,7 +874,7 @@ Equipe CAU/SP.`;
             document.getElementById('despacho15').setAttribute('data-text', texto_15);
             document.getElementById('editTextModal15').value = texto_15;
 
-            var texto_15 = 
+            var texto_16 = 
 `Informamos que foi solicitada a baixa da sua responsabilidade técnica pela empresa XXXXXXXXXX e conforme a Alteração contratual/ Termo de homologação ou CTPS/ Distrato de prestação de serviços, a data do fim da responsabilidade técnica é XXXXXXXX. Portanto, diverge da data de término declarada no RRT nº XXXXXX.
  
 Para prosseguir com a baixa da reponsabilidade técnica, é necessário:
@@ -867,10 +888,10 @@ PRAZO PARA MANIFESTAÇÃO: 10 DIAS. Conforme a Resolução 91/2014 do CAU/BR, ca
 Ao concluir a retificação, responda ao protocolo confirmando a correção.
 `;
 
-            document.getElementById('despacho15').setAttribute('data-text', texto_15);
-            document.getElementById('editTextModal15').value = texto_15;
+            document.getElementById('despacho16').setAttribute('data-text', texto_16);
+            document.getElementById('editTextModal16').value = texto_16;
 
-            var texto_16 = 
+            var texto_17 = 
 `Informamos que a data de término do RRT nº XXXXX baixado diverge da data de término da responsabilidade técnica conforme a Alteração contratual/ Termo de homologação ou CTPS/ Distrato de prestação de serviços. 
 
 Para prosseguir com a baixa da reponsabilidade técnica, a retificação do RRT ou a apresentação de documento comprobatório que confirme a data da baixa do RRT nº XXXXX foi solicitada ao profissional.
@@ -880,8 +901,8 @@ Por gentileza, aguardem a manifestação do profissional no prazo de 10 dias, co
 Ressaltamos que a baixa do responsável técnico somente será realizada após a regularização da baixa do RRT.
 `;
 
-            document.getElementById('despacho16').setAttribute('data-text', texto_16);
-            document.getElementById('editTextModal16').value = texto_16;
+            document.getElementById('despacho17').setAttribute('data-text', texto_17);
+            document.getElementById('editTextModal17').value = texto_17;
 
 
 
