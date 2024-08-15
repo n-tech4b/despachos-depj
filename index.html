@@ -242,7 +242,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho9" data-toggle="collapse" href="#collapse-9"  data-text="">
                         <label class="form-check-label" for="despacho9">
                             <span contenteditable="false">
-                                Ref. Contrato de Prestação de Serviços
+                                Ref. CPS (Contrato de Prestação de Serviços)
                             </span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9"></i>
@@ -309,7 +309,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho15" data-toggle="collapse" href="#collapse-15"  data-text="">
                         <label class="form-check-label" for="despacho15">
                             <span contenteditable="false">
-                                Ref. CTPS
+                                Ref. CTPS (Carteira de Trabalho e Previdência Social)
                             </span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal15"></i>
@@ -1727,8 +1727,10 @@ Para testar a validação, utilize o serviço "VALIDAR", do Governo Federal, no 
 
             var texto_12 = 
 `• O contrato deverá constar carga horária detalhada (quantidade de horas por dia ou por semana) e honorários mensais para verificação do piso salarial, conforme disposto no Artigo 6° da Resolução de n°28 do CAU/BR e Resolução nº 150 do CAU/BR.
-O piso salarial é calculado com base no salário mínimo vigente no país. Cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente.
-`;
+O piso salarial é calculado com base no salário mínimo vigente** no país. Cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente.
+
+** Conforme a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de prestação de serviços com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00 (valor congelado conforme decisão do Supremo Tribunal Federal no julgamento conjunto das ADPFs 53, 149 e 171).`
+;
 
             document.getElementById('despacho12').setAttribute('data-text', texto_12);
             document.getElementById('editTextModal12').value = texto_12;
@@ -1774,7 +1776,9 @@ SM: Salário mínimo
 
             var texto_16 = 
 `• O salário deverá atender ao piso salarial, conforme disposto no Artigo 6° da Resolução de n°28 do CAU/BR e Resolução nº 150 do CAU/BR. 
-O piso salarial é calculado com base no salário mínimo vigente no país. Cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente.`
+O piso salarial é calculado com base no salário mínimo vigente** no país. Cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente.
+
+** Conforme a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de trabalho (CLT) com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00 (valor congelado conforme decisão do Supremo Tribunal Federal no julgamento conjunto das ADPFs 53, 149 e 171).`
 ;
 
             document.getElementById('despacho16').setAttribute('data-text', texto_16);
