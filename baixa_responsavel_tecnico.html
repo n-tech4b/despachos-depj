@@ -221,20 +221,20 @@
                     <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho16" data-text="" >
                         <label class="form-check-label" for="despacho16">
-                            <span contenteditable="false">Correção da data de término do RRT baixado (profissional)</span>
+                            <span contenteditable="false">Comunicado de alteração de data de término do RRT (para o PROFISSIONAL)</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16"></i>
                     </div>
 
-                    <div class="form-check mb-1">
+                    <!-- <div class="form-check mb-1">
                         <input type="checkbox" class="form-check-input" id="despacho17" data-text="" >
                         <label class="form-check-label" for="despacho17">
                             <span contenteditable="false">Correção da data de término do RRT baixado (empresa)</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal17"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal17"></i>
-                    </div>
+                    </div> -->
 
                     
                     <div class="form-check mb-1">
@@ -875,18 +875,14 @@ Equipe CAU/SP.`;
             document.getElementById('editTextModal15').value = texto_15;
 
             var texto_16 = 
-`Informamos que foi solicitada a baixa da sua responsabilidade técnica pela empresa XXXXXXXXXX e conforme a Alteração contratual/ Termo de homologação ou CTPS/ Distrato de prestação de serviços, a data do fim da responsabilidade técnica é XXXXXXXX. Portanto, diverge da data de término declarada no RRT nº XXXXXX.
- 
-Para prosseguir com a baixa da reponsabilidade técnica, é necessário:
- 
-- Retificar a Data de término da atividade do RRT baixado nº XXXXXXX conforme o comprovante apresentado pela empresa ou apresentar um documento comprobatório confirmando a data de término da responsabilidade técnica pela empresa na data declarada na baixa.
- 
-Para retificar o RRT baixado, acesse o SICCAU profissional e na página inicial, clique Protocolo > Cadastrar Protocolo > Grupo de Assunto: Registro de Responsabilidade Técnica - RRT > Assunto: Permissão para retificação de RRT baixado e informe na descrição do protocolo o número do RRT, os dados a serem retificados e o motivo (correção da data de término da responsabilidade técnica pela empresa).
- 
-PRAZO PARA MANIFESTAÇÃO: 10 DIAS. Conforme a Resolução 91/2014 do CAU/BR, caso não haja manifestação no prazo definido, a data de término do RRT será retificada e a baixa da responsabilidade técnica será realizada conforme a data registrada no documento apresentado pela empresa.
+`<div><pre style="font-family: Verdana;" wrap="hard">Prezado XXXXX
 
-Ao concluir a retificação, responda ao protocolo confirmando a correção.
-`;
+Informamos que a data de término das atividades do RRT XXXX fora retificada para XXXXX, conforme determinado no art. 46 da Resolução nº 91 do CAU/BR e data de término do comprovante de vínculo junto à empresa XXXXX.
+
+- Resolução nº 91 disponível no link <a href="https://transparencia.caubr.gov.br/resolucao91/"target="blank">https://transparencia.caubr.gov.br/resolucao91/</a>.
+
+Atenciosamente,
+Equipe CAU/SP.`;
 
             document.getElementById('despacho16').setAttribute('data-text', texto_16);
             document.getElementById('editTextModal16').value = texto_16;
