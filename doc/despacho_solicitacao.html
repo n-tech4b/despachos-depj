@@ -2803,13 +2803,17 @@
         // Sua variável
 
 var texto_1000 = 
-`<div>Prezados,</div><br><div>Confirmamos o recebimento da documentação anexada no dia XXXXXXXX.</div><br><div>Para prosseguir com o registro da empresa, é necessário sanar a(s) seguinte(s) <strong>pendência(s)</strong>:</div><br>`;
+`<div>Prezados,</div><br>  
+<div>Confirmamos o recebimento da documentação anexada no dia XXXXXXXX.</div><br>  
+<div>Para prosseguir com o registro da empresa, é necessário sanar a(s) seguinte(s) <strong>pendência(s)</strong>:</div><br>`;
 document.getElementById('despacho1000').setAttribute('data-text', texto_1000);
 document.getElementById('editTextModal1000').value = texto_1000;
 
 
 var texto_2000 = 
-`<div>Prezados,</div><br><div>Confirmamos o recebimento <strong>PARCIAL</strong> da documentação anexada no dia XXXXXXXX.</div><br><div>Documento (s) não recebido (s):</div>`;
+`<div>Prezados,</div><br>  
+<div>Confirmamos o recebimento <strong>PARCIAL</strong> da documentação anexada no dia XXXXXXXX.</div><br>  
+<div>Documento (s) não recebido (s):</div>`;
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
@@ -3501,23 +3505,20 @@ document.getElementById('editTextModal18000').value = texto_18000;
                     let selectedDataText = $('#selectedDataText').val(); // Obtém o texto do textarea
 
                     if (selectedDataText !== 'Nenhum selecionado') {
-                        // Remove todas as tags <br> ou <br />
-                        // selectedDataText = selectedDataText.replace(/<br\s*\/?>/gi, '');
+                    // Insere \n entre </div><div>
+                    let cleanText = selectedDataText.replace(/<\/div>\s*<div>/gi, '</div>\n\n<div>');
 
-                        // Adiciona a tag <div><pre> no início e fecha no final
-                        //selectedDataText = `<div><pre style="font-family: Verdana;" wrap="hard">${selectedDataText}</pre></div>`;
+                    // Remove as tags <br> se quiser limpar também
+                    cleanText = cleanText.replace(/<br\s*\/?>/gi, '');
 
-                        // Copiar o texto para a área de transferência (clipboard)
-                        const el = document.createElement('textarea');
-                        el.value = selectedDataText;
-
-                        console.log(el.value);
-
-                        document.body.appendChild(el);
-                        el.select();
-                        document.execCommand('copy');
-                        document.body.removeChild(el);
-
+                    // Copiar para o clipboard
+                    navigator.clipboard.writeText(cleanText)
+                        .then(() => {
+                            console.log('Texto copiado com sucesso!');
+                        })
+                        .catch(err => {
+                            console.error('Erro ao copiar texto:', err);
+                        });
                     }
 
                 }
