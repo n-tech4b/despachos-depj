@@ -3401,6 +3401,9 @@ document.getElementById('editTextModal18000').value = texto_18000;
                         // Adiciona a tag <div><pre> no início e fecha no final
                         //selectedDataText = `<div><pre style="font-family: Verdana;" wrap="hard">${selectedDataText}</pre></div>`;
 
+                        // Adiciona a tag <div><pre> no início e fecha no final
+                        selectedDataText = `<div style="font-weight: normal;">${selectedDataText}</div>`;
+
                         // Copiar o texto para a área de transferência (clipboard)
                         const el = document.createElement('textarea');
                         el.value = selectedDataText;
