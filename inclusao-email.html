@@ -4,8 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- Jodit CSS -->
+        <link rel="stylesheet" href="jodit.css">
+
+        <link rel="script" href="/textos.js">
+
         <title>Despachos PJ</title>
         
         <style>
@@ -33,11 +40,55 @@
 
             }
 
+        /* Estilos para o loader */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        /* Criando um spinner com CSS */
+        .spinner {
+            border: 10px solid #f3f3f3; /* Cor de fundo do spinner */
+            border-top: 10px solid #3498db; /* Cor do spinner */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        /* Definindo a animação */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Estilização do texto */
+        #loader div {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px; /* Espaço entre o spinner e o texto */
+        }
+
         </style>
 
     </head>
 
-    <body>
+    <body">
+
+        <!-- Div para o loader com o spinner CSS -->
+        <div id="loader">
+            <div class="spinner"></div>
+            <div>carregando...</div>
+        </div>
             
         <!--------------------------------------- nav superior ---------------------------------------->
 
@@ -110,7 +161,7 @@
                         </li>
                         <li class="nav-item align-items-center justify-content-center">
                             <a class="nav-link font-weight-bold text-success" href="https://manualpj.netlify.app/", target="_blank"><span>Manuais</span></a>
-                        </li>  
+                        </li>         
                         <li class="nav-item align-items-center justify-content-center">
                             <a class="nav-link" href="https://conselhoarquitetura.sharepoint.com/:x:/r/sites/CAUSP-DRIVE/_layouts/15/Doc.aspx?sourcedoc=%7B8CF9D546-0417-4500-8A9D-D40BCA4024FB%7D&file=Planilha%20agendamento%20nova.xlsm&action=default&mobileredirect=true", target="_blank">Agendamento</a>
                         </li>
@@ -128,6 +179,7 @@
         <!--------------------------------------- area elaboração do despacho ---------------------------------------->
 
         <div class="container-fluid" >
+
             <div class="row p-3" >
                 <div class="col-md-12">
                     <h3 class="d-flex align-items-center mt-2">Inclusão de E-MAIL</h3>
@@ -139,53 +191,55 @@
                         <button class="btn btn-sm btn-secondary mt-2" style="width: 105px" id="cleanButton"><i class="fa fa-eraser pr-1"></i>Desmarcar</button>
                         
                     </div>
-                    
-                    <!-- checkbox -->
 
                     <!-- checkbox simples-->
-                    <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="despacho1" data-text="" checked>
-                        <label class="form-check-label" for="despacho1">
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho1000" data-text="" checked>
+                        <label class="form-check-label" for="despacho1000">
                             <span contenteditable="false">Destinatário.</span>
                         </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal1"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal1"></i>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal1000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal1000"></i>
                     </div>
-                    
-                    <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="despacho2" data-text="" checked>
-                        <label class="form-check-label" for="despacho2">
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho2000" data-text="" checked>
+                        <label class="form-check-label" for="despacho2000">
                             <span contenteditable="false">Inclusão de e-mail.</span>
                         </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2"></i>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2000"></i>
                     </div>
-                    
-                    <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="despacho3" data-text="">
-                        <label class="form-check-label" for="despacho3">
-                            <span contenteditable="false">Alteração de e-mail.</strong></span>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho3000" data-text="">
+                        <label class="form-check-label" for="despacho3000">
+                            <span contenteditable="false">Alteração de e-mail.</span>
                         </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3"></i>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3000"></i>
                     </div>
-                    
-                    <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="despacho4" data-text="" checked>
-                        <label class="form-check-label" for="despacho4">
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho4000" data-text="" checked>
+                        <label class="form-check-label" for="despacho4000">
                             <span contenteditable="false">Fechos e identificação do CAU/SP.</span>
                         </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4"></i>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4000"></i>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
         <!--------------------------------------- modais ---------------------------------------->
 
-        <div class="modal" id="editModal1">
+        
+        <div class="modal" id="editModal1000">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -193,18 +247,19 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <textarea class="form-control" rows="12" id="editTextModal1" style="line-height: 1;">
+                        <textarea class="form-control editor" rows="12" id="editTextModal1000" style="line-height: 1;">
                         </textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(1)">Salvar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(1000)">Salvar</button>
                     </div>
                 </div>
             </div>
         </div>
+                
 
-        <div class="modal" id="editModal2">
+        <div class="modal" id="editModal2000">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -212,18 +267,19 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <textarea class="form-control" rows="12" id="editTextModal2" style="line-height: 1;">
+                        <textarea class="form-control editor" rows="12" id="editTextModal2000" style="line-height: 1;">
                         </textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(2)">Salvar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(2000)">Salvar</button>
                     </div>
                 </div>
             </div>
         </div>
+                
 
-        <div class="modal" id="editModal3">
+        <div class="modal" id="editModal3000">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -231,18 +287,19 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <textarea class="form-control" rows="12" id="editTextModal3" style="line-height: 1;">
+                        <textarea class="form-control editor" rows="12" id="editTextModal3000" style="line-height: 1;">
                         </textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(3)">Salvar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(3000)">Salvar</button>
                     </div>
                 </div>
             </div>
         </div>
+                
 
-        <div class="modal" id="editModal4">
+        <div class="modal" id="editModal4000">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -250,18 +307,18 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <textarea class="form-control" rows="12" id="editTextModal4" style="line-height: 1;">
+                        <textarea class="form-control editor" rows="12" id="editTextModal4000" style="line-height: 1;">
                         </textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(4)">Salvar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(4000)">Salvar</button>
                     </div>
                 </div>
             </div>
-        </div>
-
-            
+        </div>    
+        
+        
         <!--------------------------------------- area do despacho  ---------------------------------------->
 
         <div class="container-fluid" >
@@ -269,11 +326,12 @@
                 <div class="col-md-12">
                     <div id="dataTextDisplay">
                         <h4 class="ml-3">Despacho:</h4>
-                        <textarea id="selectedDataText" class="form-control border-dark" rows="10" style="line-height: 1;"></textarea>
+                        <!-- readonly não permite edição na textarea -->
+                        <textarea id="selectedDataText" class="form-control border-dark editor" rows="10" style="line-height: 1;"></textarea>
                         <div class="mt-3 text-center">
-                            <button class="btn btn-primary d-inline m-1" style="width: 90px" id="updateButton">Atualizar</button>
-                            <button class="btn btn-danger d-inline m-1" style="width: 90px" id="deleteButton">Deletar</button>
-                            <button class="btn btn-success d-inline m-1" style="width: 90px" id="copyButton">Copiar</button>
+                            <button class="btn btn-primary d-inline m-1" style="width: 110px" id="updateButton"><i class="fa fa-refresh pr-1"></i>Atualizar</button>
+                            <button class="btn btn-danger d-inline m-1" style="width: 110px" id="deleteButton"><i class="fa fa-trash pr-1"></i>Deletar</button>
+                            <button class="btn btn-success d-inline m-1" style="width: 110px" id="copyButton"><i class="fa fa-copy pr-1"></i>Copiar</button>
                         </div>
                     </div>
                 </div>
@@ -289,11 +347,46 @@
     
         <!-- JavaScript (Opcional) -->
         <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script></div><br>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         
+        <!-- Inclua o script principal do Jodit -->
+        <script src="jodit.js"></script>
+
         <script>
+
+            
+
+        // Sua variável
+   
+
+var texto_1000 = 
+`<div>Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXXXXXX,</div><div><br></div>`;
+document.getElementById('despacho1000').setAttribute('data-text', texto_1000);
+document.getElementById('editTextModal1000').value = texto_1000;
+
+
+var texto_2000 = 
+`<div>O e-mail XXXXXXXXXXXXXX foi inserido no SICCAU (Sistema de Informação e Comunicação do CAU) da empresa</div><div><br></div><div>Por favor acesse:</div><div><a href="https://acesso.caubr.gov.br/usuario/senha/email" target="blank">https://acesso.caubr.gov.br/usuario/senha/email</a></div><div><br></div><div>Digitar o CNPJ para receber a senha do SICCAU no e-mail</div><div><br></div><div>Para acesso ao SICCAU entre em:</div><div><a href="https://acesso.caubr.gov.br/" target="blank">https://acesso.caubr.gov.br/</a></div><div><br></div><div>No SICCAU é possível realizar emissão do boleto da anuidade, bem como a emissão da Certidão de Registro e Quitação de Pessoa Jurídica, entre outras funcionalidades.</div><div><br></div><div>Condições de pagamento e desconto de anuidade descritas nos links abaixo:</div><div><br></div><div><a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_pagamento_da_anuidade_2023_r00.pdf" target="blank">https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_pagamento_da_anuidade_2023_r00.pdf</a></div><div><br></div><div><a href="https://causp.gov.br/anuidade-2023-confira-os-novos-descontos-e-prazos/" target="blank">https://causp.gov.br/anuidade-2023-confira-os-novos-descontos-e-prazos/</a></div><div><br></div>`;
+document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
+document.getElementById('editTextModal2000').value = texto_2000;
+
+
+var texto_3000 = 
+`<div>Para acesso ao SICCAU, por gentileza acessar: <a href="https://www.causp.gov.br" target="blank">https://www.causp.gov.br</a> - clicar em "SICCAU" - no campo "Fazer Login" digitar o CNPJ e a senha da empresa.</div><div><br></div><div>Caso não tenha mais acesso a senha clicar em "Esqueci minha Senha" , uma nova senha irá para o e-mail xxxxxx Caso deseje mudar o e-mail para receber a senha, por gentileza preencher solicitação (anexo) de inclusão de e-mail no SICCAU(Sistema de Informação e Comunicação do CAU) e retornar a solicitação preenchida, por e-mail.</div><div><br></div>`;
+document.getElementById('despacho3000').setAttribute('data-text', texto_3000);
+document.getElementById('editTextModal3000').value = texto_3000;
+
+
+var texto_4000 = 
+`<div><br></div><div>Atenciosamente,</div><div>Equipe CAU/SP.</div><div><br></div>`;
+document.getElementById('despacho4000').setAttribute('data-text', texto_4000);
+document.getElementById('editTextModal4000').value = texto_4000;
+
+
+
+          
             function saveEdit(despachoNumber) {
                 const editTextModal = $('#editTextModal' + despachoNumber).val();
                 const checkbox = $('#despacho' + despachoNumber);
@@ -306,38 +399,91 @@
                 $('#editModal' + despachoNumber).modal('hide');
             }
 
+            // botão copiar para solicitação de registro (elimina todos os br)
+
+            // $('#copyButton').click(function() {
+            //     let selectedDataText = $('#selectedDataText').val(); // Obtém o texto do textarea
+
+            //     if (selectedDataText !== 'Nenhum selecionado') {
+            //         // Remove todas as tags <br> ou <br />
+            //         selectedDataText = selectedDataText.replace(/<br\s*\/?>/gi, '');
+
+            //         // Copiar o texto para a área de transferência (clipboard)
+            //         const el = document.createElement('textarea');
+            //         el.value = selectedDataText;
+
+            //         console.log(el.value);
+
+            //         document.body.appendChild(el);
+            //         el.select();
+            //         document.execCommand('copy');
+            //         document.body.removeChild(el);
+
+            //     }
+            // });
+
+            // botão copiar para protocolo (elimina todos os br e adiciona a tag pre (confirmar qual a melhor opção))
+
             $('#copyButton').click(function() {
-                const selectedDataText = $('#selectedDataText').val(); // Alterado de text para val
+
+                let selectedDataText = $('#selectedDataText').val(); // Obtém o texto do textarea
+
                 if (selectedDataText !== 'Nenhum selecionado') {
+                    // Remove todas as tags <br> ou <br />
+                    // selectedDataText = selectedDataText.replace(/<br\s*\/?>/gi, '');
+
+                    // Adiciona a tag <div><pre> no início e fecha no final
+                    //selectedDataText = `<div><pre style="font-family: Verdana;" wrap="hard">${selectedDataText}</pre></div>`;
+
+                    // Adiciona a tag <div><pre> no início e fecha no final
+                    selectedDataText = `<div style="font-weight: normal;">${selectedDataText}</div>`;
+
                     // Copiar o texto para a área de transferência (clipboard)
                     const el = document.createElement('textarea');
                     el.value = selectedDataText;
+
+                    console.log(el.value);
+
                     document.body.appendChild(el);
                     el.select();
                     document.execCommand('copy');
                     document.body.removeChild(el);
 
-                    //alert('Texto copiado para a área de transferência.');
-                }
+                }   
+
+
             });
 
             $('#updateButton').click(function() {
-                // Atualizar a div para mostrar o data-text das checkboxes selecionadas
+                // Obter os valores dos checkboxes selecionados
                 const selectedCheckboxes = $('input[type="checkbox"]:checked');
-                const selectedDataText = Array.from(selectedCheckboxes).map(checkbox => $(checkbox).data('text')).join('\n');
-                
-                // Atualizar o conteúdo da textarea
-                $('#selectedDataText').val(selectedDataText || 'Nenhum selecionado');
+                // const selectedDataText = Array.from(selectedCheckboxes).map(checkbox => $(checkbox).data('text')).join('\n');
+                // console.log(selectedDataText);
 
-                // Ajustar automaticamente o tamanho da textarea
-                $('#selectedDataText').height('auto');
-                $('#selectedDataText').height($('#selectedDataText')[0].scrollHeight);
+                const selectedDataText = Array.from(selectedCheckboxes)
+                .map(checkbox => $(checkbox).data('text'))
+                .join('');
+                console.log(selectedDataText);
+
+                // Localizar o editor Jodit
+                const editorInstance = Jodit.instances.selectedDataText;
+
+                if (editorInstance) {
+                    // Atualizar o conteúdo do editor Jodit
+                    editorInstance.value = selectedDataText || 'Nenhum selecionado';
+                } else {
+                    console.error('Jodit instance not found for #selectedDataText');
+                }
             });
 
             $(document).ready(function() {
                 $('#deleteButton').click(function() {
-                    // Limpar o conteúdo da textarea
-                    $('#selectedDataText').val('');
+                    let editorInstance = Jodit.instances.selectedDataText;
+                    if (editorInstance) {
+                        editorInstance.value = ''; // Limpa o conteúdo do editor
+                    } else {
+                        $('#selectedDataText').text('Nenhum selecionado'); // Alternativa para textarea normal
+                    }
                 });
             });
 
@@ -365,61 +511,66 @@
                     $('.collapse.show').collapse('hide');
                 });
             });
+
+
+            // jodit inicialização
+
+            document.querySelectorAll('.editor').forEach((textarea) => {
+            const editor = new Jodit(textarea, {
+                "uploader": {
+                "insertImageAsBase64URI": true
+                },
+                // Configurações do editor
+                language: 'pt_br', // Define o idioma como português
+                // maxHeight: 1600,
+                enter: "div",
+                spellcheck: true,
+                showXPathInStatusbar: false,
+                askBeforePasteHTML: true,
+                askBeforePasteFromWord: false,
+                buttons: [
+                    'undo', 'redo', '|',
+                    'font','fontsize', 'eraser', '|',
+                    'bold', 'italic', 'underline', 'strikethrough', 
+                    'superscript', 'subscript', 'brush', '|',
+                    'ul', 'ol', 
+                    //'indent', 'outdent', 'align', 'lineHeight', 
+                    'paragraph', '|',
+                    'table', 'hr', 'symbols', '|',
+                    // 'classSpan', '|',
+                    // 'file', 
+                    'link', 'image', 'video', '|',
+                    // 'cut', 'copy', 'paste', 
+                    // 'copyformat', '|',
+                    // 'ai-commands', 'ai-assistant', '|',
+                    'find', 'spellcheck', 
+                    //'selectall', 'copy', 
+                    'preview', 'print', 'fullsize', 
+                    // 'about'
+                ]
+                ,
+                style: {
+                fontSize: '14px'
+                },
+            });
+        });
+
+
+        // remover o o spinner após o carregamento da página (jodit etc)
+        window.onload = function() {
+
+            document.getElementById('loader').style.display = 'none';
+
+            // simular atraso para teste
+            // setTimeout(function() {
+            //     Remove o loader após o atraso
+            //     document.getElementById('loader').style.display = 'none';
+            // }, 600); 
+        };
+
+
+
             
-
-            // Sua variável
-            var texto_1 = 
-`<div><pre style="font-family: Verdana;" wrap="hard">Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXXXXXX,
-`;
-            document.getElementById('despacho1').setAttribute('data-text', texto_1);
-            document.getElementById('editTextModal1').value = texto_1;
-
-
-            var texto_2 = 
-`O e-mail XXXXXXXXXXXXXX foi inserido no SICCAU (Sistema de Informação e Comunicação do CAU) da empresa
-
-Por favor acesse:
-<a href="https://acesso.caubr.gov.br/usuario/senha/email" target="blank">https://acesso.caubr.gov.br/usuario/senha/email</a>
-
-Digitar o CNPJ para receber a senha do SICCAU no e-mail
-
-
-Para acesso ao SICCAU entre em:
-<a href="https://acesso.caubr.gov.br/" target="blank">https://acesso.caubr.gov.br/</a>
-
-
-No SICCAU é possível realizar emissão do boleto da anuidade, bem como a emissão da Certidão de Registro e Quitação de Pessoa Jurídica, entre outras funcionalidades.
-
-
-Condições de pagamento e desconto de anuidade descritas nos links abaixo:
-
-<a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_pagamento_da_anuidade_2023_r00.pdf" target="blank">https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_pagamento_da_anuidade_2023_r00.pdf</a>  
-
-<a href="https://causp.gov.br/anuidade-2023-confira-os-novos-descontos-e-prazos/" target="blank">https://causp.gov.br/anuidade-2023-confira-os-novos-descontos-e-prazos/</a>
-`;
-            document.getElementById('despacho2').setAttribute('data-text', texto_2);
-            document.getElementById('editTextModal2').value = texto_2;
-
-
-            var texto_3 = 
-`Para acesso ao SICCAU, por gentileza acessar: <a href="https://www.causp.gov.br" target="blank">https://www.causp.gov.br</a> - clicar em "SICCAU" - no campo "Fazer Login" digitar o CNPJ e a senha da empresa.
-
-Caso não tenha mais acesso a senha clicar em "Esqueci minha Senha" , uma nova senha irá para o e-mail xxxxxx Caso deseje mudar o e-mail para receber a senha, por gentileza preencher solicitação (anexo) de inclusão de e-mail no SICCAU(Sistema de Informação e Comunicação do CAU) e retornar a solicitação preenchida, por e-mail.
-`;
-
-            document.getElementById('despacho3').setAttribute('data-text', texto_3);
-            document.getElementById('editTextModal3').value = texto_3;
-
-            var texto_4 = 
-`
-
-Atenciosamente,
-Equipe CAU/SP.`;
-
-            document.getElementById('despacho4').setAttribute('data-text', texto_4);
-            document.getElementById('editTextModal4').value = texto_4;
-
-
         </script>
 
     </body>
