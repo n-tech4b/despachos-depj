@@ -346,10 +346,20 @@
                     <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho16000" data-text="" >
                         <label class="form-check-label" for="despacho16000">
-                            <span contenteditable="false">Fechos e identificação do CAU/SP.</span>
+                            <span contenteditable="false">Canais de atendimento.</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16000"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho16500" data-text="" >
+                        <label class="form-check-label" for="despacho16500">
+                            <span contenteditable="false">Fechos e identificação do CAU/SP.</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16500"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16500"></i>
                     </div>
 
                     <!-- checkbox simples-->
@@ -721,6 +731,26 @@
         </div>
                 
 
+        <div class="modal" id="editModal16500">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal16500" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(16500)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
         <div class="modal" id="editModal17000">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -914,52 +944,55 @@ document.getElementById('editTextModal12000').value = texto_12000;
 
 
 var texto_13000 = 
-`<div>Ao atender as orientações, por favor, responda o protocolo. Acesse o SICCAU da empresa (usando o CNPJ como login), clique em Protocolo - Pesquisar Protocolo, insira o número do protocolo e clique em “Responder Protocolo”.<div><br></div></div>`;
+`<div><div>O CANCELAMENTO é um procedimento administrativo interno, por isso não será possível atender esta solicitação.</div><div><br></div><div>A solicitação correta que a empresa deve fazer é a de "BAIXA DE REGISTRO DE EMPRESA" ou de "INTERRUPÇÃO DE REGISTRO DE PESSOA JURÍDICA".</div><div><br></div><div>Conforme a Resolução 28 do CAU/BR, a <u>BAIXA DO REGISTRO DA EMPRESA</u> deve ser solicitada em um dos casos abaixo:</div><div><ul><li>A empresa foi encerrada na Receita Federal (encaminhar o distrato social ou requerimento de empresário de cancelamento e a certidão de baixa do CNPJ);</li><li>As atividades relativas à arquitetura e urbanismo foram retiradas do objeto social (encaminhar alteração contratual contendo a alteração das atividades, devidamente registrada em órgão competente);</li><li>A empresa possui em seu objeto social somente atividades compartilhadas e um engenheiro é o responsável técnico (encaminhar a última alteração contratual consolidada e a Certidão de Registro no CREA se houver).</li></ul></div><div>Observação: Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada das citadas expressões.</div><div><br></div><div><u>Para realizar a abertura do Protocolo de baixa de registro:</u></div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Baixa de Registro de Empresa e anexar ao protocolo os documentos indicados nos motivos de baixa citados acima.</div><div><br></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro de Pessoa Jurídica e não esteja executando atividades de arquitetura e urbanismo, a empresa pode solicitar a <u>INTERRUPÇÃO do registro</u>.</div><div><br></div><div><u>Para realizar abertura de Protocolo de interrupção de registro: </u> </div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Interrupção do Registro de Pessoa Jurídica.</div><div><br></div><div>Condições de Interrupção e Baixa de Registro, descritas nos links abaixo:</div><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/</a></div><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/</a></div></div>`;
 document.getElementById('despacho13000').setAttribute('data-text', texto_13000);
 document.getElementById('editTextModal13000').value = texto_13000;
 
 
 var texto_14000 = 
-`<div>PRAZO PARA MANIFESTAÇÃO: 10 DIAS (sob pena de ter o protocolo indeferido e arquivado).<div>`;
+`<div>Ao atender as orientações, por favor, responda o protocolo. Acesse o SICCAU da empresa (usando o CNPJ como login), clique em Protocolo - Pesquisar Protocolo, insira o número do protocolo e clique em “Responder Protocolo”.<div><br></div></div>`;
 document.getElementById('despacho14000').setAttribute('data-text', texto_14000);
 document.getElementById('editTextModal14000').value = texto_14000;
 
 
 var texto_15000 = 
-`<div><br></div><div>Atenciosamente,</div><div>Equipe CAU/SP.</div><div><br></div>`;
+`<div>PRAZO PARA MANIFESTAÇÃO: 10 DIAS (sob pena de ter o protocolo indeferido e arquivado).<div><div><br></div>`;
 document.getElementById('despacho15000').setAttribute('data-text', texto_15000);
 document.getElementById('editTextModal15000').value = texto_15000;
 
 
 var texto_16000 = 
-`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data da baixa do CNPJ em XXXXXXXXXXXX</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
+`<div>Em caso de dúvidas, entre em contato através dos  <a href="https://causp.gov.br/atendimento/" target="blank">Canais de Atendimento</a> do CAU/SP.</div><div><br></div>`;
 document.getElementById('despacho16000').setAttribute('data-text', texto_16000);
 document.getElementById('editTextModal16000').value = texto_16000;
 
 
+var texto_16500 = 
+`<div><br></div><div>Atenciosamente,</div><div>Coordenação Técnica do Exercício Profissional – CAU/SP.</div><div><br></div>`;
+document.getElementById('despacho16500').setAttribute('data-text', texto_16500);
+document.getElementById('editTextModal16500').value = texto_16500;
+
+
 var texto_17000 = 
-`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do registro da alteração contratual em XXXXXXXXXXXX</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
+`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data da baixa do CNPJ em XXXXXXXXXXXX</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
 document.getElementById('despacho17000').setAttribute('data-text', texto_17000);
 document.getElementById('editTextModal17000').value = texto_17000;
 
 
 var texto_18000 = 
-`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do protocolo de solicitação de baixa em XXXXXX.</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
+`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do registro da alteração contratual em XXXXXXXXXXXX</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
 document.getElementById('despacho18000').setAttribute('data-text', texto_18000);
 document.getElementById('editTextModal18000').value = texto_18000;
 
 var texto_19000 = 
-`<div>Para a empresa realizar a BAIXA de registro perante o CAU, a empresa deverá se enquadrar nas condições de baixa de registro dispostas no artigo 26 da Resolução 28 do CAU/BR (disponível em <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">https://transparencia.caubr.gov.br/resolucao28/</a>).</div><div><br></div><div>A baixa de registro é cabível quando:</div><ul><li>A empresa foi encerrada na Receita Federal (encaminhar o distrato social ou requerimento de empresário de cancelamento e a certidão de baixa do CNPJ);</li><li>As atividades relativas à arquitetura e urbanismo foram retiradas do objeto social (encaminhar alteração contratual contendo a alteração das atividades, devidamente registrada em órgão competente);</li><li>A empresa possui em seu objeto social somente atividades compartilhadas e um engenheiro é o responsável técnico (encaminhar a última alteração contratual consolidada e a Certidão de Registro no CREA se houver).</li></ul><div>Observação: Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada das citadas expressões.</div><div><br></div><div>A empresa deve solicitar a baixa de registro impreterivelmente através de protocolo aberto pelo SICCAU da empresa.</div><div><br></div><div><u>Para realizar abertura de Protocolo de baixa de registro: </u></div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Baixa de Registro de Empresa e anexar ao protocolo os documentos indicados nos motivos de baixa citados acima.</div><div><br></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro de Pessoa Jurídica e não esteja executando atividades de arquitetura e urbanismo, a empresa pode solicitar a INTERRUPÇÃO do registro.</div><div><br></div><div><u>Para realizar abertura de Protocolo de interrupção de registro:</u></div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Interrupção do Registro de Pessoa Jurídica.</div><div><br></div><div>Informações de Interrupção e Baixa de Registro, descritas também nos links abaixo:</div><div><br></div><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/</a></div><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/</a></div>`;
+`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do protocolo de solicitação de baixa em XXXXXX.</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
 document.getElementById('despacho19000').setAttribute('data-text', texto_19000);
 document.getElementById('editTextModal19000').value = texto_19000;
 
 var texto_20000 = 
-`<div><div>O CANCELAMENTO é um procedimento administrativo interno, por isso não será possível atender esta solicitação.</div><div><br></div><div>A solicitação correta que a empresa deve fazer é a de "BAIXA DE REGISTRO DE EMPRESA" ou de "INTERRUPÇÃO DE REGISTRO DE PESSOA JURÍDICA".</div><div><br></div><div>Conforme a Resolução 28 do CAU/BR, a <u>BAIXA DO REGISTRO DA EMPRESA</u> deve ser solicitada em um dos casos abaixo:</div><div><ul><li>A empresa foi encerrada na Receita Federal (encaminhar o distrato social ou requerimento de empresário de cancelamento e a certidão de baixa do CNPJ);</li><li>As atividades relativas à arquitetura e urbanismo foram retiradas do objeto social (encaminhar alteração contratual contendo a alteração das atividades, devidamente registrada em órgão competente);</li><li>A empresa possui em seu objeto social somente atividades compartilhadas e um engenheiro é o responsável técnico (encaminhar a última alteração contratual consolidada e a Certidão de Registro no CREA se houver).</li></ul></div><div>Observação: Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada das citadas expressões.</div><div><br></div><div><u>Para realizar a abertura do Protocolo de baixa de registro:</u></div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Baixa de Registro de Empresa e anexar ao protocolo os documentos indicados nos motivos de baixa citados acima.</div><div><br></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro de Pessoa Jurídica e não esteja executando atividades de arquitetura e urbanismo, a empresa pode solicitar a <u>INTERRUPÇÃO do registro</u>.</div><div><br></div><div><u>Para realizar abertura de Protocolo de interrupção de registro: </u> </div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Interrupção do Registro de Pessoa Jurídica.</div><div><br></div><div>Condições de Interrupção e Baixa de Registro, descritas nos links abaixo:</div><div><br></div><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/</a></div><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/</a></div></div>`;
+`<div>Para a empresa realizar a BAIXA de registro perante o CAU, a empresa deverá se enquadrar nas condições de baixa de registro dispostas no artigo 26 da Resolução 28 do CAU/BR (disponível em <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">https://transparencia.caubr.gov.br/resolucao28/</a>).</div><div><br></div><div>A baixa de registro é cabível quando:</div><ul><li>A empresa foi encerrada na Receita Federal (encaminhar o distrato social ou requerimento de empresário de cancelamento e a certidão de baixa do CNPJ);</li><li>As atividades relativas à arquitetura e urbanismo foram retiradas do objeto social (encaminhar alteração contratual contendo a alteração das atividades, devidamente registrada em órgão competente);</li><li>A empresa possui em seu objeto social somente atividades compartilhadas e um engenheiro é o responsável técnico (encaminhar a última alteração contratual consolidada e a Certidão de Registro no CREA se houver).</li></ul><div>Observação: Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada das citadas expressões.</div><div><br></div><div>A empresa deve solicitar a baixa de registro impreterivelmente através de protocolo aberto pelo SICCAU da empresa.</div><div><br></div><div><u>Para realizar abertura de Protocolo de baixa de registro: </u></div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Baixa de Registro de Empresa e anexar ao protocolo os documentos indicados nos motivos de baixa citados acima.</div><div><br></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro de Pessoa Jurídica e não esteja executando atividades de arquitetura e urbanismo, a empresa pode solicitar a INTERRUPÇÃO do registro.</div><div><br></div><div><u>Para realizar abertura de Protocolo de interrupção de registro:</u></div><div><br></div><div>Acessar o SICCAU da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Interrupção do Registro de Pessoa Jurídica.</div><div><br></div><div>Informações de Interrupção e Baixa de Registro, descritas também nos links abaixo:</div><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/</a></div><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/</a></div>`;
 document.getElementById('despacho20000').setAttribute('data-text', texto_20000);
 document.getElementById('editTextModal20000').value = texto_20000;
-
-
-
 
           
             function saveEdit(despachoNumber) {

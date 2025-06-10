@@ -391,6 +391,16 @@
                                         
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho9500" data-text="">
+                        <label class="form-check-label" for="despacho9500">
+                            <span contenteditable="false">Canais de atendimento.</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9500"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9500"></i>
+                    </div>
+                                        
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho10000" data-text="" checked>
                         <label class="form-check-label" for="despacho10000">
                             <span contenteditable="false">Fechos e identificação do CAU/SP.</span>
@@ -767,6 +777,26 @@
         </div>
                 
 
+        <div class="modal" id="editModal9500">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal9500" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(9500)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
         <div class="modal" id="editModal10000">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -837,7 +867,7 @@ document.getElementById('editTextModal1000').value = texto_1000;
 
 
 var texto_2000 = 
-`<div>✅ Informamos que <strong>o cadastro da empresa foi atualizado</strong> perante o CAU, conforme alteração contratual registrada em XXXXXXXX.</div><div><br></div>`;
+`<div>✅ Informamos que <strong>o cadastro da empresa foi atualizado</strong> perante o CAU, conforme alteração contratual registrada em <strong>XXXXXXXX</strong>.</div><div><br></div>`;
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
@@ -849,13 +879,13 @@ document.getElementById('editTextModal3000').value = texto_3000;
 
 
 var texto_4000 = 
-`<div>Para efetuar a atualização do registro, é necessário anexar ao protocolo a última alteração do contrato social, devidamente registrada em órgão competente.</div><div><br></div>`;
+`<div>Para efetuar a atualização do registro, é necessário anexar ao protocolo a <stong>última alteração do contrato social</stong>, devidamente registrada em órgão competente.</div><div><br></div>`;
 document.getElementById('despacho4000').setAttribute('data-text', texto_4000);
 document.getElementById('editTextModal4000').value = texto_4000;
 
 
 var texto_5000 = 
-`<div>Verificamos que houve tentativa de envio de documentos em xxxxxxx, porém nenhum arquivo foi anexado ao protocolo para análise. Por gentileza, realizem novamente a tentativa de envio dos documentos para análise.</div><div><br></div><div>Ressaltamos que o tamanho máximo permitido é de 2MB.</div><div><br></div>`;
+`<div>Verificamos que houve tentativa de envio de documentos em xxxxxxx, porém nenhum arquivo foi anexado ao protocolo para análise. Por gentileza, realizem novamente a tentativa de envio dos documentos para análise.</div><div><br></div><div>Ressaltamos que o tamanho máximo permitido é de 2MB e não devem ser utilizados carateres especiais no nome do arquivo.</div><div><br></div>`;
 document.getElementById('despacho5000').setAttribute('data-text', texto_5000);
 document.getElementById('editTextModal5000').value = texto_5000;
 
@@ -867,13 +897,13 @@ document.getElementById('editTextModal6000').value = texto_6000;
 
 
 var texto_7000 = 
-`<div>Informamos que há uma atualização cadastral obrigatória ainda não atendida pela empresa.</div><div><br></div><div>Para prosseguir com a atualização cadastral é necessário anexar ao protocolo:</div><div><br></div>`;
+`<div>Informamos que há uma <strong>atualização cadastral obrigatória ainda não atendida</strong> pela empresa.</div><div><br></div><div>Para prosseguir com a atualização cadastral é necessário anexar ao protocolo:</div><div><br></div>`;
 document.getElementById('despacho7000').setAttribute('data-text', texto_7000);
 document.getElementById('editTextModal7000').value = texto_7000;
 
 
 var texto_7100 = 
-`<div>XX) Última alteração consolidada do contrato social em um arquivo PDF salvo com certificação digital da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br). O certificado é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) ou da Certidão de registro para fins de publicidade e eficácia contra terceiros (cartório).</div>`;
+`<div>XX) a última alteração consolidada do contrato social, devidamente registrada em órgão competente, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a>  da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).  Observação: O certificado é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) com data de emissão inferior a 1 ano.</div>`;
 document.getElementById('despacho7100').setAttribute('data-text', texto_7100);
 document.getElementById('editTextModal7100').value = texto_7100;
 
@@ -885,13 +915,13 @@ document.getElementById('editTextModal7200').value = texto_7200;
 
 
 var texto_7300 = 
-`<div>XX) Contrato de prestação de serviços, em um arquivo PDF salvo com certificação digital da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div>`;
+`<div>XX) Contrato de prestação de serviços, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div>`;
 document.getElementById('despacho7300').setAttribute('data-text', texto_7300);
 document.getElementById('editTextModal7300').value = texto_7300;
 
 
 var texto_7400 = 
-`<div>XX) A CTPS do profissional, contendo as páginas de identificação, qualificação, registro e anotações gerais (com alterações salariais), em um arquivo PDF único salvo com certificação digital da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) (no caso de CTPS digital, anexar também documento de identificação do profissional).</div>`;
+`<div>XX) A CTPS do profissional, contendo as páginas de identificação, qualificação, registro e anotações gerais (com alterações salariais), em um arquivo PDF único salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) (no caso de CTPS digital, anexar também documento de identificação do profissional).</div>`;
 document.getElementById('despacho7400').setAttribute('data-text', texto_7400);
 document.getElementById('editTextModal7400').value = texto_7400;
 
@@ -909,13 +939,13 @@ document.getElementById('editTextModal7600').value = texto_7600;
 
 
 var texto_7700 = 
-`<div>XX) O RRT de desempenho de cargo ou função emitido pelo profissional xxxxx.<div><br></div><div>Caso o profissional responsável técnico pela empresa possua o ART de Cargo ou Função do CREA é possível realizar a emissão do RRT Derivado de Desempenho de Cargo ou Função Técnica.<div><br></div><div>O RRT DERIVADO não possui taxa a ser paga. Para emissão do RRT derivado, siga o tutorial disponível no link xxxxxxxxxxxxx.<div><br></div>`;
+`<div>XX) O RRT de desempenho de cargo ou função emitido pelo(a) profissional xxxxx.<div><br></div><div>Caso o(a) profissional responsável técnico(a) pela empresa possua o ART de Cargo ou Função do CREA é possível realizar a emissão do RRT Derivado de Desempenho de Cargo ou Função Técnica.<div><br></div><div>O RRT DERIVADO não possui taxa a ser paga. Para emissão do RRT derivado, siga o tutorial disponível no link <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf" target="_blank">https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf</a>.<div><br></div>`;
 document.getElementById('despacho7700').setAttribute('data-text', texto_7700);
 document.getElementById('editTextModal7700').value = texto_7700;
 
 
 var texto_7800 = 
-`<div>A certificação digital deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil (listadas em http://estrutura.iti.gov.br), ou pelo portal Gov.br.</div><div><br></div><div>Caso não possuam certificação digital, as cópias autenticadas dos documentos devem ser encaminhadas ao endereço: DEPJ – Pessoa Jurídica – CAU/SP, Rua Quinze de Novembro, 194 - Centro Histórico de São Paulo, São Paulo - SP, 01013-000.</div><div><br></div>`;
+`<div>A  <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil (listadas em <a href="http://estrutura.iti.gov.br" target="blank">http://estrutura.iti.gov.br</a>), ou pelo portal Gov.br.</div><div><br></div>`;
 document.getElementById('despacho7800').setAttribute('data-text', texto_7800);
 document.getElementById('editTextModal7800').value = texto_7800;
 
@@ -938,8 +968,14 @@ document.getElementById('despacho9000').setAttribute('data-text', texto_9000);
 document.getElementById('editTextModal9000').value = texto_9000;
 
 
+var texto_9500 = 
+`<div>Em caso de dúvidas, entre em contato através dos  <a href="https://causp.gov.br/atendimento/" target="blank">Canais de Atendimento</a> do CAU/SP.</div><div><br></div>`;
+document.getElementById('despacho9500').setAttribute('data-text', texto_9500);
+document.getElementById('editTextModal9500').value = texto_9500;
+
+
 var texto_10000 = 
-`<div><br></div><div>Atenciosamente,</div><div>Equipe CAU/SP.</div><div><br></div>`;
+`<div><br></div><div>Atenciosamente,</div><div>Coordenação Técnica do Exercício Profissional – CAU/SP.</div><div><br></div>`;
 document.getElementById('despacho10000').setAttribute('data-text', texto_10000);
 document.getElementById('editTextModal10000').value = texto_10000;
 
