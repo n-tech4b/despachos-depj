@@ -201,7 +201,7 @@
 
             <div class="row p-3" >
                 <div class="col-md-12">
-                    <h3 class="d-flex align-items-center mt-2">Inclusão de E-MAIL</h3>
+                    <h3 class="d-flex align-items-center mt-2">Visto Prévio</h3>
 
                     <!-- button reiniciar e desmarcar -->
                     <div class="mb-3 mt-3">
@@ -213,7 +213,7 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho1000" data-text="" checked>
+                        <input type="checkbox" class="form-check-input" id="despacho1000" data-text="" >
                         <label class="form-check-label" for="despacho1000">
                             <span contenteditable="false">Destinatário.</span>
                         </label>
@@ -223,9 +223,9 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho2000" data-text="" checked>
+                        <input type="checkbox" class="form-check-input" id="despacho2000" data-text="" >
                         <label class="form-check-label" for="despacho2000">
-                            <span contenteditable="false">Inclusão de e-mail.</span>
+                            <span contenteditable="false">Visto Prévio Alteração Contratual.</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2000"></i>
@@ -235,7 +235,7 @@
                     <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho3000" data-text="">
                         <label class="form-check-label" for="despacho3000">
-                            <span contenteditable="false">Alteração de e-mail.</span>
+                            <span contenteditable="false">Visto Prévio Distrato Social.</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3000"></i>
@@ -243,13 +243,55 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho4000" data-text="" checked>
+                        <input type="checkbox" class="form-check-input" id="despacho4000" data-text="" >
                         <label class="form-check-label" for="despacho4000">
-                            <span contenteditable="false">Fechos e identificação do CAU/SP.</span>
+                            <span contenteditable="false">Visto Prévio Constituição.</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4000"></i>
                     </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho5000" data-text="" >
+                        <label class="form-check-label" for="despacho5000">
+                            <span contenteditable="false">Atendimento Presencial Confirmado.</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5000"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho6000" data-text="" >
+                        <label class="form-check-label" for="despacho6000">
+                            <span contenteditable="false">Procedimento Visto Prévio.</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal6000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6000"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho7000" data-text="" >
+                        <label class="form-check-label" for="despacho7000">
+                            <span contenteditable="false">Visto Prévio de Alteração Contratual de Empresa sem registro no CAU.</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7000"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho8000" data-text="" >
+                        <label class="form-check-label" for="despacho8000">
+                            <span contenteditable="false">Visto prévio presencial após conclusão.</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal8000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal8000"></i>
+                    </div>
+
+                    
 
                 </div>
             </div>
@@ -258,6 +300,7 @@
         <!--------------------------------------- modais ---------------------------------------->
 
         
+
         <div class="modal" id="editModal1000">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -335,8 +378,92 @@
                     </div>
                 </div>
             </div>
-        </div>    
-        
+        </div>
+                
+
+        <div class="modal" id="editModal5000">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal5000" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(5000)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+        <div class="modal" id="editModal6000">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal6000" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(6000)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+        <div class="modal" id="editModal7000">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal7000" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(7000)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+        <div class="modal" id="editModal8000">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal8000" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(8000)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+                
+
+       
         
         <!--------------------------------------- area do despacho  ---------------------------------------->
 
@@ -380,32 +507,63 @@
         // Sua variável
    
 
+
 var texto_1000 = 
-`<div>Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXXXXXX,</div><div><br></div>`;
+`<div>Bom dia/Tarde Prezado,</div><div><br></div>`;
 document.getElementById('despacho1000').setAttribute('data-text', texto_1000);
 document.getElementById('editTextModal1000').value = texto_1000;
 
 
 var texto_2000 = 
-`<div>O e-mail XXXXXXXXXXXXXX foi inserido no SICCAU (Sistema de Informação e Comunicação do CAU) da empresa.</div><div><br></div><div>Por favor, acesse o link abaixo e insira o CNPJ para receber a senha do SICCAU no e-mail:</div><div><a href="https://acesso.caubr.gov.br/usuario/senha/email" target="blank">https://acesso.caubr.gov.br/usuario/senha/email</a></div><div><br></div><div>No SICCAU é possível realizar a emissão do boleto da anuidade, bem como a emissão da Certidão de Registro e Quitação de Pessoa Jurídica (CRQPJ), entre outras funcionalidades.</div><div><br></div><div>As condições de pagamento e desconto de anuidade estão descritas nos links abaixo:</div><div><a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_pagamento_da_anuidade_2023_r00.pdf" target="blank">https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_pagamento_da_anuidade_2023_r00.pdf</a></div><div><a href="https://causp.gov.br/anuidade-2023-confira-os-novos-descontos-e-prazos/" target="blank">https://causp.gov.br/anuidade-2023-confira-os-novos-descontos-e-prazos/</a></div><div><br></div>`;
+`<div>Bom/a xxxxx Prezado</div><div><br></div><div>A alteração contratual da empresa XXXXXXXXXXXXXXXX foi analisada e não há pendências para receber o visto prévio do CAU/SP.</div><div><br></div><div>Há a opção de atendimento presencial dia XX/XX/XXX (xxxxx-feira) as 00:00 a ser realizado na sede do CAU/SP. Caso deseje atendimento presencial neste dia e horário, por gentileza informar o nome e o RG da pessoa que comparecerá a sede.</div><div><br></div><div>No atendimento presencial as vias da alteração contratual serão carimbadas e assinadas no ato da entrega.</div><div>Todas as vias da alteração contratual a serem recebidas o visto devem estar com firmas reconhecidas nas assinaturas dos sócios.</div><div><br></div><div><br></div><div>Há também a opção do envio das vias originais da alteração contratual pelos correios, enviar para:</div><div><br></div><div>CAU/SP - Departamento de Pessoa Jurídica - Rua Quinze de Novembro, 194 - Centro Histórico de São Paulo, São Paulo - SP, CEP 01013-000.</div><div><br></div><div>Todas as vias da alteração contratual a serem recebidas o visto devem estar com firmas reconhecidas nas assinaturas dos sócios.</div><div><br></div><div>A documentação será carimbada, assinada e devolvida ao endereço do remetente.</div><div><br></div><div><br></div><div>Em caso de visto prévio digital requerido pelo cartório, por gentileza enviar a Nota de Exigência do Cartório.</div><div><br></div><div>Atenciosamente,</div><div><br></div>`;
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
 
 var texto_3000 = 
-`<div>Para acesso ao SICCAU, por gentileza acessar: <a href="https://www.causp.gov.br" target="blank">https://www.causp.gov.br</a> - clicar em "SICCAU" - no campo "Fazer Login" digitar o CNPJ e a senha da empresa.</div><div><br></div><div>Caso não tenha mais acesso a senha clicar em "Esqueci minha Senha" , uma nova senha irá para o e-mail xxxxxx Caso deseje mudar o e-mail para receber a senha, por gentileza preencher solicitação (anexo) de inclusão de e-mail no SICCAU(Sistema de Informação e Comunicação do CAU) e retornar a solicitação preenchida, por e-mail.</div><div><br></div>`;
+`<div>Bom/a xxxxx Prezado</div><div><br></div><div>O distrato social da empresa XXXXXXXXXXXXXXXX foi analisado e não há pendências para receber o visto prévio do CAU/SP.</div><div><br></div><div>Há a opção de atendimento presencial dia XX/XX/XXX (xxxxx-feira) as 00:00 a ser realizado na sede do CAU/SP. Caso deseje atendimento presencial neste dia e horário, por gentileza informar o nome e o RG da pessoa que comparecerá a sede.</div><div><br></div><div>No atendimento presencial as vias do distrato social serão carimbados e assinados no ato da entrega.</div><div>Todas as vias do distrato social a serem recebidos o visto devem estar com firmas reconhecidas nas assinaturas dos sócios.</div><div><br></div><div>Há também a opção do envio das vias originais do distrato social pelos correios, enviar para:</div><div><br></div><div><br></div><div>CAU/SP - Departamento de Pessoa Jurídica - Rua Quinze de Novembro, 194 - Centro Histórico de São Paulo, São Paulo - SP, CEP 01013-000.</div><div><br></div><div>Todas as vias do distrato social a serem recebidos o visto devem estar com firmas reconhecidas nas assinaturas dos sócios.</div><div><br></div><div>A documentação será carimbada, assinada e devolvida ao endereço do remetente.</div><div><br></div><div><br></div><div>Informo que visto prévio ainda é realizado de forma física, o carimbo do CAU é inserido fisicamente nas folhas da alteração contratual.</div><div><br></div><div>O CAU ainda não possui visto prévio de forma digital.</div><div><br></div><div>Atenciosamente,</div><div><br></div>
+`;
 document.getElementById('despacho3000').setAttribute('data-text', texto_3000);
 document.getElementById('editTextModal3000').value = texto_3000;
 
 
 var texto_4000 = 
-`<div><br></div><div>Atenciosamente,</div><div>Equipe CAU/SP.</div><div><br></div>`;
+`<div>Bom/a xxxxx Prezado</div><div><br></div><div>O contrato social da empresa XXXXXXXXXXXXXXXX foi analisado e não há pendências para receber o visto prévio do CAU/SP.</div><div><br></div><div>Há a opção de atendimento presencial dia XX/XX/XXX (xxxxx-feira) as 00:00 a ser realizado na sede do CAU/SP. Caso deseje atendimento presencial neste dia e horário, por gentileza informar o nome e o RG da pessoa que comparecerá a sede.</div><div><br></div><div>No atendimento presencial as vias do contrato social serão carimbados e assinados no ato da entrega.</div><div>Todas as vias do contrato social a serem recebidos o visto devem estar com firmas reconhecidas nas assinaturas dos sócios.</div><div><br></div><div><br></div><div>Há também a opção do envio das vias originais do contrato social pelos correios, enviar para:</div><div><br></div><div>CAU/SP - Departamento de Pessoa Jurídica - Rua Quinze de Novembro, 194 - Centro Histórico de São Paulo, São Paulo - SP, CEP 01013-000.</div><div><br></div><div>Todas as vias do contrato social a serem recebidos o visto devem estar com firmas reconhecidas nas assinaturas dos sócios.</div><div><br></div><div>A documentação será carimbada, assinada e devolvida ao endereço do remetente.</div><div><br></div><div>Informo que visto prévio ainda é realizado de forma física, o carimbo do CAU é inserido fisicamente nas folhas da alteração contratual.</div><div><br></div><div>O CAU ainda não possui visto prévio de forma digital.</div><div><br></div><div>Atenciosamente,</div><div><br></div></div><div><br></div>`;
 document.getElementById('despacho4000').setAttribute('data-text', texto_4000);
 document.getElementById('editTextModal4000').value = texto_4000;
 
 
+var texto_5000 = 
+`<div>Bom dia Prezado XXXXXXXXXXXXX, obrigado pelo envio dos dados.</div><div><br></div><div><br></div><div>Atendimento presencial confirmado dia / /2023 (XXXX-feira) as 00:00 na sede do CAU/SP</div><div><br></div><div>Sede do CAU/SP endereço:</div><div><br></div><div>Rua Quinze de Novembro, 194 - Centro Histórico de São Paulo,</div><div>São Paulo - SP, 01013-000</div><div><br></div><div>Atenciosamente,</div><div>(Identificação)</div><div><br></div>`;
+document.getElementById('despacho5000').setAttribute('data-text', texto_5000);
+document.getElementById('editTextModal5000').value = texto_5000;
 
-          
+
+var texto_6000 = 
+`<div>Por gentileza enviar a alteração contratual por e-mail para análise.</div><div><br></div><div>A alteração contratual estando apta para o deferimento visto prévio(que é o carimbo do CAU nas folhas do contrato social ou alteração contratual para posteriormente ser registrado em cartório) poderá ser agendado atendimento presencial</div><div><br></div><div>Há opção também do envio das vias originais da alteração contratual pelos correios. (Caso seja enviado pelos correios, a documentação será carimbada, assinada e enviada para o endereço do remetente).</div><div><br></div><div>Informo que não há taxa a ser paga.</div><div><br></div><div><br></div><div>Aguardamos o envio da alteração contratual para análise.</div><div><br></div><div>Qualquer dúvida, a disposição</div><div><br></div><div><br></div><div>Atenciosamente,</div><div><br></div>`;
+document.getElementById('despacho6000').setAttribute('data-text', texto_6000);
+document.getElementById('editTextModal6000').value = texto_6000;
+
+
+var texto_7000 = 
+`<div>Informo que a empresa XXXXXXXXXXXXXXXXXX, CNPJ: XXXXXXXXXXXXXXXX não se encontra registrada no Conselho de Arquitetura, desta forma por gentileza enviar alteração contratual anterior já registrada em Cartório ou (JUCESP se for o caso) para verificação da necessidade do registro da empresa perante o CAU, antes do deferimento do visto prévio na alteração contratual enviada.</div>`;
+document.getElementById('despacho7000').setAttribute('data-text', texto_7000);
+document.getElementById('editTextModal7000').value = texto_7000;
+
+
+var texto_8000 = 
+`<div>Prezados responsáveis pela empresa XXXXXXXXXXXXX,</div><div><br></div><div><br></div><div>Informamos que XX vias do XXXXXXXXXXXXX foram vistadas, carimbadas e entregues ao Sr. XXXXXXXXXXXX com R.G. XXXXXXXXXXXXXXX. </div><div><br></div><div><br></div><div>Após finalizar o registro do distrato no cartório, por gentileza, abram o protocolo para realizar a baixa da empresa no CAU/SP. </div><div><br></div><div>Para realizar abertura de Protocolo de baixa de registro, acessar:</div><div><a href="https://www.causp.gov.br" target="blank">https://www.causp.gov.br</a></div><div>Clicar em "SICCAU" - no campo "Fazer login" digitar o CNPJ e a senha da empresa. Dentro do ambiente SICCAU da empresa - clicar em "Protocolos" - "Cadastrar Protocolo" - "Cadastro Empresa" - "BAIXA DE REGISTRO DE PESSOA JURÍDICA"</div><div><br></div><div>No protocolo anexar o distrato social da empresa e a baixa do CNPJ.</div><div><br></div><div>Atenciosamente,</div><div>Equipe CAU/SP</div><div><br></div>`;
+document.getElementById('despacho8000').setAttribute('data-text', texto_8000);
+document.getElementById('editTextModal8000').value = texto_8000;
+
+
+
+
+
+
+
+
+         
             function saveEdit(despachoNumber) {
                 const editTextModal = $('#editTextModal' + despachoNumber).val();
                 const checkbox = $('#despacho' + despachoNumber);
