@@ -95,7 +95,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark siccau-color">
 
             <!-- brand -->
-            <a href="#"><img src="logo_novo.png" width="315" height="75" alt="Início" class="img-fluid"></a>
+            <a href="#"><img src="logo.png" width="233" height="75" alt="Início" class="img-fluid"></a>
             <!-- <a class="navbar-brand fa-lg pt-3 pb-3" href="">Despachos PJ</a> -->
 
             <!-- collapse button -->
@@ -115,7 +115,7 @@
 
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="despacho_solicitacao.html">Solicitação de Registro</a>
-                            <a class="dropdown-item" href="despacho_solicitacao_novo.html">Solicitação de Registro <span class="badge badge-success">Despachos atualizados</span></a>
+                            <!-- <a class="dropdown-item" href="index.html">Solicitação de Registro <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <div class="dropdown-divider"></div>                          
                             <a class="dropdown-item" href="alteracao-cadastral.html">Alteração Cadastral</a>
                             <!-- <a class="dropdown-item" href="alteracao_cadastral.html">Alteração Cadastral <span class="badge badge-danger">Versão Antiga</span></a> -->
@@ -206,8 +206,6 @@
                         <button class="btn btn-sm btn-secondary mt-2" style="width: 90px" id="restartButton"><i class="fa fa-rotate-right pr-1"></i>Reiniciar</button>
 
                         <button class="btn btn-sm btn-secondary mt-2" style="width: 105px" id="cleanButton"><i class="fa fa-eraser pr-1"></i>Desmarcar</button>
-
-                        <!-- <button class="btn btn-sm btn-secondary mt-2" style="width: 105px" id="todosButton">Todos</button>  botão para teste -->
                         
                     </div>
 
@@ -300,7 +298,7 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho3120" data-text="">
                                         <label class="form-check-label" for="despacho3120">
-                                            <span contenteditable="false">Minuta do contrato - sem dados de registro (usar com texto certificação)</span>
+                                            <span contenteditable="false">Minuta do contrato (sem dados de registro e sem certificação digital)</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3120"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3120"></i>
@@ -309,17 +307,18 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho3130" data-text="">
                                         <label class="form-check-label" for="despacho3130">
-                                            <span contenteditable="false">Alteração Contratual não consolidada (quando não tem todos os dados para registro)</span>
+                                            <span contenteditable="false">Alteração contratual não consolidada (sem todos os dados para registro)</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3130"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3130"></i>
                                     </div>
 
-                                    
+                        
+
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho3150" data-text="">
                                         <label class="form-check-label" for="despacho3150">
-                                            <span contenteditable="false">Contrato Social (Ato Constitutivo) sem Certificação Digital</span>
+                                            <span contenteditable="false">Contrato social com pendência de Registro e/ou Certificação Digital</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3150"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3150"></i>
@@ -330,21 +329,11 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho3160" data-text="">
                                         <label class="form-check-label" for="despacho3160">
-                                            <span contenteditable="false">Contrato Social (Alterações) sem Certificação Digital</span>
+                                            <span contenteditable="false">Alteração contratual com pendência de Registro e/ou Certificação Digital</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3160"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3160"></i>
                                     </div>
-
-                                    <div class="form-check mb-1">
-                                        <input type="checkbox" class="form-check-input" id="despacho3165" data-text="">
-                                        <label class="form-check-label" for="despacho3165">
-                                            <span contenteditable="false">Orientação sobre Certidão de Inteiro Teor</span>
-                                        </label>
-                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3165"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3165"></i>
-                                    </div>
-
 
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho3170" data-text="">
@@ -355,22 +344,13 @@
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3170"></i>
                                     </div>
 
-                                    <div class="form-check mb-1">
+                                    <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="despacho3180" data-text="">
                                         <label class="form-check-label" for="despacho3180">
                                             <span contenteditable="false">Certificado Digital sem AC ICP-Brasil</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3180"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3180"></i>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="despacho3190" data-text="">
-                                        <label class="form-check-label" for="despacho3190">
-                                            <span contenteditable="false">Empresa com objeto ou CNAE de Design de Interiores</span>
-                                        </label>
-                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3190"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3190"></i>
                                     </div>
 
 
@@ -438,23 +418,14 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho4150" data-text="">
                                         <label class="form-check-label" for="despacho4150">
-                                            <span contenteditable="false">Orientação sobre Certidão de Inteiro Teor</span>
+                                            <span contenteditable="false">Certificado Digital sem verificação</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4150"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4150"></i>
                                     </div>
-
-                                    <div class="form-check mb-1">
-                                        <input type="checkbox" class="form-check-input" id="despacho4155" data-text="">
-                                        <label class="form-check-label" for="despacho4155">
-                                            <span contenteditable="false">Certificado Digital sem verificação</span>
-                                        </label>
-                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4155"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4155"></i>
-                                    </div>
             
                                             
-                                    <div class="form-check">
+                                <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="despacho4160" data-text="">
                                         <label class="form-check-label" for="despacho4160">
                                             <span contenteditable="false">Certificado Digital sem AC ICP-Brasil</span>
@@ -463,25 +434,14 @@
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4160"></i>
                                     </div>
 
-
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="despacho4170" data-text="">
-                                        <label class="form-check-label" for="despacho4170">
-                                            <span contenteditable="false">Empresa com objeto ou CNAE de Design de Interiores</span>
-                                        </label>
-                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4170"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4170"></i>
-                                    </div>
-
                                 </div>
-
 
                             </div>
 
 
                             <!-- checkbox composto-->
 
-                            <div class="form-check ml-2">
+                            <div class="form-check mb-1 ml-2">
             
                                 <input type="checkbox" class="form-check-input" id="despacho5000" data-toggle="collapse" href="#collapse-5000"  data-text="">
                                 <label class="form-check-label" for="despacho5000">
@@ -519,7 +479,7 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho5130" data-text="">
                                         <label class="form-check-label" for="despacho5130">
-                                            <span contenteditable="false">Minuta do contrato - sem dados de registro (usar com texto certificação)</span>
+                                            <span contenteditable="false">Minuta do contrato (sem dados de registro e sem certificação digital)</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5130"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5130"></i>
@@ -529,7 +489,7 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho5140" data-text="">
                                         <label class="form-check-label" for="despacho5140">
-                                            <span contenteditable="false">Alteração Contratual não consolidada (quando não tem todos os dados para registro)</span>
+                                            <span contenteditable="false">Alteração contratual não consolidada (sem todos os dados para registro)</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5140"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5140"></i>
@@ -539,7 +499,7 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho5150" data-text="">
                                         <label class="form-check-label" for="despacho5150">
-                                            <span contenteditable="false">Contrato Social (Ato Constitutivo) sem Certificação Digital</span>
+                                            <span contenteditable="false">Contrato social com pendência de Registro e/ou Certificação Digital </span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5150"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5150"></i>
@@ -549,7 +509,7 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho5160" data-text="">
                                         <label class="form-check-label" for="despacho5160">
-                                            <span contenteditable="false">Contrato Social (Alterações) sem Certificação Digital</span>
+                                            <span contenteditable="false">Alteração contratual com pendência de Registro e/ou Certificação Digital</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5160"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5160"></i>
@@ -564,7 +524,7 @@
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5170"></i>
                                     </div>
 
-                                    <div class="form-check mb-1">
+                                    <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="despacho5180" data-text="">
                                         <label class="form-check-label" for="despacho5180">
                                             <span contenteditable="false">Certificado Digital sem AC ICP-Brasil </span>
@@ -572,26 +532,14 @@
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5180"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5180"></i>
                                     </div>
-
-                                    
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="despacho5190" data-text="">
-                                        <label class="form-check-label" for="despacho5190">
-                                            <span contenteditable="false">Empresa com objeto ou CNAE de Design de Interiores</span>
-                                        </label>
-                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal5190"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal5190"></i>
-                                    </div>
-
-
                                     
 
                                 </div>
 
                             </div>
 
-                        </div>
 
+                        </div>
                     </div>
                         
 
@@ -656,17 +604,6 @@
 
                                     <div class="form-check mt-1 p-0">
                                         <div class="form-check mb-1">
-                                            <input type="checkbox" class="form-check-input" id="despacho7050" data-text="">
-                                            <label class="form-check-label" for="despacho7050">
-                                                <span contenteditable="false">Casos não previstos</span>
-                                            </label>
-                                            <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7050"></i>
-                                            <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7050"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-check mt-1 p-0">
-                                        <div class="form-check mb-1">
                                             <input type="checkbox" class="form-check-input" id="despacho7100" data-text="">
                                             <label class="form-check-label" for="despacho7100">
                                                 <span contenteditable="false">Vínculo entre pessoas jurídicas</span>
@@ -680,8 +617,7 @@
                                         <div class="form-check mb-1">
                                             <input type="checkbox" class="form-check-input" id="despacho7103" data-text="">
                                             <label class="form-check-label" for="despacho7103">
-                                                <span contenteditable="false">Objeto inconsistente </span> 
-                                                <!-- <span class="badge badge-success" data-toggle="tooltip" title="Incluído 27/08/2028"> Novo</span> -->
+                                                <span contenteditable="false">Objeto inconsistente <span class="badge badge-success" data-toggle="tooltip" title="Incluído 27/08/2028"> Novo</span></span>
                                             </label>
                                             <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7103"></i>
                                             <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7103"></i>
@@ -723,19 +659,10 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho7120" data-text="">
                                         <label class="form-check-label" for="despacho7120">
-                                            <span contenteditable="false">Falta carga horária e/ou honorários mensais</span>
+                                            <span contenteditable="false">Carga horária e honorários mensais</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7120"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7120"></i>
-                                    </div>
-
-                                    <div class="form-check mb-1">
-                                        <input type="checkbox" class="form-check-input" id="despacho7125" data-text="">
-                                        <label class="form-check-label" for="despacho7125">
-                                            <span contenteditable="false">Valor informado não atende ao piso</span>
-                                        </label>
-                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7125"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7125"></i>
                                     </div>
                                             
                                     <div class="form-check mb-1">
@@ -750,7 +677,7 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho7135" data-text="">
                                         <label class="form-check-label" for="despacho7135">
-                                            <span contenteditable="false">Vedação de desconto (que afete diretamente o piso) </span>
+                                            <span contenteditable="false">Vedação de desconto (que afete diretamente o piso) <span class="badge badge-success" data-toggle="tooltip" title="Incluído 27/08/2028"> Novo</span></span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7135"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7135"></i>
@@ -760,7 +687,7 @@
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="despacho7140" data-text="">
                                         <label class="form-check-label" for="despacho7140">
-                                            <span contenteditable="false">Contrato sem assinaturas válidas</span>
+                                            <span contenteditable="false">Reconhecer firma</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7140"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7140"></i>
@@ -771,7 +698,7 @@
 
                             <!-- checkbox composto -->
 
-                            <div class="form-check ml-2">
+                            <div class="form-check mb-1 ml-2">
                                 
                                 <input type="checkbox" class="form-check-input" id="despacho8000" data-toggle="collapse" href="#collapse-8000"  data-text="">
                                 <label class="form-check-label" for="despacho8000">
@@ -787,19 +714,10 @@
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho8100" data-text="">
                                         <label class="form-check-label" for="despacho8100">
-                                            <span contenteditable="false">Valor informado não atende piso</span>
+                                            <span contenteditable="false">Salário abaixo do piso</span>
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal8100"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal8100"></i>
-                                    </div>
-
-                                    <div class="form-check mb-1">
-                                        <input type="checkbox" class="form-check-input" id="despacho8105" data-text="">
-                                        <label class="form-check-label" for="despacho8105">
-                                            <span contenteditable="false">Fórmula Carga Horária piso</span>
-                                        </label>
-                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal8105"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal8105"></i>
                                     </div>
                                             
                                     <div class="form-check mb-1">
@@ -1016,55 +934,55 @@
                                         </div>
                                     </div>
 
-
-
-                                    <div class="form-check mt-1 p-0">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="despacho9192" data-text="">
-                                            <label class="form-check-label" for="despacho9192">
-                                                <span contenteditable="false">Enviar o RRT na solicitação</span>
-                                            </label>
-                                            <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9192"></i>
-                                            <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9192"></i>
-                                        </div>
-                                    </div>
-
                                     <!-- checkbox composto -->
 
-                                    <div class="form-check mt-1 mb-1">
+                                    <div class="form-check mb-1">
                                         
-                                        <input type="checkbox" class="form-check-input" id="despacho9193" data-toggle="collapse" href="#collapse-9193"  data-text="">
-                                        <label class="form-check-label" for="despacho9193">
+                                        <input type="checkbox" class="form-check-input" id="despacho9192" data-toggle="collapse" href="#collapse-9192"  data-text="">
+                                        <label class="form-check-label" for="despacho9192">
                                             <span contenteditable="false">
                                                 Links Úteis de RRTs
                                             </span>
                                         </label>
-                                        <!-- <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9193"></i>
-                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9193"></i> -->
+                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9192"></i>
+                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9192"></i>
 
-                                        <div class="collapse" id="collapse-9193">
+                                        <div class="collapse" id="collapse-9192">
                                             
                                             <div class="form-check mb-1">
-                                                <input type="checkbox" class="form-check-input" id="despacho9194" data-text="">
-                                                <label class="form-check-label" for="despacho9194">
+                                                <input type="checkbox" class="form-check-input" id="despacho9193" data-text="">
+                                                <label class="form-check-label" for="despacho9193">
                                                     <span contenteditable="false">Tutorial de retificação de RRT registrado</span>
                                                 </label>
-                                                <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9194"></i>
-                                                <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9194"></i>
+                                                <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9193"></i>
+                                                <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9193"></i>
                                             </div>
 
                                             <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="despacho9195" data-text="">
-                                                <label class="form-check-label" for="despacho9195">
+                                                <input type="checkbox" class="form-check-input" id="despacho9194" data-text="">
+                                                <label class="form-check-label" for="despacho9194">
                                                     <span contenteditable="false">Tutorial de alteração de RRT não registrado</span>
                                                 </label>
-                                                <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9195"></i>
-                                                <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9195"></i>
+                                                <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9194"></i>
+                                                <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9194"></i>
                                             </div>
                                                 
                                         </div>             
 
 
+                                    </div>
+
+
+
+                                    <div class="form-check mt-1 p-0">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="despacho9195" data-text="">
+                                            <label class="form-check-label" for="despacho9195">
+                                                <span contenteditable="false">Enviar o RRT na solicitação</span>
+                                            </label>
+                                            <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal9195"></i>
+                                            <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal9195"></i>
+                                        </div>
                                     </div>
 
 
@@ -1172,11 +1090,11 @@
                         <input type="checkbox" class="form-check-input" id="despacho11000" data-toggle="collapse" href="#collapse-11000"  data-text="">
                         <label class="form-check-label" for="despacho11000">
                             <span contenteditable="false">
-                                Pendências relacionadas ao CNPJ (Cadastro Nacional de Pessoa Jurídica)
+                                Ref. CNPJ
                             </span>
                         </label>
-                        <!-- <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal11000"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal11000"></i> -->
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal11000"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal11000"></i>
 
                         <div class="collapse" id="collapse-11000">
                             
@@ -1189,16 +1107,26 @@
                                 <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal11100"></i>
                             </div>
 
+
+
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="despacho11200" data-text="">
                                 <label class="form-check-label" for="despacho11200">
-                                    <span contenteditable="false">Link para acesso ao CNPJ no site da Receita Federal do Brasil</span>
+                                    <span contenteditable="false">CNPJ com data de emissão antiga</span>
                                 </label>
                                 <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal11200"></i>
                                 <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal11200"></i>
                             </div>
 
-                               
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="despacho11300" data-text="">
+                                <label class="form-check-label" for="despacho11300">
+                                    <span contenteditable="false">Link para acesso ao CNPJ no site da Receita Federal do Brasil</span>
+                                </label>
+                                <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal11300"></i>
+                                <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal11300"></i>
+                            </div>
+                                
                         </div>             
 
 
@@ -1223,22 +1151,13 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho12100" data-text="">
+                        <input type="checkbox" class="form-check-input" id="despacho12100" data-text="" checked>
                         <label class="form-check-label" for="despacho12100">
                             <span contenteditable="false">Instruções sobre certificação digital</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal12100"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal12100"></i>
-                    </div>    
-                    <!-- checkbox simples-->
-                    <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho12200" data-text="">
-                        <label class="form-check-label" for="despacho12200">
-                            <span contenteditable="false">Documentos necessários para regisro de empresa</span>
-                        </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal12200"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal12200"></i>
-                    </div>                 
+                    </div>                    
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho13000" data-text="" checked>
@@ -1330,7 +1249,7 @@
                                 <div class="form-check mb-1">
                                     <input type="checkbox" class="form-check-input" id="despacho16300" data-text="">
                                     <label class="form-check-label" for="despacho16300">
-                                        <span contenteditable="false">Solicitação de Registro com Número do CNPJ Incorreto. (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
+                                        <span contenteditable="false">Solicitação de Registro com Número do CNPJ Incorreto. (<strong>DEFINIR TEXTO</strong>)</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16300"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16300"></i>
@@ -1341,7 +1260,7 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="despacho16400" data-text="">
                                     <label class="form-check-label" for="despacho16400">
-                                        <span contenteditable="false">Responsável Técnico por mais de três empresas.  (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
+                                        <span contenteditable="false">Responsável Técnico por mais de três empresas.  (<strong>DEFINIR TEXTO</strong>)</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16400"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16400"></i>
@@ -1352,21 +1271,10 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="despacho16500" data-text="">
                                     <label class="form-check-label" for="despacho16500">
-                                        <span contenteditable="false">Solicitação sumiu do SICCAU.  (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
+                                        <span contenteditable="false">Outros...</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16500"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16500"></i>
-                                </div>
-                            </div>
-
-                            <div class="form-check mt-1 p-0">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="despacho16600" data-text="">
-                                    <label class="form-check-label" for="despacho16600">
-                                        <span contenteditable="false">Outros....  (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
-                                    </label>
-                                    <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16600"></i>
-                                    <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16600"></i>
                                 </div>
                             </div>
 
@@ -1545,9 +1453,7 @@
                 </div>
             </div>
         </div>
-
-
-
+                
         
                 
         
@@ -1589,25 +1495,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal" id="editModal3165">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal3165" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(3165)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
                 
         
         <div class="modal" id="editModal3170">  
@@ -1644,25 +1531,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(3180)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="editModal3190">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal3190" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(3190)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -1789,26 +1657,6 @@
                 </div>
             </div>
         </div>
-
-                
-        <div class="modal" id="editModal4155">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal4155" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(4155)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
                 
         
         <div class="modal" id="editModal4160">  
@@ -1825,25 +1673,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(4160)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="editModal4170">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal4170" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(4170)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -2029,25 +1858,6 @@
             </div>
         </div>
 
-        <div class="modal" id="editModal5190">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal5190" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(5190)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="modal" id="editModal5500">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -2107,25 +1917,6 @@
             </div>
         </div>
                 
-
-        <div class="modal" id="editModal7050">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal7050" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(7050)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         
         <div class="modal" id="editModal7100">  
             <div class="modal-dialog modal-lg">
@@ -2244,25 +2035,6 @@
             </div>
         </div>
                 
-                
-        <div class="modal" id="editModal7125">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal7125" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(7125)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         
         <div class="modal" id="editModal7130">  
             <div class="modal-dialog modal-lg">
@@ -2357,26 +2129,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(8100)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                
-        <div class="modal" id="editModal8105">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal8105" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(8105)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -3016,7 +2768,25 @@
             </div>
         </div>
 
-               
+        <div class="modal" id="editModal11300">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal11300" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(11300)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
         
         <div class="modal" id="editModal12000">  
             <div class="modal-dialog modal-lg">
@@ -3052,25 +2822,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(12100)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="editModal12200">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal12200" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(12200)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -3322,34 +3073,34 @@
         // Sua variável
 
 var texto_1000 = 
-`<div>Olá,</div><br><div>Foram identificadas pendências na análise dos documentos enviados em XXXXXXXX.</div><br><div>Para aprovação do registro da empresa, verifique os itens abaixo:</div><br>`;
+`<div>Olá,</div><br><div>Informamos que foram identificadas pendências na análise dos documentos enviados em XXXXXXXX.</div><br><div>Para que o registro da empresa seja aprovado, é necessário que verifique:</div><br>`;
 document.getElementById('despacho1000').setAttribute('data-text', texto_1000);
 document.getElementById('editTextModal1000').value = texto_1000;
 
 var texto_2000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao Ato Constitutivo e/ou Alterações Contratuais:</span></strong></div><br><div>❌ O arquivo contendo o Ato Constitutivo e/ou Alterações Contratuais da pessoa jurídica encontra-se <strong>inacessível</strong>.</div><br><div>Verifique se o nome do arquivo não contém caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário enviar o documento na solicitação de registro.</div><br>`;
+`<div><div>⚠️ <strong><u>Referente ao Ato Constitutivo e/ou Alterações Contratuais</u></strong>:</div><br><div>❌ Informamos que o arquivo contendo o Ato Constitutivo e/ou Alterações Contratuais da pessoa jurídica encontra-se inacessível.</div><br><div>Um documento inacessível indica que ele <strong>não foi enviado na solicitação</strong> ou que <strong>ocorreu um erro durante o envio para o sistema</strong>.</div><br><div>Verifique se o nome do arquivo não tem caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário <strong>enviar o documento na solicitação de registro</strong>.</div><br>`;
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
 var texto_2100 =
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;">  <strong>   <span>Referente ao Requerimento de Empresário:</span>  </strong></div><br><div>❌ A pessoa jurídica <strong>registrada como MEI não pode exercer atividades de Arquitetura e Urbanismo</strong>, pois essas são <strong>profissões regulamentadas</strong> e não estão entre as atividades permitidas para o MEI. Assim, o MEI não se enquadra como empresa prestadora de serviços de arquitetura e urbanismo e não atende às normas do CAU/BR para registro.</div><br><div>Se a empresa pretende exercer atividades de Arquitetura e Urbanismo, previstas na <a href="https://transparencia.caubr.gov.br/resolucao21/" target="_blank">Resolução CAU/BR nº 21/2012</a>, será necessário <strong>desenquadrá-la do MEI</strong> e enviar a documentação atualizada na solicitação de registro. </div><br><div>🔗 <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/quero-crescer-desenquadramento/" target="_blank">Clique aqui</a> para orientações de desenquadramento MEI</div><div>🔗 <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/quero-ser-mei/atividades-permitidas/" target="_blank">Clique aqui</a> para acessar atividades permitidas ao MEI</div><div>🔗 <a href="https://transparencia.caubr.gov.br/arquivos/deliberacaocep0182020.pdf" target="_blank">Clique aqui</a> para acessar a Deliberação nº 018/2020 – CEP – CAU/BR, que trata sobre o assunto</div><br>`;
+`<div>⚠️ <u><strong>Referente ao Enquadramento da Empresa:</strong></u><div><br><div>❌ A <strong>pessoa jurídica registrada como MEI não pode exercer atividades de Arquitetura e Urbanismo</strong>, pois essas são <strong>profissões regulamentadas</strong> e não estão entre as atividades permitidas para o MEI. Assim, o MEI não se enquadra como empresa prestadora de serviços de arquitetura e urbanismo e não<strong> atende às normas do CAU/BR para registro</strong>.</div><br><div><strong>Se a empresa pretende exercer atividades de Arquitetura e Urbanismo, previstas na Resolução CAU/BR nº 21/2012, será necessário desenquadrá-la do MEI e enviar nova documentação para solicitar o registro no CAU/UF.</strong> </div><br><div>🔗 <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/quero-crescer-desenquadramento/" target="_blank">Clique aqui para orientações de desenquadramento MEI</a></div><div>🔗 <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/quero-ser-mei/atividades-permitidas/" target="_blank">Clique aqui para acessar atividades permitidas ao MEI</a></div><div>🔗 <a href="https://transparencia.caubr.gov.br/arquivos/deliberacaocep0182020.pdf/" target="_blank">Clique aqui para acessar a Deliberação nº 018/2020 – CEP – CAU/BR, que trata sobre o assunto</a></div><br>`;
 document.getElementById('despacho2100').setAttribute('data-text', texto_2100);
 document.getElementById('editTextModal2100').value = texto_2100;
 
 var texto_3000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;">  <strong>   <span>Referente ao Contrato Social:</span>  </strong></div><br>`;
+`<div>⚠️ <u><strong>Referente ao Contrato Social (JUCESP):</strong></u></div><br>`;
 document.getElementById('despacho3000').setAttribute('data-text', texto_3000);
 document.getElementById('editTextModal3000').value = texto_3000;
 
 
 var texto_3100 = 
-`<div>❌ <strong>O objeto social da empresa incompatível:</strong></div><br><div>Verificamos que o objeto social da empresa <strong>não é compatível</strong> com as atividades e atribuições da Arquitetura e Urbanismo (artigo 1º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR nº 28/2012</a>).</div><br><div>Para dar continuidade ao registro é necessário <strong>alterar o contrato social</strong>, incluindo no objeto social as atividades e atribuições profissionais de arquitetos(as) e urbanistas previstas na <a href="https://transparencia.caubr.gov.br/resolucao21/" target="_blank">Resolução CAU/BR nº 21/2012</a>.</div><br>`;
+`<div>❌ <strong>O objeto social da empresa está incompatível</strong>:</div><br><div>Verificamos que o <strong>objeto social</strong> da empresa <strong>não é compatível</strong> com as atividades e atribuições da Arquitetura e Urbanismo (artigo 1º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR nº 28/2012</a>).</div><br><div>Para dar continuidade ao registro: <strong>Alterar o contrato social</strong>, incluindo no objeto social as atividades e atribuições profissionais de arquitetos(as) e urbanistas previstas na <a href="https://transparencia.caubr.gov.br/resolucao21/" target="_blank">Resolução CAU/BR nº 21/2012</a>.</div><br>`;
 document.getElementById('despacho3100').setAttribute('data-text', texto_3100);
 document.getElementById('editTextModal3100').value = texto_3100;
 
 
 var texto_3110 = 
-`<div>❌ Verificamos que a empresa <strong>não atende ao disposto na</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm" target="_blank">Lei nº 12.378/2010</a>, que determina:</div><br><div style="padding-left: 40px;"><i>“Art. 11 – É <strong>vedado</strong> o uso das expressões “arquitetura” ou “urbanismo”, ou designação similar, na razão social ou nome fantasia de sociedade que não possua arquiteto e urbanista entre os sócios com poder de gestão ou entre os empregados permanentes.”</i> </div><br><div>Dessa forma, para prosseguirmos com o registro, a empresa deverá optar por uma das alternativas abaixo: </div><br><div><ul style="list-style: none;"><li >1️⃣ <strong>Retirar</strong> os termos “Arquitetura” e/ou “Urbanismo” da razão social e do nome fantasia (se houver); </li><li>2️⃣ <strong>Incluir um arquiteto</strong> como sócio <strong>com poderes de gestão</strong> (sócio-administrador); </li><li>3️⃣ <strong>Contratar</strong> um arquiteto como <strong>empregado permanente</strong> (CLT), apresentando a documentação comprobatória. </li></ul></div><div>📌 Após realizar a Alteração Contratual ou efetivar a contratação, encaminhe a documentação na própria solicitação de registro. </div><br><div>A análise dos demais documentos depende da regularização dessa pendência. Assim, outras correções poderão ser solicitadas após o envio. </div><br>`;
+`<div>❌ Verificamos que a empresa <strong>não atende ao disposto na</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm" target="_blank">Lei nº 12.378/2010</a>, que determina:</div><br><div style="padding-left: 40px;"><i>“Art. 11 – É <strong>vedado</strong> o uso das expressões “arquitetura” ou “urbanismo”, ou designação similar, na razão social ou nome fantasia de sociedade que não possua arquiteto e urbanista entre os sócios com poder de gestão ou entre os empregados permanentes.”</i> </div><br><div>Dessa forma, para prosseguirmos com o registro, a empresa deverá optar por uma das alternativas abaixo: </div><br><div><ul style="list-style: none;"><li >1️⃣ <strong>Retirar</strong> os termos “Arquitetura” e/ou “Urbanismo” da razão social e do nome fantasia (se houver); </li><li>2️⃣ <strong>Incluir um arquiteto</strong> como sócio <strong>com poderes de gestão</strong> (sócio-administrador); </li><li>3️⃣ <strong>Contratar</strong> um arquiteto como <strong>empregado permanente</strong> (CLT), apresentando a documentação comprobatória. </li></ul></div><div>Após realizar a alteração contratual ou efetivar a contratação, encaminhe a documentação na própria solicitação de registro. </div><br><div>Informamos que a análise dos demais documentos depende da regularização dessa pendência. Assim, outras correções poderão ser solicitadas após o envio. </div><br>`;
 document.getElementById('despacho3110').setAttribute('data-text', texto_3110);
 document.getElementById('editTextModal3110').value = texto_3110;
 
@@ -3361,270 +3112,231 @@ document.getElementById('editTextModal3120').value = texto_3120;
 
 
 var texto_3130 = 
-`<div>❌ A alteração contratual apresentada <strong>não possui os dados da consolidação do contrato social na íntegra</strong>. </div><br><div>Para prosseguimento da análise, é necessário enviar também a alteração contratual anterior, onde constam as informações da consolidação. </div><br><div>Os documentos deverão ser <strong>salvos com CERTIFICAÇÃO DIGITAL da empresa ou de seu responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br>`;
+`<div>• A alteração contratual apresentada não possui os dados da consolidação do contrato social na íntegra.</div><br><div>Para prosseguir, é necessário enviar na solicitação a alteração anterior do contrato social, contendo os dados da consolidação do contrato que não constam no documento apresentado.</div><br>`;
 document.getElementById('despacho3130').setAttribute('data-text', texto_3130);
 document.getElementById('editTextModal3130').value = texto_3130;
 
+
+
 var texto_3150 = 
-`<div>📌 É necessário enviar na solicitação o contrato social, devidamente registrado em órgão competente, em um arquivo PDF <strong>salvo com CERTIFICAÇÃO DIGITAL da empresa ou de seu responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br>`;
+`<div>• É necessário enviar na solicitação o contrato social, devidamente registrado em órgão competente, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div>Observação: O certificado da empresa ou do sócio administrador é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) com certificação digital válida da JUCESP.</div><br><div>Para verificar se a certificação é válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as informações e assinatura(s) aprovada(s) da empresa, do responsável legal ou do profissional do órgão de registro (Jucesp).</div><br>`;
 document.getElementById('despacho3150').setAttribute('data-text', texto_3150);
 document.getElementById('editTextModal3150').value = texto_3150;
 
 
 var texto_3160 = 
-`<div>📌 É necessário enviar na solicitação a última alteração consolidada do contrato social, devidamente registrada em órgão competente, em um arquivo PDF <strong>salvo com CERTIFICAÇÃO DIGITAL da empresa ou de seu responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br>`;
+`<div>• É necessário enviar na solicitação a última alteração consolidada do contrato social, devidamente registrada em órgão competente, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div>Observação: O certificado da empresa ou do sócio administrador é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) com certificação digital válida da JUCESP.</div><br><div>Para verificar se a certificação é válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as informações e assinatura(s) aprovada(s) da empresa, do responsável legal ou do profissional do órgão de registro (Jucesp).</div><br>`;
 document.getElementById('despacho3160').setAttribute('data-text', texto_3160);
 document.getElementById('editTextModal3160').value = texto_3160;
 
-var texto_3165 = 
-`<div><strong>Observação</strong>: A certificação digital é dispensada em caso de apresentação da <i>Certidão de Inteiro Teor</i> com certificação digital <strong><u>válida</u></strong> da JUCESP ou da empresa/responsável legal.</div><br><div>Para verificar se um dos documentos possui certificação digital válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as <strong>informações e assinatura(s) aprovada(s)</strong> da empresa, do responsável legal ou do profissional do órgão de registro (JUCESP). </div><br>`;
-document.getElementById('despacho3165').setAttribute('data-text', texto_3165);
-document.getElementById('editTextModal3165').value = texto_3165;
-
 
 var texto_3170 = 
-`<div>❌ A certificação digital do documento <strong>não está válida pelo</strong> <i><a href="https://validar.iti.gov.br" target="_blank">VALIDAR</a></i> (serviço oficial de verificação de assinaturas do Governo Federal).</div><br><div>Solicitamos que a certificação digital seja <strong>efetuada novamente</strong> no arquivo contendo o documento.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para mais informações sobre como realizar corretamente a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
+`<div>• Não foi possível efetuar a validação da certificação digital ao submeter o arquivo PDF no "VALIDAR" (serviço oficial de validação de assinaturas do Governo Federal).</div><br><div>Efetuem novamente a certificação digital no arquivo PDF e, antes de anexá-lo à solicitação, efetuem a verificação da certificação do arquivo.</div><br><div>Para verificar se a certificação é válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as informações e assinatura(s) aprovada(s) da empresa, do responsável legal ou do profissional do órgão de registro (Jucesp).</div><br><div>Observação: após a verificação NÃO ANEXEM ao arquivo PDF o relatório gerado pelo site pois, ao efetuar alteração no arquivo PDF original assinado, as chaves criptografadas da certificação são invalidadas.</div><br>`;
 document.getElementById('despacho3170').setAttribute('data-text', texto_3170);
 document.getElementById('editTextModal3170').value = texto_3170;
 
 
 var texto_3180 = 
-`<div>❌A assinatura eletrônica utilizada no documento <strong>não é uma assinatura qualificada ICP-Brasil</strong>.</div><br><div>A certificação digital deve estar <strong>em nome da empresa ou do responsável legal</strong> e deve ser emitida por uma Autoridade Certificadora vinculada à
- <strong>ICP-Brasil</strong> (<a href="http://estrutura.iti.gov.br" target="_blank">lista de autoridades</a>) ou pelo portal <strong>Gov.br</strong>.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
+`<div>• A assinatura eletrônica utilizada como certificação do documento não atende ao solicitado. </div><br><div>A <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> solicitada deve ser em nome da empresa ou do responsável legal e deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil (listadas em <a href="http://estrutura.iti.gov.br" target="_blank">http://estrutura.iti.gov.br</a>) ou pelo portal Gov.br.</div><br>`;
 document.getElementById('despacho3180').setAttribute('data-text', texto_3180);
 document.getElementById('editTextModal3180').value = texto_3180;
 
-var texto_3190 = 
-`<div>💡 <strong>Sugestão</strong>: verificamos que o objeto social da empresa menciona atividades de <strong>Design de Interiores</strong>. </div><div>Tais atividades são englobadas pela Arquitetura de Interiores, campo de atuação do arquiteto e urbanista. </div><div>Sugerimos que, quando conveniente, a empresa inclua em seu objeto social atividades de Arquitetura e Urbanismo, permitindo <strong>ampliar</strong> o campo de atuação profissional, através das atribuições do responsável técnico arquiteto e urbanista, dando maior abrangência na prestação de serviços.</div><br>`;
-document.getElementById('despacho3190').setAttribute('data-text', texto_3190);
-document.getElementById('editTextModal3190').value = texto_3190;
-
 
 var texto_4000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;">  <strong>   <span>Referente ao Requerimento de Empresário:</span>  </strong></div><br>`;
+`<div>⚠️ <u><strong>Referente ao Requerimento de Empresário:</strong></u></div><br>`;
 document.getElementById('despacho4000').setAttribute('data-text', texto_4000);
 document.getElementById('editTextModal4000').value = texto_4000;
 
 
 var texto_4100 = 
-`<div>❌ <strong>O objeto social da empresa incompatível</strong>:</div><br><div>Verificamos que o objeto social da empresa <strong>não é compatível</strong> com as atividades e atribuições da Arquitetura e Urbanismo (artigo 1º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR nº 28/2012</a>).</div><br><div>Para dar continuidade ao registro é necessário <strong>alterar o Requerimento de Empresário</strong>, incluindo no objeto social as atividades e atribuições profissionais de arquitetos(as) e urbanistas previstas na <a href="https://transparencia.caubr.gov.br/resolucao21/" target="_blank">Resolução CAU/BR nº 21/2012</a>.</div><br>`;
+`<div>❌ <strong>O objeto social da empresa está incompatível</strong>:</div><br><div>Verificamos que o <strong>objeto social</strong> da empresa <strong>não é compatível</strong> com as atividades e atribuições da Arquitetura e Urbanismo (artigo 1º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR nº 28/2012</a>).</div><br><div>Para dar continuidade ao registro: <strong>Alterar o contrato social</strong>, incluindo no objeto social as atividades e atribuições profissionais de arquitetos(as) e urbanistas previstas na <a href="https://transparencia.caubr.gov.br/resolucao21/" target="_blank">Resolução CAU/BR nº 21/2012</a>.</div><br>`;
 document.getElementById('despacho4100').setAttribute('data-text', texto_4100);
 document.getElementById('editTextModal4100').value = texto_4100;
 
 
 var texto_4110 = 
-`<div>❌ Verificamos que a empresa <strong>não atende ao disposto na</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm" target="_blank">Lei nº 12.378/2010</a>, que determina:</div><br><div style="padding-left: 40px;"><i>“Art. 11 – É <strong>vedado</strong> o uso das expressões “arquitetura” ou “urbanismo”, ou designação similar, na razão social ou nome fantasia de sociedade que não possua arquiteto e urbanista entre os sócios com poder de gestão ou entre os empregados permanentes.”</i> </div><br><div>Dessa forma, para prosseguirmos com o registro, a empresa deverá optar por uma das alternativas abaixo: </div><br><div><ul style="list-style: none;"><li >1️⃣ <strong>Retirar</strong> os termos “Arquitetura” e/ou “Urbanismo” da razão social e do nome fantasia (se houver); </li><li>2️⃣ <strong>Incluir um arquiteto</strong> como sócio <strong>com poderes de gestão</strong> (sócio-administrador); </li><li>3️⃣ <strong>Contratar</strong> um arquiteto como <strong>empregado permanente</strong> (CLT), apresentando a documentação comprobatória. </li></ul></div><div>📌 Após realizar a alteração contratual ou efetivar a contratação, encaminhe a documentação na própria solicitação de registro. </div><br><div>A análise dos demais documentos depende da regularização dessa pendência. Assim, outras correções poderão ser solicitadas após o envio. </div><br>`;
+`<div>❌ Verificamos que a empresa <strong>não atende ao disposto na</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm" target="_blank">Lei nº 12.378/2010</a>, que determina:</div><br><div style="padding-left: 40px;"><i>“Art. 11 – É <strong>vedado</strong> o uso das expressões “arquitetura” ou “urbanismo”, ou designação similar, na razão social ou nome fantasia de sociedade que não possua arquiteto e urbanista entre os sócios com poder de gestão ou entre os empregados permanentes.”</i> </div><br><div>Dessa forma, para prosseguirmos com o registro, a empresa deverá optar por uma das alternativas abaixo: </div><br><div><ul style="list-style: none;"><li >1️⃣ <strong>Retirar</strong> os termos “Arquitetura” e/ou “Urbanismo” da razão social e do nome fantasia (se houver); </li><li>2️⃣ <strong>Incluir um arquiteto</strong> como sócio <strong>com poderes de gestão</strong> (sócio-administrador); </li><li>3️⃣ <strong>Contratar</strong> um arquiteto como <strong>empregado permanente</strong> (CLT), apresentando a documentação comprobatória. </li></ul></div><div>Após realizar a alteração contratual ou efetivar a contratação, encaminhe a documentação na própria solicitação de registro. </div><br><div>Informamos que a análise dos demais documentos depende da regularização dessa pendência. Assim, outras correções poderão ser solicitadas após o envio. </div><br>`;
 document.getElementById('despacho4110').setAttribute('data-text', texto_4110);
 document.getElementById('editTextModal4110').value = texto_4110;
 
 
 
 var texto_4130 = 
-`<div>❌ O documento apresentado <strong>não contém os dados completos para registro da empresa no CAU/SP</strong>.</div><br><div>Para prosseguimento da análise, é necessário enviar na solicitação o <strong>Requerimento de Empresário inicial</strong> (<strong><u>ato constitutivo</u></strong>) e <strong>todas as suas alterações</strong> (<strong><u>aditivos</u></strong>).</div><br><div>Os documentos, em arquivos PDF, deverão ser <strong>salvos com CERTIFICAÇÃO DIGITAL da empresa ou do responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br>`;
+`<div>• É necessário enviar na solicitação o Requerimento de Empresário inicial (ato constitutivo) e todas as suas alterações (aditivos). Os documentos, em arquivos PDF, deverão ser salvos com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">CERTIFICAÇÃO DIGITAL*</a> da empresa ou do responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div>Observação: O certificado da empresa ou do sócio administrador é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) com certificação digital válida da JUCESP.</div><br><div>Para verificar se a certificação é válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as informações e assinatura(s) aprovada(s) da empresa, do responsável legal ou do profissional do órgão de registro (Jucesp).</div><br>`;
 document.getElementById('despacho4130').setAttribute('data-text', texto_4130);
 document.getElementById('editTextModal4130').value = texto_4130;
 
 
 var texto_4140 = 
-`<div>📌 É necessário enviar na solicitação o Requerimento de Empresário, devidamente registrado em órgão competente, em um arquivo PDF <strong>salvo com CERTIFICAÇÃO DIGITAL da empresa ou de seu responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br>`;
+`<div>• É necessário enviar na solicitação o Requerimento de Empresário em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>Observação: O certificado da empresa ou do sócio administrador é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) com certificação digital válida da JUCESP.</div><br><div>Para verificar se a certificação é válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as informações e assinatura(s) aprovada(s) da empresa, do responsável legal ou do profissional do órgão de registro (Jucesp).</div><br>`;
 document.getElementById('despacho4140').setAttribute('data-text', texto_4140);
 document.getElementById('editTextModal4140').value = texto_4140;
 
 
 var texto_4150 = 
-`<div><strong>Observação</strong>: A certificação digital é dispensada em caso de apresentação da <i>Certidão de Inteiro Teor</i> com certificação digital <strong><u>válida</u></strong> da JUCESP ou da empresa/responsável legal.</div><br><div>Para verificar se um dos documentos possui certificação digital válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as <strong>informações e assinatura(s) aprovada(s)</strong> da empresa, do responsável legal ou do profissional do órgão de registro (JUCESP). </div><br>`;
+`<div>• Não foi possível efetuar a validação da certificação digital ao submeter o arquivo PDF no "VALIDAR" (serviço oficial de validação de assinaturas do Governo Federal).</div><br><div>Efetuem novamente a certificação digital no arquivo PDF e, antes de anexá-lo à solicitação, efetuem a verificação da certificação do arquivo.</div><br><div>Para verificar se a certificação é válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as informações e assinatura(s) aprovada(s) da empresa, do responsável legal ou do profissional do órgão de registro (Jucesp).</div><br><div>Observação: após a verificação NÃO ANEXEM ao arquivo PDF o relatório gerado pelo site pois, ao efetuar alteração no arquivo PDF original assinado, as chaves criptografadas da certificação são invalidadas.</div><br>`;
 document.getElementById('despacho4150').setAttribute('data-text', texto_4150);
 document.getElementById('editTextModal4150').value = texto_4150;
 
-var texto_4155 = 
-`<div>❌ A certificação digital do documento <strong>não está válida pelo</strong> <i><a href="https://validar.iti.gov.br" target="_blank">VALIDAR</a></i> (serviço oficial de verificação de assinaturas do Governo Federal).</div><br><div>Solicitamos que a certificação digital seja <strong>efetuada novamente</strong> no arquivo contendo o documento.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para mais informações sobre como realizar corretamente a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
-document.getElementById('editTextModal4155').value = texto_4155;
-
 
 var texto_4160 = 
-`<div>❌A assinatura eletrônica utilizada no documento <strong>não é uma assinatura qualificada ICP-Brasil</strong>.</div><br><div>A certificação digital deve estar <strong>em nome da empresa ou do responsável legal</strong> e deve ser emitida por uma Autoridade Certificadora vinculada à <strong>ICP-Brasil</strong> (<a href="http://estrutura.iti.gov.br" target="_blank">lista de autoridades</a>) ou pelo portal <strong>Gov.br</strong>.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
+`<div>• A assinatura eletrônica utilizada como certificação do documento não atende ao solicitado. </div><br><div>A <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> solicitada deve ser em nome da empresa ou do responsável legal e deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil (listadas em <a href="http://estrutura.iti.gov.br" target="_blank">http://estrutura.iti.gov.br</a>) ou pelo portal Gov.br.</div><br>`;
 document.getElementById('despacho4160').setAttribute('data-text', texto_4160);
 document.getElementById('editTextModal4160').value = texto_4160;
 
-var texto_4170 = 
-`<div>💡 <strong>Sugestão</strong>: verificamos que o objeto social da empresa menciona atividades de <strong>Design de Interiores</strong>. </div><div>Tais atividades são englobadas pela Arquitetura de Interiores, campo de atuação do arquiteto e urbanista. </div><div>Sugerimos que, quando conveniente, a empresa inclua em seu objeto social atividades de Arquitetura e Urbanismo, permitindo <strong>ampliar</strong> o campo de atuação profissional, através das atribuições do responsável técnico arquiteto e urbanista, dando maior abrangência na prestação de serviços.</div><br>`;
-document.getElementById('despacho4170').setAttribute('data-text', texto_4170);
-document.getElementById('editTextModal4170').value = texto_4170;
 
 var texto_5000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao Contrato Social (CARTÓRIO):</span></strong></div><br>`;
+`<div>⚠️ <u><strong>Referente ao Contrato Social (CARTÓRIO):</strong></u></div><br>`;
 document.getElementById('despacho5000').setAttribute('data-text', texto_5000);
 document.getElementById('editTextModal5000').value = texto_5000;
 
 
 var texto_5100 = 
-`<div>❌ <strong>O objeto social da empresa incompatível:</strong></div><br><div>Verificamos que o objeto social da empresa <strong>não é compatível</strong> com as atividades e atribuições da Arquitetura e Urbanismo (artigo 1º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR nº 28/2012</a>).</div><br><div>Para dar continuidade ao registro é necessário <strong>alterar o contrato social</strong>, incluindo no objeto social as atividades e atribuições profissionais de arquitetos(as) e urbanistas previstas na <a href="https://transparencia.caubr.gov.br/resolucao21/" target="_blank">Resolução CAU/BR nº 21/2012</a>.</div><br>`;
+`<div>❌ <strong>O objeto social da empresa está incompatível</strong>:</div><br><div>Verificamos que o <strong>objeto social</strong> da empresa <strong>não é compatível</strong> com as atividades e atribuições da Arquitetura e Urbanismo (artigo 1º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR nº 28/2012</a>).</div><br><div>Para dar continuidade ao registro: <strong>Alterar o contrato social</strong>, incluindo no objeto social as atividades e atribuições profissionais de arquitetos(as) e urbanistas previstas na <a href="https://transparencia.caubr.gov.br/resolucao21/" target="_blank">Resolução CAU/BR nº 21/2012</a>.</div><br>`;
 document.getElementById('despacho5100').setAttribute('data-text', texto_5100);
 document.getElementById('editTextModal5100').value = texto_5100;
 
 
 var texto_5110 = 
-`<div>❌ Verificamos que a empresa <strong>não atende ao disposto na</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm" target="_blank">Lei nº 12.378/2010</a>, que determina:</div><br><div style="padding-left: 40px;"><i>“Art. 11 – É <strong>vedado</strong> o uso das expressões “arquitetura” ou “urbanismo”, ou designação similar, na razão social ou nome fantasia de sociedade que não possua arquiteto e urbanista entre os sócios com poder de gestão ou entre os empregados permanentes.”</i> </div><br><div>Dessa forma, para prosseguirmos com o registro, a empresa deverá optar por uma das alternativas abaixo: </div><br><div><ul style="list-style: none;"><li >1️⃣ <strong>Retirar</strong> os termos “Arquitetura” e/ou “Urbanismo” da razão social e do nome fantasia (se houver); </li><li>2️⃣ <strong>Incluir um arquiteto</strong> como sócio <strong>com poderes de gestão</strong> (sócio-administrador); </li><li>3️⃣ <strong>Contratar</strong> um arquiteto como <strong>empregado permanente</strong> (CLT), apresentando a documentação comprobatória. </li></ul></div><div>📌 Após realizar a alteração contratual ou efetivar a contratação, encaminhe a documentação na própria solicitação de registro. </div><br><div>A análise dos demais documentos depende da regularização dessa pendência. Assim, outras correções poderão ser solicitadas após o envio. </div><br>`;
+`<div>❌ Verificamos que a empresa <strong>não atende ao disposto na</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm" target="_blank">Lei nº 12.378/2010</a>, que determina:</div><br><div style="padding-left: 40px;"><i>“Art. 11 – É <strong>vedado</strong> o uso das expressões “arquitetura” ou “urbanismo”, ou designação similar, na razão social ou nome fantasia de sociedade que não possua arquiteto e urbanista entre os sócios com poder de gestão ou entre os empregados permanentes.”</i> </div><br><div>Dessa forma, para prosseguirmos com o registro, a empresa deverá optar por uma das alternativas abaixo: </div><br><div><ul style="list-style: none;"><li >1️⃣ <strong>Retirar</strong> os termos “Arquitetura” e/ou “Urbanismo” da razão social e do nome fantasia (se houver); </li><li>2️⃣ <strong>Incluir um arquiteto</strong> como sócio <strong>com poderes de gestão</strong> (sócio-administrador); </li><li>3️⃣ <strong>Contratar</strong> um arquiteto como <strong>empregado permanente</strong> (CLT), apresentando a documentação comprobatória. </li></ul></div><div>Após realizar a alteração contratual ou efetivar a contratação, encaminhe a documentação na própria solicitação de registro. </div><br><div>Informamos que a análise dos demais documentos depende da regularização dessa pendência. Assim, outras correções poderão ser solicitadas após o envio. </div><br>`;
 document.getElementById('despacho5110').setAttribute('data-text', texto_5110);
 document.getElementById('editTextModal5110').value = texto_5110;
 
 
 var texto_5130 = 
-`<div>❌ O Contrato Social apresentado <strong>não possui sinais de registro em órgão competente</strong>, como <u><strong>data de registro</strong></u>, <u><strong>selos</strong></u> ou <u><strong>identificação oficial</strong></u>.</div><br>`;
+`<div>• O Contrato Social apresentado não possui sinais de registro em órgão competente (data do registro e selos e/ou identificação de registro).</div><br>`;
 document.getElementById('despacho5130').setAttribute('data-text', texto_5130);
 document.getElementById('editTextModal5130').value = texto_5130;
 
 
 var texto_5140 = 
-`<div>❌ A alteração contratual apresentada <strong>não possui os dados da consolidação do contrato social na íntegra</strong>. </div><br><div>Para prosseguimento da análise, é necessário enviar também a alteração contratual anterior, onde constam as informações da consolidação. </div><br><div>Os documentos deverão ser <strong>salvos com CERTIFICAÇÃO DIGITAL da empresa ou de seu responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br>`;
+`<div>• A alteração contratual apresentada não possui os dados da consolidação do contrato social na íntegra.</div><br><div>Para prosseguir, é necessário enviar na solicitação a alteração anterior do contrato social, contendo os dados da consolidação do contrato que não constam no documento apresentado.</div><br>`;
 document.getElementById('despacho5140').setAttribute('data-text', texto_5140);
 document.getElementById('editTextModal5140').value = texto_5140;
 
 
 var texto_5150 = 
-`<div>📌 É necessário enviar na solicitação o contrato social, devidamente registrado em órgão competente, em um arquivo PDF <strong>salvo com CERTIFICAÇÃO DIGITAL da empresa ou de seu responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br><div><strong>Observação</strong>: A certificação digital da empresa ou do responsável legal <strong>pode ser dispensada</strong> caso seja apresentada a <i>Certidão de Registro para fins de publicidade e eficácia contra terceiros</i>, com a capa, onde consta a chave de autenticação. Caso não haja capa com esta chave, a certificação digital é obrigatória.</div><br>`;
+`<div>• É necessário enviar na solicitação o contrato social, devidamente registrado em órgão competente, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>Observação: O certificado é dispensado em caso de apresentação da Certidão de Registro para fins de publicidade e eficácia contra terceiros (cartório).</div><br>`;
 document.getElementById('despacho5150').setAttribute('data-text', texto_5150);
 document.getElementById('editTextModal5150').value = texto_5150;
 
 
 var texto_5160 = 
-`<div>📌 É necessário enviar na solicitação a última alteração consolidada do contrato social, devidamente registrada em órgão competente, em um arquivo PDF <strong>salvo com CERTIFICAÇÃO DIGITAL da empresa ou de seu responsável legal</strong> (emitida pela ICP-Brasil ou pelo portal Gov.br). </div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><br>    <div><strong>Observação</strong>: A certificação digital da empresa ou do responsável legal <strong>pode ser dispensada</strong> caso seja apresentada a <i>Certidão de Registro para fins de publicidade e eficácia contra terceiros</i>, com a capa, onde consta a chave de autenticação. Caso não haja capa com esta chave, a certificação digital é obrigatória.</div><br>`;
+`<div>• É necessário enviar na solicitação a última alteração consolidada do contrato social, devidamente registrada em órgão competente, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div>Observação: O certificado é dispensado em caso de apresentação da Certidão de Registro para fins de publicidade e eficácia contra terceiros (cartório).</div><br>`;
 document.getElementById('despacho5160').setAttribute('data-text', texto_5160);
 document.getElementById('editTextModal5160').value = texto_5160;
 
 
 var texto_5170 = 
-`<div>❌ A certificação digital do documento <strong>não está válida pelo</strong> <i><a href="https://validar.iti.gov.br" target="_blank">VALIDAR</a></i> (serviço oficial de verificação de assinaturas do Governo Federal).</div><br><div>Solicitamos que a certificação digital seja <strong>efetuada novamente</strong> no arquivo contendo o documento.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para mais informações sobre como realizar corretamente a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
+`<div>• Não foi possível efetuar a validação da certificação digital ao submeter o arquivo PDF no "VALIDAR" (serviço oficial de validação de assinaturas do Governo Federal).</div><br><div>Efetuem novamente a certificação digital no arquivo PDF e, antes de anexá-lo à solicitação, efetuem a verificação da certificação do arquivo.</div><br><div>Para verificar se a certificação é válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as informações e assinatura(s) aprovada(s) da empresa, do responsável legal ou do profissional do órgão de registro (Cartório).</div><br><div>Observação: após a verificação NÃO ANEXEM ao arquivo PDF o relatório gerado pelo site pois, ao efetuar alteração no arquivo PDF original assinado, as chaves criptografadas da certificação são invalidadas.</div><br>`;
 document.getElementById('despacho5170').setAttribute('data-text', texto_5170);
 document.getElementById('editTextModal5170').value = texto_5170;
 
 
 var texto_5180 = 
-`<div>❌A assinatura eletrônica utilizada no documento <strong>não é uma assinatura qualificada ICP-Brasil</strong>.</div><br><div>A certificação digital deve estar <strong>em nome da empresa ou do responsável legal</strong> e deve ser emitida por uma Autoridade Certificadora vinculada à
- <strong>ICP-Brasil</strong> (<a href="http://estrutura.iti.gov.br" target="_blank">lista de autoridades</a>) ou pelo portal <strong>Gov.br</strong>.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
+`<div>• A assinatura eletrônica utilizada como certificação do documento não atende ao solicitado.</div><br><div>A <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> solicitada deve ser em nome da empresa ou do responsável legal e deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil (listadas em <a href="http://estrutura.iti.gov.br" target="_blank">http://estrutura.iti.gov.br</a>) ou pelo portal Gov.br.</div><br>`;
 document.getElementById('despacho5180').setAttribute('data-text', texto_5180);
 document.getElementById('editTextModal5180').value = texto_5180;
 
-var texto_5190 = 
-`<div>💡 <strong>Sugestão</strong>: verificamos que o objeto social da empresa menciona atividades de <strong>Design de Interiores</strong>. </div><div>Tais atividades são englobadas pela Arquitetura de Interiores, campo de atuação do arquiteto e urbanista. </div><div>Sugerimos que, quando conveniente, a empresa inclua em seu objeto social atividades de Arquitetura e Urbanismo, permitindo <strong>ampliar</strong> o campo de atuação profissional, através das atribuições do responsável técnico arquiteto e urbanista, dando maior abrangência na prestação de serviços.</div><br>`;
-document.getElementById('despacho5190').setAttribute('data-text', texto_5190);
-document.getElementById('editTextModal5190').value = texto_5190;
-
-
-
 var texto_5500 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;">  <strong>   <span>Referente ao Comprovante de Vínculo:</span>  </strong></div><br><div>❌ O arquivo contendo o Comprovante de Vínculo entre o responsável técnico e a pessoa jurídica encontra-se <strong>inacessível</strong>.</div><br><div>Verifique se o nome do arquivo não contém caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário enviar o documento na solicitação de registro.</div><br>`;
+`<div><div>⚠️ <strong><u>Referente ao Comprovante de Vínculo</u></strong>:</div><br><div>❌ Informamos que o arquivo contendo o Comprovante de Vínculo entre o responsável técnico e a pessoa jurídica encontra-se inacessível.</div><br><div>Um documento inacessível indica que ele <strong>não foi enviado na solicitação</strong> ou que <strong>ocorreu um erro durante o envio para o sistema</strong>.</div><br><div>Verifique se o nome do arquivo não tem caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário <strong>enviar o documento na solicitação de registro</strong>.</div><br>`;
 document.getElementById('despacho5500').setAttribute('data-text', texto_5500);
 document.getElementById('editTextModal5500').value = texto_5500;
 
 var texto_6000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;">  <strong>   <span>Referente ao Comprovante de Vínculo:</span>  </strong></div><br><div>É necessário apresentar o <strong>comprovante de vínculo</strong> do arquiteto e urbanista com a empresa, conforme o tipo de vínculo:</div><br><div><span style="padding-left: 20px;">▸ <strong>Empregado (CLT)</strong>: páginas da CTPS contendo identificação, qualificação civil, registro de contrato e alterações salariais (se houver);</span></div><div><span style="padding-left: 20px;">▸ <strong>Prestador de serviços</strong>: contrato de prestação de serviços.</span></div><br><div>O comprovante de vínculo deve ser anexado à solicitação em um <strong>único arquivo PDF, com certificação digital</strong> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><div>🔗 Para saber mais sobre a responsabilidade técnica por empresa <a href="https://causp.gov.br/wp-content/uploads/2025/11/Responsabilidade-Tecnica-por-empresa.pdf" target="_blank">clique aqui</a>.</div><br>`;
+`<div>⚠️ <u><strong>Referente ao Comprovante de Vínculo:</strong></u></div><br><div>• Apresentar o comprovante de vínculo do profissional arquiteto e urbanista junto à empresa, de acordo com o tipo do vínculo:</div><br><div>⮕ caso seja empregado (registro CLT): as páginas de identificação, qualificação civil, registro e alterações salariais (se houver) da CTPS;</div><div>⮕ caso seja prestador de serviços: contrato de prestação de serviços.</div><br><div>O comprovante de vínculo deve ser anexado à solicitação <u>em um arquivo PDF único salvo com certificação digital da empresa ou do sócio administrador</u> (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br>`;
 document.getElementById('despacho6000').setAttribute('data-text', texto_6000);
 document.getElementById('editTextModal6000').value = texto_6000;
 
 
 var texto_7000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;">  <strong>   <span>Referente ao Contrato de Prestação de Serviços:</span>  </strong></div><br>`;
+`<div>⚠️ <u><strong>Referente ao Contrato de Prestação de Serviços:</strong></u></div><br>`;
 document.getElementById('despacho7000').setAttribute('data-text', texto_7000);
 document.getElementById('editTextModal7000').value = texto_7000;
 
-var texto_7050 = 
-`<div><strong>❌ XXXXXXXXXXXXXXXXXXXXXXXXXXXX:</strong></div><br><div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.</div><br>`;
-document.getElementById('despacho7050').setAttribute('data-text', texto_7050);
-document.getElementById('editTextModal7050').value = texto_7050;
 
 var texto_7100 = 
-`<div><strong>❌ Não é permitida a contratação de pessoa jurídica para assumir responsabilidade técnica por outra pessoa jurídica:</strong></div><br><div>A responsabilidade técnica só pode ser assumida por pessoa física, ou seja, por arquiteto e urbanista legalmente habilitado, com atribuições compatíveis com as atividades desenvolvidas pela empresa.</div><br><div>O contrato de prestação de serviços deverá ser firmado entre a <strong>CONTRATANTE</strong> (<strong>pessoa jurídica solicitante do registro</strong>) e o arquiteto e urbanista <strong>CONTRATADO</strong> (<strong>pessoa física</strong>).</div><br><div>🔗 Para saber mais sobre a responsabilidade técnica por empresa <a href="https://causp.gov.br/wp-content/uploads/2025/11/Responsabilidade-Tecnica-por-empresa.pdf" target="_blank">clique aqui</a>. </div><br>`;
+`<div>• Não é permitida a contratação de pessoa jurídica para responder tecnicamente por outra pessoa jurídica.</div><br><div>A responsabilidade técnica somente poderá ser assumida por pessoa física, ou seja, por profissional Arquiteto e Urbanista legalmente habilitado, e com atribuições técnicas compatíveis com as atividades da empresa.</div><br><div>O contrato de prestação de serviços deverá ser pactuado entre a CONTRATANTE (Pessoa Jurídica solicitante do registro) e um arquiteto e urbanista CONTRATADO (Pessoa Física).</div><br>`;
 document.getElementById('despacho7100').setAttribute('data-text', texto_7100);
 document.getElementById('editTextModal7100').value = texto_7100;
 
 
 var texto_7101 = 
-`<div>❌ <strong>Datas divergentes:</strong> </div><br><div>As <strong>datas de início</strong> do contrato de prestação de serviços e do RRT de Desempenho de Cargo ou Função <strong>devem ser compatíveis</strong>. </div><div style="padding-left: 15px;">▸ Se a data informada no RRT estiver correta: o <strong>contrato deverá ser retificado</strong> para ajustar a data de início. </div><div style="padding-left: 15px;">▸ Se a <strong> data do contrato estiver correta</strong>: será necessário <strong>emitir um novo RRT</strong> com a data correta. </div><br>`;
+`<div>• A data de início do contrato de prestação de serviços e a data de início do RRT de desempenho de cargo ou função devem ser compatíveis:</div><br><div>⮕ Caso a data de início declarada no RRT esteja correta, é necessário <strong>retificar o contrato</strong>;</div><div>⮕ Caso a data de início definida no contrato esteja correta, de acordo com o determinado na Resolução nº 91, é necessário <strong>emitir um novo RRT com a data correta</strong>.</div><br>`;
 document.getElementById('despacho7101').setAttribute('data-text', texto_7101);
 document.getElementById('editTextModal7101').value = texto_7101;
 
 var texto_7102 = 
-`<div>❌ <strong>Datas divergentes:</strong> </div><br><div>As <strong>datas de início</strong> do contrato de prestação de serviços e do RRT de Desempenho de Cargo ou Função <strong>devem ser compatíveis</strong>. </div><div style="padding-left: 15px;">▸ Se a data informada no RRT estiver correta: o <strong>contrato deverá ser retificado</strong> para ajustar a data de início. </div><div style="padding-left: 15px;">▸ Se a <strong> data do contrato estiver correta</strong>: será necessário <strong>corrigir a data de início no RRT</strong>. </div><br>`;
+`<div>• A data de início do contrato de prestação de serviços e a data de início do RRT de desempenho de cargo ou função devem ser compatíveis:</div><br><div>⮕ Caso a data de início declarada no RRT esteja correta, é necessário <strong>retificar o contrato</strong>;</div><div>⮕ Caso a data de início definida no contrato esteja correta, <strong>retificar a data de início do RRT</strong>.</div><br>`;
 document.getElementById('despacho7102').setAttribute('data-text', texto_7102);
 document.getElementById('editTextModal7102').value = texto_7102;
 
 var texto_7103 = 
-`<div>❌ <strong>Objeto social apresentado não abrange a Responsabilidade Técnica pela pessoa jurídica:</strong></div><br><div>Ser responsável técnico(a) pela empresa significa que o(a) profissional irá se <strong>responsabilizar por toda a parte técnica de Arquitetura e Urbanismo da pessoa jurídica perante o CAU/SP</strong>, não havendo limitação dessa responsabilidade (<u>como, por exemplo, obras e/ou atividades específicas</u>).</div><div>Conforme a <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução nº 28/2012-CAU/BR</a>, a empresa deverá contar com pelo menos um responsável técnico registrado para exercer as atividades de Arquitetura e Urbanismo relacionadas no objeto social e manter-se regular perante o CAU/SP.</div><br><div>Portanto, é necessário retificar o do contrato de prestação de serviços, a fim de especificar que o objeto do contrato <strong>abrange a responsabilidade técnica pela pessoa jurídica</strong>.</div><br>`;
+`<div>• Ser responsável técnico(a) pela empresa significa que o(a) profissional irá se <strong>responsabilizar por toda a parte técnica de Arquitetura e Urbanismo da pessoa jurídica perante o CAU/SP</strong>, não havendo limitação dessa responsabilidade (<u>como, por exemplo, obras e/ou atividades específicas</u>).</div><br><div>Conforme a <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução nº 28/2012-CAU/BR</a>, a empresa deverá contar com pelo menos um responsável técnico registrado para exercer as <strong>atividades de Arquitetura e Urbanismo relacionadas no objeto social</strong> e manter-se regular perante o CAU/SP.</div><br><div>Portanto, faz-se necessária a retificação do contrato de prestação de serviços, a fim de especificar que o objeto do contrato abrange a <strong>responsabilidade técnica pela pessoa jurídica</strong>.</div><br>`;
 document.getElementById('despacho7103').setAttribute('data-text', texto_7103);
 document.getElementById('editTextModal7103').value = texto_7103;
 
 
 var texto_7110 = 
-`<div>❌ <strong>Prazo de Vigência incorreto:</strong> </div><br><div>O prazo de vigência do contrato deve ser de <strong>até 4 anos</strong>, conforme o art. 598 do Código Civil. </div><br><div>Assim, o prazo deve ser corrigido, <strong>tanto no contrato de prestação de serviços quanto no RRT (se for o caso)</strong>, respeitando o limite máximo de 4 anos.</div><br>`;
+`<div>• O prazo de vigência do contrato deverá ser de até 4 anos, conforme o Art. 598 do Código Civil.</div><br>`;
 document.getElementById('despacho7110').setAttribute('data-text', texto_7110);
 document.getElementById('editTextModal7110').value = texto_7110;
 
 
 var texto_7120 = 
-`<div>❌ <strong>Falta carga horária e/ou honorários mensais do responsável técnico</strong>: </div><br><div>O contrato deverá conter a <strong>carga horária detalhada</strong> (quantidade de <strong>horas por dia</strong> ou <strong>horas por semana</strong>) e <strong>honorários mensais</strong> para verificação do piso salarial. </div><br><div>Conforme <a href="https://transparencia.caubr.gov.br/resolucao150/" target="_blank">Resolução nº 150 do CAU/BR</a>, cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo** ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente. </div><br><div>** De acordo com a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de prestação de serviços com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00. </div><br><div>Portanto, é necessário incluir a <strong>carga horária detalhada</strong> (<strong>horas por dia ou por semana</strong>) e <strong>honorários mensais</strong> no contrato, assegurando o atendimento ao piso salarial. </div><br><div>🔗 <a href="https://n-tech4b.github.io/despachos-pj/piso-semanal" target="_blank">Clique aqui</a> para acessar orientações e calculadora de piso salarial. </div><br>`;
+`<div>• O contrato deverá conter a carga horária detalhada (quantidade de horas por dia ou horas por semana) e honorários mensais para verificação do piso salarial, conforme Resolução nº 150 do CAU/BR.</div><br><div>Cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo** ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente.</div><br><div>** Conforme a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de prestação de serviços com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00.</div><br>`;
 document.getElementById('despacho7120').setAttribute('data-text', texto_7120);
 document.getElementById('editTextModal7120').value = texto_7120;
 
-var texto_7125 = 
-`<div>❌ <strong>O valor informado não atende ao piso salarial</strong>: </div><br><div>A <strong>remuneração mínima deve ser compatível com a carga horária contratada</strong>. O valor apresentado é inferior ao piso profissional, considerando a carga horária informada no contrato.</div><br><div>Conforme <a href="https://transparencia.caubr.gov.br/resolucao150/" target="_blank">Resolução nº 150 do CAU/BR</a>, cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo** ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente. </div><br><div>** De acordo com a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de prestação de serviços com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00. </div><br><div><div>Retifique a carga horária e/ou os honorários mensais para <strong>atender ao piso salarial</strong>. </div><br><div>🔗 <a href="https://n-tech4b.github.io/despachos-pj/piso-semanal" target="_blank">Clique aqui</a> para acessar orientações e calculadora de piso salarial. </div><br>`;
-document.getElementById('despacho7125').setAttribute('data-text', texto_7125);
-document.getElementById('editTextModal7125').value = texto_7125;
-
 
 var texto_7130 = 
-`<div><u>FÓRMULA PARA CÁLCULO DE REMUNERAÇÃO COM CARGA HORÁRIA SEMANAL (CHS): </u></div><br><div><u>Até 30 horas semanais:</u></div><div>CHS x 0,2 = X SM</div><br><div><u>Superior a 30 horas semanais:</u></div><div>6 + [(CHS - 30) x 0,2] x 1,25 = X SM</div><br><div><u>Legenda:</u></div><div>CHS: carga horária semanal</div><div>SM: Salário mínimo**</div><br><div>** Conforme a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de prestação de serviços com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00.</div><br>`;
+`<div>• A remuneração informada no contrato de prestação de serviços apresentado não atende ao piso definido na Resolução nº 150 do CAU/BR.</div><br><div>O salário-mínimo a ser recebido deverá obedecer a fórmula abaixo (elaborada pelo Setor Jurídico do CAU/SP):</div><br><div><u>FÓRMULA PARA CÁLCULO DE REMUNERAÇÃO COM CARGA HORÁRIA SEMANAL (CHS): </u></div><br><div><u>Até 30 horas semanais:</u></div><div>CHS x 0,2 = X SM</div><br><div><u>Superior a 30 horas semanais:</u></div><div>6 + [(CHS - 30) x 0,2] x 1,25 = X SM</div><br><div><u>Legenda:</u></div><div>CHS: carga horária semanal</div><div>SM: Salário mínimo**</div><br><div>** Conforme a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de prestação de serviços com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00.</div><br>`;
 document.getElementById('despacho7130').setAttribute('data-text', texto_7130);
 document.getElementById('editTextModal7130').value = texto_7130;
 
 var texto_7135 = 
-`<div>❌ <strong>A remuneração informada no contrato não pode sofrer descontos:</strong></div><br><div>O valor estipulado deve corresponder ao <strong>montante mensal efetivamente recebido</strong> pelo(a) profissional, em conformidade com o <strong>piso salarial da categoria</strong>. </div><br><div>Qualquer desconto previsto compromete o atendimento ao piso profissional e impede a regularidade do vínculo perante o CAU/SP. </div><br><div>Retifique a <strong>cláusula/item XXXXXXXXX</strong> do contrato, removendo previsões de descontos que possam reduzir a remuneração mínima devida ao(à) responsável técnico(a). </div><br>`;
+`<div>• O valor da remuneração estipulada no contrato não poderá sofrer quaisquer descontos, devendo corresponder ao montante (mensal) a ser recebido pelo(a) profissional contratado(a), em conformidade com o piso salarial da categoria.</div><br><div>Portanto, torna-se necessária a retificação da cláusula/item XXXXXXXXX do contrato, a fim de remover previsões de descontos que possam comprometer o cumprimento do piso profissional.</div><br>`;
 document.getElementById('despacho7135').setAttribute('data-text', texto_7135);
 document.getElementById('editTextModal7135').value = texto_7135;
 
 
 var texto_7140 = 
-`<div>❌ <strong>Contrato sem assinaturas válidas</strong>: </div><br><div>O contrato deve conter:</div><div style="padding-left: 10px;">• assinaturas físicas com firma reconhecida; <strong>ou</strong></div><div style="padding-left: 10px;">• assinaturas eletrônicas válidas.  </div><br><div>Após as assinaturas (com firma reconhecida ou assinatura eletrônica), é necessário <strong>realizar a certificação digital no arquivo PDF</strong>.</div><br><div>A certificação deve estar em nome da empresa ou do responsável legal e ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil ou pelo portal Gov.br.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div></div><br>`;
+`<div>• Assinar e reconhecer firma das assinaturas ou realizar a assinatura eletrônica. Em seguida, realizar a <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> no arquivo PDF. A certificação digital deve ser em nome da empresa ou do sócio administrador, e deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil ou  pelo portal Gov.br.</div><br>`;
 document.getElementById('despacho7140').setAttribute('data-text', texto_7140);
 document.getElementById('editTextModal7140').value = texto_7140;
 
 
 var texto_8000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente à CTPS (Carteira de Trabalho e Previdência Social):</span></strong></div><br>`;
+`<div>⚠️ <u><strong>Referente à CTPS (Carteira de Trabalho e Previdência Social):</strong></u></div><br>`;
 document.getElementById('despacho8000').setAttribute('data-text', texto_8000);
 document.getElementById('editTextModal8000').value = texto_8000;
 
 
 var texto_8100 = 
-`<div>❌ <strong>O valor informado não atende ao piso salarial</strong>: </div><br><div>Conforme <a href="https://transparencia.caubr.gov.br/resolucao150/" target="_blank">Resolução nº 150 do CAU/BR</a>, cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo** ao mês. Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente. </div><br><div>** De acordo com a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de trabalho (CLT) com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00. </div><br><div>Retifique os honorários mensais para <strong>atender ao piso salarial correspondente à carga horária</strong> estabelecida. </div><br><div>🔗 <a href="https://n-tech4b.github.io/despachos-pj/piso-semanal" target="_blank">Clique aqui</a> para acessar orientações e calculadora de piso salarial. </div><br>`;
+`<div>• O salário deverá atender ao piso salarial, conforme Resolução nº 150 do CAU/BR.</div><br><div>Cada hora da jornada diária de trabalho equivale a 1 (um) salário mínimo** ao mês.</div><br><div>Para jornadas diárias acima de 6 horas, é acrescido 25% do valor do salário mínimo para cada hora excedente.</div><br><div>** Conforme a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de trabalho (CLT) com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00.</div><br>`;
 document.getElementById('despacho8100').setAttribute('data-text', texto_8100);
 document.getElementById('editTextModal8100').value = texto_8100;
 
-var texto_8105 = 
-`<div style="border-radius: 6px; background-color: #FAFAFA; padding: 5px;"><u>FÓRMULA PARA CÁLCULO DE REMUNERAÇÃO COM CARGA HORÁRIA SEMANAL (CHS): </u></div><br><div><u>Até 30 horas semanais:</u></div><div>CHS x 0,2 = X SM</div><br><div><u>Superior a 30 horas semanais:</u></div><div>6 + [(CHS - 30) x 0,2] x 1,25 = X SM</div><br><div><u>Legenda:</u></div><div>CHS: carga horária semanal</div><div>SM: Salário mínimo**</div><br><div>** Conforme a deliberação nº 99/2024 - CEP - CAU/SP, para contrato de prestação de serviços com vigência a partir de 3 de março de 2022, o salário mínimo a ser considerado para a base de cálculo é de R$ 1.212,00.</div><br>`;
-document.getElementById('despacho8105').setAttribute('data-text', texto_8105);
-document.getElementById('editTextModal8105').value = texto_8105;
-
 
 var texto_8110 = 
-`<div>❌ <strong>A ocupação informada para o profissional está incorreta:</strong> </div><div>Identificamos que a ocupação registrada é “<strong>XXXXXXXXXXX</strong>”, não compreendendo às classificações compatíveis com o exercício das atividades de Arquitetura e Urbanismo. </div><div>Para prosseguir, é necessário selecionar uma ocupação que pertença ao código <strong>CBO 2141</strong> (<strong>Arquitetos e urbanistas</strong>), <strong>1413</strong> (<strong>Gerentes de obras em empresas de construção</strong>) ou outra ocupação <strong>equivalente e compatível</strong>. </div><br><div>Retifique a ocupação do profissional no documento apresentado, escolhendo uma das opções compatíveis. </div><br>`;
+`<div>• Verificamos que a ocupação do profissional é "XXXXXXXXXXX".</div><br><div>Portanto, é necessário alterar a ocupação para uma pertencente ao código CBO 2141 (Arquitetos e urbanistas), 1413 (Gerentes de obras em empresas de construção) ou outra similar.</div><br>`;
 document.getElementById('despacho8110').setAttribute('data-text', texto_8110);
 document.getElementById('editTextModal8110').value = texto_8110;
 
 
 var texto_8120 = 
-`<div>❌ <strong>Documentação da CTPS incompleta</strong>: </div><div>É necessário apresentar todas as informações que comprovem o vínculo do profissional com a empresa, incluindo <strong>dados pessoais, registro, salário, dissídios e demais anotações pertinentes</strong>. </div><br><div>Digitalize e envie <strong>todas as páginas da CTPS</strong> que contenham essas informações <strong>ou</strong> apresente a <strong>CTPS Digital</strong> (com o documento de identidade). </div><div>Informações complementares poderão ser enviadas por meio de <strong>Ficha de Registro do Empregado</strong>. </div><br>`;
+`<div>• Digitalizar as páginas onde constem os dados do profissional, registro, salário, dissídios e demais observações, se necessário, ou apresentar a CTPS Digital. Informações complementares e alterações poderão ser apresentadas por meio de uma Ficha de Registro do Empregado.</div><br>`;
 document.getElementById('despacho8120').setAttribute('data-text', texto_8120);
 document.getElementById('editTextModal8120').value = texto_8120;
 
 
 var texto_8130 = 
-`<div>❌ <strong>O arquivo da CTPS <strong>não</strong> possui certificação digital válida</strong>: </div><div>A CTPS (exceto a CTPS digital) deve ser anexada à solicitação em um único arquivo PDF salvo com certificação digital em nome da empresa ou do sócio administrador, emitida por uma Autoridade Certificadora vinculada à ICP-Brasil ou pelo portal Gov.br.</div><br><div>Portanto, é necessário <strong>anexar o arquivo PDF certificado digitalmente</strong> à solicitação de registro, conforme as orientações acima. </div><br>`;
+`<div>• A CTPS, com exceção da CTPS Digital, deverá ser anexada à solicitação de registro em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL*</a> da empresa ou do responsável legal. A certificação digital deve ser em nome da empresa ou do sócio administrador, e deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil ou pelo portal Gov.br.</div><br>`;
 document.getElementById('despacho8130').setAttribute('data-text', texto_8130);
 document.getElementById('editTextModal8130').value = texto_8130;
 
 var texto_8500 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>REFERENTE AO RRT (REGISTRO DE RESPONSABILIDADE TÉCNICA):</span></strong></div><br><div>❌ O arquivo contendo o RRT encontra-se <strong>inacessível</strong>.</div><br><div>Verifique se o nome do arquivo não contém caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário enviar o documento na solicitação de registro.</div><br>`;
+`<div><div>⚠️ <strong><u>Referente ao RRT (Registro de Responsabilidade Técnica)</u></strong>:</div><br><div>❌ Informamos que o arquivo contendo o RRT (Registro de Responsabilidade Técnica) encontra-se inacessível.</div><br><div>Um documento inacessível indica que ele <strong>não foi enviado na solicitação</strong> ou que <strong>ocorreu um erro durante o envio para o sistema</strong>.</div><br><div>Verifique se o nome do arquivo não tem caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário <strong>enviar o documento na solicitação de registro</strong>.</div><br>`;
 document.getElementById('despacho8500').setAttribute('data-text', texto_8500);
 document.getElementById('editTextModal8500').value = texto_8500;
 
@@ -3636,189 +3348,176 @@ document.getElementById('editTextModal9000').value = texto_9000;
 
 
 var texto_9100 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>REFERENTE AO RRT (REGISTRO DE RESPONSABILIDADE TÉCNICA):</span></strong></div><br><div>O(A) arquiteto(a) e urbanista indicado(a) como responsável técnico(a) pela empresa, emissor(a) do RRT nº <strong>XXXXXXXXXXXX</strong>, deverá acessar o SICCAU e retificar:</div><br>`;
+`<div><strong><span style="border-top: 2px solid #000; border-bottom: 2px solid;">⚠️ REFERENTE AO RRT (REGISTRO DE RESPONSABILIDADE TÉCNICA):</span></strong></div><br><div>❌ <strong>Pendência no RRT de Desempenho de Cargo ou Função</strong>.</div><br><div>O(A) arquiteto(a) e urbanista indicado(a) como responsável técnico(a) pela empresa, emissor(a) do RRT nº <strong>XXXXXXXXXXXX</strong>, deverá <strong>acessar o SICCAU e retificar</strong>:</div><br>`;
 document.getElementById('despacho9100').setAttribute('data-text', texto_9100);
 document.getElementById('editTextModal9100').value = texto_9100;
 
 
 var texto_9110 = 
-`<div style="padding-left: 20px;">▸  <strong>Contratante</strong>: o nome e número de CNPJ devem estar iguais aos dados da empresa solicitante do registro.</div>`;
+`<div>▸  <strong>Contratante</strong>: o nome e número de CNPJ devem estar iguais aos dados da empresa solicitante do registro.</div>`;
 document.getElementById('despacho9110').setAttribute('data-text', texto_9110);
 document.getElementById('editTextModal9110').value = texto_9110;
 
 
 var texto_9120 = 
-`<div style="padding-left: 20px;">▸ <strong>Valor do Serviço/Honorários</strong>: preencher conforme remuneração mensal estabelecida no contrato.</div>`;
+`<div>▸ <strong>Valor do Serviço/Honorários</strong>: preencher conforme remuneração mensal estabelecida no contrato.</div>`;
 document.getElementById('despacho9120').setAttribute('data-text', texto_9120);
 document.getElementById('editTextModal9120').value = texto_9120;
 
 
 var texto_9130 = 
-`<div style="padding-left: 20px;">▸ <strong>Valor do Serviço/Honorários</strong>: preencher conforme remuneração mensal estabelecida na CTPS.</div>`;
+`<div>▸ <strong>Valor do Serviço/Honorários</strong>: preencher conforme remuneração mensal estabelecida na CTPS.</div>`;
 document.getElementById('despacho9130').setAttribute('data-text', texto_9130);
 document.getElementById('editTextModal9130').value = texto_9130;
 
 
 var texto_9140 = 
-`<div style="padding-left: 20px;">▸ <strong>Data de Previsão de Término</strong>: deixar em branco (não preenchida).</div>`;
+`<div>▸ <strong>Data de Previsão de Término</strong>: deixar em branco (não preenchida).</div>`;
 document.getElementById('despacho9140').setAttribute('data-text', texto_9140);
 document.getElementById('editTextModal9140').value = texto_9140;
 
 
 var texto_9150 = 
-`<div style="padding-left: 20px;">▸ <strong>Data de Previsão de Término</strong>: preencher conforme o prazo estabelecido no contrato de prestação de serviços.</div>`;
+`<div>▸ <strong>Data de Previsão de Término</strong>: preencher conforme o prazo estabelecido no contrato de prestação de serviços.</div>`;
 document.getElementById('despacho9150').setAttribute('data-text', texto_9150);
 document.getElementById('editTextModal9150').value = texto_9150;
 
 
 var texto_9151 = 
-`<div style="padding-left: 20px;">▸ <strong>Data de Previsão de Término</strong>: preencher com a data de validade do registro do profissional.</div>`;
+`<div>▸ <strong>Data de Previsão de Término</strong>: preencher com a data de validade do registro do profissional.</div>`;
 document.getElementById('despacho9151').setAttribute('data-text', texto_9151);
 document.getElementById('editTextModal9151').value = texto_9151;
 
 
 var texto_9160 = 
-`<div style="padding-left: 20px;">▸ <strong>Endereço do Serviço/Obra</strong>: preencher com o endereço da sede da empresa, como consta no cartão CNPJ (inclusive numeração e complemento de endereço).</div>`;
+`<div>▸ <strong>Endereço do Serviço/Obra</strong>: preencher com o endereço da sede da empresa, como consta no cartão CNPJ (inclusive numeração e complemento de endereço).</div>`;
 document.getElementById('despacho9160').setAttribute('data-text', texto_9160);
 document.getElementById('editTextModal9160').value = texto_9160;
 
 
 var texto_9170 = 
-`<div style="padding-left: 20px;">▸ <strong>Atividade Técnica</strong>: alterar para a atividade "3.7 - Desempenho de Cargo ou Função Técnica".</div>`;
+`<div>▸ <strong>Atividade Técnica</strong>: alterar para a atividade "3.7 - Desempenho de Cargo ou Função Técnica".</div>`;
 document.getElementById('despacho9170').setAttribute('data-text', texto_9170);
 document.getElementById('editTextModal9170').value = texto_9170;
 
 
 var texto_9180 = 
-`<div style="padding-left: 20px;">▸ <strong>Quantidade e Unidade de Medida</strong>: preencher com a carga horária de trabalho definida no contrato de prestação de serviços, em horas por dia (h/d) ou horas por semana (h/sem). Exemplo: 6 horas por dia (6 h/d).</div>`;
+`<div>▸ <strong>Quantidade e Unidade de Medida</strong>: preencher com a carga horária de trabalho definida no contrato de prestação de serviços, em horas por dia (h/d) ou horas por semana (h/sem). Exemplo: 6 horas por dia 6 h/d (6 h/d).</div>`;
 document.getElementById('despacho9180').setAttribute('data-text', texto_9180);
 document.getElementById('editTextModal9180').value = texto_9180;
 
 
 var texto_9181 = 
-`<div style="padding-left: 20px;">▸ <strong>Quantidade e Unidade de Medida</strong>: preencher com a carga horária aproximada de trabalho exercida, em horas por dia (h/d) ou horas por semana (h/sem). Exemplo: 6 horas por dia (6 h/d).</div>`;
+`<div>▸ <strong>Quantidade e Unidade de Medida</strong>: preencher com a carga horária aproximada de trabalho exercida, em horas por dia (h/d) ou horas por semana (h/sem). Exemplo: 6 horas por dia 6 h/d (6 h/d).</div>`;
 document.getElementById('despacho9181').setAttribute('data-text', texto_9181);
 document.getElementById('editTextModal9181').value = texto_9181;
 
 
 var texto_9190 = 
-`<div style="padding-left: 20px;">▸ <strong>Quantidade e Unidade de Medida</strong>: preencher com a carga horária de trabalho definida na Ficha de Registro do Empregado, em horas por dia (h/d), descontando-se os intervalos. Exemplo: 6 horas por dia (6 h/d).</div>`;
+`<div>▸ <strong>Quantidade e Unidade de Medida</strong>: preencher com a carga horária de trabalho definida na Ficha de Registro do Empregado, em horas por dia (h/d), descontando-se os intervalos. Exemplo: 6 horas por dia 6 h/d (6 h/d).</div>`;
 document.getElementById('despacho9190').setAttribute('data-text', texto_9190);
 document.getElementById('editTextModal9190').value = texto_9190;
 
 
 var texto_9191 = 
-`<div style="padding-left: 20px;">▸ <strong>Tipologia</strong>: preencher com "<i>NÃO SE APLICA</i>".</div>`;
+`<div>▸ <strong>Tipologia</strong>: preencher com "<i>NÃO SE APLICA</i>".</div>`;
 document.getElementById('despacho9191').setAttribute('data-text', texto_9191);
 document.getElementById('editTextModal9191').value = texto_9191;
 
 
-var texto_9192 = 
-`<br><div>📌 Após realizar <strong><u>todas</u></strong> as retificações solicitadas, é necessário anexar o RRT na solicitação de registro.</div><br>`;
-document.getElementById('despacho9192').setAttribute('data-text', texto_9192);
-document.getElementById('editTextModal9192').value = texto_9192;
-
-var texto_9193 = 
-``;
-document.getElementById('despacho9193').setAttribute('data-text', texto_9193);
-document.getElementById('editTextModal9193').value = texto_9193;
-
-var texto_9194 = 
-`<div>🔗 <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_como_retificar_rrt_r05.pdf" target="_blank">Clique aqui</a> para acessar o tutorial de retificação do RRT.</div><br>`;
-document.getElementById('despacho9194').setAttribute('data-text', texto_9194);
-document.getElementById('editTextModal9194').value = texto_9194;
-
 var texto_9195 = 
-`<div>🔗 <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_como_alterar_rrt_r00.pdf" target="_blank">Clique aqui</a> para acessar o tutorial de alteração de RRT, caso ainda não esteja registrado.</div><br>`;
+`<br><div>📌 Após realizar <strong><u>todas</u></strong> as retificações solicitadas, é necessário anexar o RRT na solicitação de registro.</div><br>`;
 document.getElementById('despacho9195').setAttribute('data-text', texto_9195);
 document.getElementById('editTextModal9195').value = texto_9195;
 
 
-
-
 var texto_9300 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao RRT (Registro de Responsabilidade Técnica):</span></strong></div><br><div>📌 Após a apresentação do comprovante de vínculo corrigido, poderão ser solicitadas retificações no RRT, o qual deve <strong>refletir o conteúdo definido no comprovante de vínculo correto</strong>.</div><br><div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/11/RRT-de-Cargo-e-Funcao.pdf">Clique aqui</a> para acessar o <strong>tutorial de emissão</strong> do RRT de Cargo ou Função Técnica.</div><br>`;
+`<div>⚠️ <u><strong>Referente ao RRT (Registro de Responsabilidade Técnica):</strong></u></div><br><div>📌 Após a apresentação do comprovante de vínculo corrigido, poderão ser solicitadas retificações no RRT, o qual deve <strong>refletir o conteúdo definido no comprovante de vínculo correto</strong>.</div><br>`;
 document.getElementById('despacho9300').setAttribute('data-text', texto_9300);
 document.getElementById('editTextModal9300').value = texto_9300;
 
 
 var texto_9310 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao RRT (Registro de Responsabilidade Técnica):</span></strong></div><br><div><div>📌 <strong>Emissão do RRT de Cargo e Função</strong>:</div><br><div>O(a) profissional indicado(a) como responsável técnico(a) deverá acessar seu SICCAU e emitir o RRT de Desempenho de <strong>Cargo ou Função Técnica</strong> (<strong>Atividade 3.7</strong>).</div><br><div>Lembramos que o(a) profissional pode ser responsável técnico(a) de no máximo três empresas.</div><br><div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/11/RRT-de-Cargo-e-Funcao.pdf">Clique aqui</a> para acessar o <strong>tutorial de emissão</strong> do RRT de Cargo ou Função Técnica.</div><br><div>Após o registro do RRT, o documento deverá ser anexado à solicitação de registro.</div><br>`;
+`<div>⚠️ <u><strong>Referente ao RRT (Registro de Responsabilidade Técnica):</strong></u></div><br><div><div>📌 <strong>Emissão do RRT de Cargo e Função</strong>:</div><br><div>O(a) profissional indicado(a) como responsável técnico(a) deverá acessar seu SICCAU e emitir o RRT de Desempenho de <strong>Cargo ou Função Técnica</strong> (<strong>Atividade 3.7</strong>).</div><br><div>Lembramos que o(a) profissional pode ser responsável técnico(a) de no máximo três empresas.</div><br><div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/11/RRT-de-Cargo-e-Funcao.pdf">Clique aqui</a> para acessar o <strong>tutorial de emissão</strong> do RRT de Cargo ou Função Técnica.</div><br><div>Após o registro do RRT, o documento deverá ser anexado à solicitação de registro.</div><br>`;
 document.getElementById('despacho9310').setAttribute('data-text', texto_9310);
 document.getElementById('editTextModal9310').value = texto_9310;
 
 
 var texto_9320 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao RRT (Registro de Responsabilidade Técnica):</span></strong></div><br><div><div>📌 <strong>RRT Extemporâneo</strong>: </div><br><div>O RRT apresentado foi classificado como <strong>extemporâneo</strong>, pois a data de início informada ultrapassa o prazo previsto para emissão do documento (art. 2º, inciso III, da <a href="https://transparencia.caubr.gov.br/resolucao91/" target="_blank">Resolução CAU/BR nº 91/2014</a>). </div><br><div>Para que o RRT possa ser analisado, o(a) profissional deverá <strong>pagar a taxa de expediente</strong>, disponível no SICCAU. </div><br><div>A análise do RRT Extemporâneo será feita através do <strong>protocolo de análise</strong>, na <strong>página do(a) arquiteto(a) e urbanista (Pessoa Física)</strong>. </div><br><div>Após a aprovação e registro do RRT, o documento deverá ser anexado à solicitação de registro da empresa.</div><br>`;
+`<div>⚠️ <u><strong>Referente ao RRT (Registro de Responsabilidade Técnica):</strong></u></div><br><div><div>📌 <strong>RRT Extemporâneo</strong>: </div><br><div>O RRT apresentado foi classificado como <strong>extemporâneo</strong>, pois a data de início informada ultrapassa o prazo previsto para emissão do documento (art. 2º, inciso III, da <a href="https://transparencia.caubr.gov.br/resolucao91/" target="_blank">Resolução CAU/BR nº 91/2014</a>). </div><br><div>Para que o RRT possa ser analisado, o(a) profissional deverá <strong>pagar a taxa de expediente</strong>, disponível no SICCAU. </div><br><div>A análise do RRT Extemporâneo será feita através do <strong>protocolo de análise</strong>, na <strong>página do(a) arquiteto(a) e urbanista (Pessoa Física)</strong>. </div><br><div>Após a aprovação e registro do RRT, o documento deverá ser anexado à solicitação de registro da empresa.</div><br>`;
 document.getElementById('despacho9320').setAttribute('data-text', texto_9320);
 document.getElementById('editTextModal9320').value = texto_9320;
 
 
 var texto_9330 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao RRT (Registro de Responsabilidade Técnica):</span></strong></div><br><div><div>📌 <strong>RRT Extemporâneo pendente</strong>: </div><br><div>O RRT nº XXXXXXX foi analisado em XX/XX/XXXX e há <strong>pendências</strong> a serem corrigidas.</div><br><div>As correções deveram ser realizadas por meio do <strong>protocolo de análise</strong>, na <strong>página do(a) arquiteto(a) e urbanista (Pessoa Física)</strong>.   </div><br><div>Após a aprovação e registro do RRT, o documento deverá ser anexado à solicitação de registro da empresa.</div><br>`;
+`<div>⚠️ <u><strong>Referente ao RRT (Registro de Responsabilidade Técnica):</strong></u></div><br>sssssssssssssssssssss`;
 document.getElementById('despacho9330').setAttribute('data-text', texto_9330);
 document.getElementById('editTextModal9330').value = texto_9330;
 
 
 var texto_9340 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao RRT (Registro de Responsabilidade Técnica):</span></strong></div><br><div>📌 Não consta em nosso sistema o pagamento da <strong>segunda taxa</strong> referente ao registro RRT Extemporâneo. </div><br><div>Portanto, é necessário anexar à solicitação o <strong>RRT devidamente registrado</strong>.</div><br><div>🔗 <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_extemporaneo_-_como_gerar_o_segundo_boleto_r01.pdf" target="_blank">Clique aqui</a> para acessar o tutorial de como emitir o segundo boleto do RRT Extemporâneo.</div><br>`;
+`<div>⚠️ <u><strong>Referente ao RRT (Registro de Responsabilidade Técnica):</strong></u></div><br><div>📌 Não consta em nosso sistema o pagamento da <strong>segunda taxa</strong> referente ao registro RRT Extemporâneo. </div><br><div>Portanto, é necessário anexar à solicitação o <strong>RRT devidamente registrado</strong> <u>ou</u> o <strong>comprovante de pagamento da segunda taxa</strong> do RRT Extemporâneo.</div><br><div>🔗 <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_extemporaneo_-_como_gerar_o_segundo_boleto_r01.pdf" target="_blank">Clique aqui</a> para acessar o tutorial de como emitir o segundo boleto do RRT Extemporâneo.</div><br>`;
 document.getElementById('despacho9340').setAttribute('data-text', texto_9340);
 document.getElementById('editTextModal9340').value = texto_9340;
 
 var texto_9350 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao RRT (Registro de Responsabilidade Técnica):</span></strong></div><br><div>📌 Não consta em nosso sistema o <strong>pagamento da taxa</strong> referente ao registro do RRT apresentado.</div><br><div>Portanto, é necessário anexar à solicitação o <strong>RRT devidamente registrado</strong>.</div><br>`;
+`<div>⚠️ <u><strong>Referente ao RRT (Registro de Responsabilidade Técnica):</strong></u></div><br><div>📌 Não consta em nosso sistema o <strong>pagamento da taxa</strong> referente ao registro do RRT apresentado.</div><br><div>Portanto, é necessário anexar à solicitação o <strong>RRT devidamente registrado</strong> <u>ou</u> o <strong>respectivo comprovante de pagamento</strong>.</div><br>`;
 document.getElementById('despacho9350').setAttribute('data-text', texto_9350);
 document.getElementById('editTextModal9350').value = texto_9350;
 
 var texto_10000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao CNPJ (Cadastro Nacional de Pessoa Jurídica):</span></strong></div><br><div>❌ O arquivo contendo o CNPJ (Cadastro Nacional de Pessoa Jurídica) encontra-se <strong>inacessível</strong>.</div><br><div>Verifique se o nome do arquivo não contém caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário enviar o documento na solicitação de registro.</div><br>`;
+`<div><div>⚠️ <strong><u>Referente ao CNPJ (Cadastro Nacional de Pessoa Jurídica)</u></strong>:</div><br><div>❌ Informamos que o arquivo contendo o CNPJ (Cadastro Nacional de Pessoa Jurídica) encontra-se inacessível.</div><br><div>Um documento inacessível indica que ele <strong>não foi enviado na solicitação</strong> ou que <strong>ocorreu um erro durante o envio para o sistema</strong>.</div><br><div>Verifique se o nome do arquivo não tem caracteres especiais (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong>, isso afeta o envio e abertura do documento no sistema. </div><br><div>Após a verificação, é necessário <strong>enviar o documento na solicitação de registro</strong>.</div><br>`;
 document.getElementById('despacho10000').setAttribute('data-text', texto_10000);
 document.getElementById('editTextModal10000').value = texto_10000;
 
 
 var texto_11000 = 
-``;
+`<div>⚠️ <u><strong>Referente ao CNPJ (Cadastro Nacional de Pessoa Jurídica):</strong></u></div><br>`;
 document.getElementById('despacho11000').setAttribute('data-text', texto_11000);
 document.getElementById('editTextModal11000').value = texto_11000;
 
 
 var texto_11100 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #f5a623;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;"><strong><span>Referente ao CNPJ (Cadastro Nacional de Pessoa Jurídica):</span></strong></div><br><div>📌 Cartão CNPJ desatualizado:</div><br><div>É necessário anexar à solicitação de registro o cartão CNPJ <strong>atualizado</strong>, com <strong>data de emissão mais recente</strong>.</div><br>`;
+`<div>📌 Cartão CNPJ desatualizado:</div><br><div>• Anexar à solicitação de registro o cartão CNPJ atualizado, com data de emissão mais recente.</div><br>`;
+
 document.getElementById('despacho11100').setAttribute('data-text', texto_11100);
 document.getElementById('editTextModal11100').value = texto_11100;
 
 
 var texto_11200 = 
-`<div>🔗 Em caso de dúvida <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank">clique aqui</a> para emitir o CNPJ atualizado no site Receita Federal do Brasil.</div><br>`;
+`<div>📌 Cartão CNPJ com data de emissão antiga:</div><br><div>• Anexar à solicitação de registro o cartão CNPJ atualizado, com data de emissão mais recente.</div><br>`;
 document.getElementById('despacho11200').setAttribute('data-text', texto_11200);
 document.getElementById('editTextModal11200').value = texto_11200;
 
+var texto_11300 = 
+`<div>🔗 Em caso de dúvida <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank">clique aqui</a> para emitir o CNPJ atualizado no site Receita Federal do Brasil.</div><br>`;
+document.getElementById('despacho11300').setAttribute('data-text', texto_11300);
+document.getElementById('editTextModal11300').value = texto_11300;
+
 
 var texto_12000 = 
-`<div style=" margin-top: 8px; border-left: 6px solid #bfbfbf;  background-color: #FAFAFA;  padding: 5px 15px;  font-size: 16px;">  <strong>   <span>ℹ️ Informações Importantes:</span>  </strong></div><br><div>🔗 Para acessar a solicitação de registro e <strong>anexar documentos</strong> pendentes <a href="https://siccau.caubr.gov.br/app/view/sight/externo.php?form=PesquisarSolicitacao" target="_blank">clique aqui</a>.</div><br>`;
+`<br><div>📌 <strong><u>INFORMAÇÕES IMPORTANTES</u></strong>: </div><br><div>🔗 <a href="https://siccau.caubr.gov.br/app/view/sight/externo.php?form=PesquisarSolicitacao" target="_blank">clique aqui</a> para acessar a solicitação de registro e anexar documentos pendentes.</div><br>`;
 document.getElementById('despacho12000').setAttribute('data-text', texto_12000);
 document.getElementById('editTextModal12000').value = texto_12000;
 
 
 var texto_12100 = 
-`<div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">Clique aqui</a> para acessar o tutorial de certificação digital.</div><br>`;
+`<div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a> para acessar o tutorial de certificação digital.</div><br>`;
 document.getElementById('despacho12100').setAttribute('data-text', texto_12100);
 document.getElementById('editTextModal12100').value = texto_12100;
 
-var texto_12200 = 
-`<div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/11/Documentos-para-Registro-de-Empresas-Resumido.pdf" target="_blank">Clique aqui</a> para consultar os documentos necessário para registro de empresa.</div><br>`;
-document.getElementById('despacho12200').setAttribute('data-text', texto_12200);
-document.getElementById('editTextModal12200').value = texto_12200;
-
 
 var texto_13000 = 
-`<div>⏳ <strong>Prazo para manifestação</strong>: A empresa possui <strong>10 (dez) dias</strong> para se manifestar e sanar as pendências relativas à solicitação de registro. Caso não regularize as pendências dentro desse prazo, o processo será <strong>arquivado</strong> (art. 7º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR Nº 28/2012</a>).</div><br>`;
+`<div>⏳ <strong>Prazo para manifestação</strong>: A empresa possui <strong>10 (dez) dias</strong> para se manifestar e sanar as pendências relativas à solicitação de registro. Caso não haja regularização dentro desse prazo, o processo será <strong>arquivado</strong> (art. 7º da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução CAU/BR Nº 28/2012</a>).</div><br>`;
 document.getElementById('despacho13000').setAttribute('data-text', texto_13000);
 document.getElementById('editTextModal13000').value = texto_13000;
 
 
 var texto_14000 = 
-`<div>Em caso de dúvidas, acesse a <a href="https://causp.gov.br/cadastro-pessoa-juridica/" target="_blank">página de registro de Pessoa Jurídica</a>.<br>Se for necessário, acesse o <a href="https://causp.gov.br/atendimento/"  target="_blank">Canal de Atendimento</a> do CAU/SP. </div><br><div>Atenciosamente,<br>Coordenação Técnica do Exercício Profissional – CAU/SP</div><br>`;
+`<div>Em caso de dúvidas, acesse a <a href="https://causp.gov.br/cadastro-pessoa-juridica/" target="_blank">página de registro de Pessoa Jurídica</a>. Se for necessário, acesse o <a href="https://causp.gov.br/atendimento/"  target="_blank">Canal de Atendimento</a> do CAU/SP. </div><br><br><div>Atenciosamente,<br>Coordenação Técnica do Exercício Profissional – CAU/SP</div><br>`;
+
+
+
 document.getElementById('despacho14000').setAttribute('data-text', texto_14000);
 document.getElementById('editTextModal14000').value = texto_14000;
 
@@ -3827,7 +3526,7 @@ var texto_15000 =
 `<div>Olá!</div><br>
 <div>Informamos que a empresa XXXXXXXXXXXX foi <b>registrada</b> no CAU (XXXXXXXXXX).<br></div><br>
 <div>👉 <a href="https://acesso.caubr.gov.br/usuario/senha/email" target="_blank">Clique aqui</a> e digite o CNPJ para receber a <b>senha do SICCAU</b> (Sistema de Informação e Comunicação do CAU) no e-mail cadastrado na solicitação (XXXXXXXXXXXXXXXX).<br></div><br>
-<div>👉 <a href="https://acesso.caubr.gov.br/" target="_blank">Clique aqui</a> para acessar o SICCAU.<br></div><br><div>No SICCAU da empresa será possível emitir o boleto da anuidade, a Certidão<strong> de Registro e Quitação de Pessoa Jurídica</strong>, emissão de <strong>CAT-O</strong>, entre outros serviços relacionados.<br></div><br><div>⚠️ <strong>Importante</strong>: verifique se o e-mail cadastrado pertence ao <strong>responsável legal</strong>, pois todas as notificações do CAU, inclusive financeiras, serão enviadas para esse endereço.<br></b></div><br><div><a href="https://servicos.caubr.gov.br/app/view/sight/main.php?form=AlterarEmail" target="_blank">Clique aqui</a> para alteração de e-mail, se for necessário.<br></div><br><div>📌 <strong>Descontos na anuidade</strong>: </div><div> <ul> <li><strong>Empresas com único sócio arquiteto e urbanista</strong>: podem solicitar desconto de 90%, via protocolo no SICCAU (Grupo de assunto: “Anuidade” | Assunto: <strong>“<i>Solicito desconto de 90% PJ com único sócio arquiteto e urbanista</i>”</strong>). </li> <li><strong>Demais empresas</strong>: têm direito aos descontos para pagamento à vista. </li> <li>🔗 <a href="https://transparencia.caubr.gov.br/cartadeservicos3-6/" target="_blank">Clique aqui</a> para mais informações sobre descontos.</li> </ul></div><br><div>ℹ️ Para mais informações, acesse:<br></div><br><div><a href="https://caubr.gov.br/arquitetos-e-urbanistas-podem-obter-ate-90-de-desconto-na-anuidade-do-cau/" target="_blank"> Desconto de anuidades</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank"> Interrupção de Registro de Pessoa Jurídica</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank"> Baixa de Registro de Pessoa Jurídica</a>;<br></div><br><div>Ou entre em contato através dos <a href="https://causp.gov.br/atendimento/" target="_blank"> Canais de Atendimento do CAU/SP</a>.<br></div><br><br><div>Atenciosamente,</div><div>Coordenação Técnica de Exercício Profissional – CAU/SP</div><br>`;
+<div>👉 <a href="https://acesso.caubr.gov.br/" target="_blank">Clique aqui</a> para acessar o SICCAU.<br></div><br><div>No SICCAU da empresa será possível emitir o boleto da anuidade, a Certidão<strong> de Registro e Quitação de Pessoa Jurídica</strong>, emissão de <strong>CAT-O</strong>, entre outros serviços relacionados.<br></div><br><div>⚠️ <strong>Importante</strong>: verifique se o e-mail cadastrado pertence ao <strong>responsável legal</strong>, pois todas as notificações do CAU, inclusive financeiras, serão enviadas para esse endereço.<br></b></div><br><div><a href="https://servicos.caubr.gov.br/app/view/sight/main.php?form=AlterarEmail" target="_blank">Clique aqui</a> para alteração de e-mail, se for necessário.<br></div><br><div>📌 <strong>Descontos na anuidade</strong>: </div><div> <ul> <li><strong>Empresas com único sócio arquiteto e urbanista</strong>: podem solicitar desconto de 90%, via protocolo no SICCAU (Grupo de assunto: “Anuidade” | Assunto: <strong>“<i>Solicito desconto de 90% PJ com único sócio arquiteto e urbanista</i>”</strong>). O prazo para solicitação é até <strong>30/06</strong> do ano corrente. </li> <li><strong>Empresas com mais de um sócio</strong>: têm direito aos descontos para pagamento à vista. </li> <li>🔗 <a href="https://transparencia.caubr.gov.br/cartadeservicos3-6/" target="_blank">Clique aqui</a> para mais informações de descontos.</li> </ul></div><br><div>ℹ️ Para mais informações, acesse:<br></div><br><div><a href="https://caubr.gov.br/arquitetos-e-urbanistas-podem-obter-ate-90-de-desconto-na-anuidade-do-cau/" target="_blank"> Desconto de anuidades</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank"> Interrupção de Registro de Pessoa Jurídica</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank"> Baixa de Registro de Pessoa Jurídica</a>;<br></div><br><div>Ou entre em contato através dos <a href="https://causp.gov.br/atendimento/" target="_blank"> Canais de Atendimento do CAU/SP</a>.<br></div><br><br><div>Atenciosamente,</div><div>Coordenação Técnica de Exercício Profissional – CAU/SP</div><br>`;
 document.getElementById('despacho15000').setAttribute('data-text', texto_15000);
 document.getElementById('editTextModal15000').value = texto_15000;
 
@@ -3835,7 +3534,7 @@ var texto_15100 =
 `<div>Olá!</div><br>
 <div>Informamos que a empresa XXXXXXXXXXXX foi <b>registrada</b> no CAU (XXXXXXXXXX).<br></div><br>
 <div>👉 <a href="https://acesso.caubr.gov.br/usuario/senha/email" target="_blank">Clique aqui</a> e digite o CNPJ para receber a <b>senha do SICCAU</b> (Sistema de Informação e Comunicação do CAU) no e-mail cadastrado na solicitação (XXXXXXXXXXXXXXXX).<br></div><br>
-<div>👉 <a href="https://acesso.caubr.gov.br/" target="_blank">Clique aqui</a> para acessar o SICCAU.<br></div><br><div>No SICCAU da empresa será possível emitir o boleto da anuidade, a Certidão<strong> de Registro e Quitação de Pessoa Jurídica</strong>, emissão de <strong>CAT-O</strong>, entre outros serviços relacionados.<br></div><br><div>⚠️ <strong>Importante</strong>: verifique se o e-mail cadastrado pertence ao <strong>responsável legal</strong>, pois todas as notificações do CAU, inclusive financeiras, serão enviadas para esse endereço.<br></b></div><br><div><a href="https://servicos.caubr.gov.br/app/view/sight/main.php?form=AlterarEmail" target="_blank">Clique aqui</a> para alteração de e-mail, se for necessário.<br></div><br><div>💡 <strong>Sugestão</strong>: verificamos que o objeto social da empresa menciona atividades de <strong>Design de Interiores</strong>.</div><div>Tais atividades são <strong>englobadas</strong> pela <strong>Arquitetura de Interiores</strong>, campo de atuação do arquiteto e urbanista.</div> <div>Sugerimos que, quando conveniente, a empresa <strong>inclua em seu objeto social</strong> atividades de Arquitetura e Urbanismo, permitindo <strong>ampliar</strong> o campo de atuação profissional, através das atribuições do responsável técnico arquiteto e urbanista, dando <strong>maior abrangência na prestação de serviços</strong>. </div><br><div>📌 <strong>Descontos na anuidade</strong>: </div><div> <ul> <li><strong>Empresas com único sócio arquiteto e urbanista</strong>: podem solicitar desconto de 90%, via protocolo no SICCAU (Grupo de assunto: “Anuidade” | Assunto: <strong>“<i>Solicito desconto de 90% PJ com único sócio arquiteto e urbanista</i>”</strong>). </li> <li><strong>Demais empresas</strong>: têm direito aos descontos para pagamento à vista. </li> <li>🔗 <a href="https://transparencia.caubr.gov.br/cartadeservicos3-6/" target="_blank">Clique aqui</a> para mais informações sobre descontos.</li> </ul></div><br><div>ℹ️ Para mais informações, acesse:<br></div><br><div><a href="https://caubr.gov.br/arquitetos-e-urbanistas-podem-obter-ate-90-de-desconto-na-anuidade-do-cau/" target="_blank"> Desconto de anuidades</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank"> Interrupção de Registro de Pessoa Jurídica</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank"> Baixa de Registro de Pessoa Jurídica</a>;<br></div><br><div>Ou entre em contato através dos <a href="https://causp.gov.br/atendimento/" target="_blank"> Canais de Atendimento do CAU/SP</a>.<br></div><br><br><div>Atenciosamente,</div><div>Coordenação Técnica de Exercício Profissional – CAU/SP</div><br>`;
+<div>👉 <a href="https://acesso.caubr.gov.br/" target="_blank">Clique aqui</a> para acessar o SICCAU.<br></div><br><div>No SICCAU da empresa será possível emitir o boleto da anuidade, a Certidão<strong> de Registro e Quitação de Pessoa Jurídica</strong>, emissão de <strong>CAT-O</strong>, entre outros serviços relacionados.<br></div><br><div>⚠️ <strong>Importante</strong>: verifique se o e-mail cadastrado pertence ao <strong>responsável legal</strong>, pois todas as notificações do CAU, inclusive financeiras, serão enviadas para esse endereço.<br></b></div><br><div><a href="https://servicos.caubr.gov.br/app/view/sight/main.php?form=AlterarEmail" target="_blank">Clique aqui</a> para alteração de e-mail, se for necessário.<br></div><br><div>💡 <strong>Sugestão</strong>: </div><div>Verificamos que o objeto social da empresa menciona atividades de <strong>Design de Interiores</strong>.</div><div>Tais atividades são <strong>englobadas</strong> pela <strong>Arquitetura de Interiores</strong>, campo de atuação do arquiteto e urbanista.</div> <div>Sugerimos que, quando conveniente, a empresa <strong>inclua em seu objeto social</strong> atividades de Arquitetura e Urbanismo, permitindo <strong>ampliar</strong> o campo de atuação profissional, através das atribuições do responsável técnico arquiteto e urbanista, dando <strong>maior abrangência na prestação de serviços</strong>. </div><br><div>📌 <strong>Descontos na anuidade</strong>: </div><div> <ul> <li><strong>Empresas com único sócio arquiteto e urbanista</strong>: podem solicitar desconto de 90%, via protocolo no SICCAU (Grupo de assunto: “Anuidade” | Assunto: <strong>“<i>Solicito desconto de 90% PJ com único sócio arquiteto e urbanista</i>”</strong>). O prazo para solicitação é até <strong>30/06</strong> do ano corrente. </li> <li><strong>Empresas com mais de um sócio</strong>: têm direito aos descontos para pagamento à vista. </li> <li>🔗 <a href="https://transparencia.caubr.gov.br/cartadeservicos3-6/" target="_blank">Clique aqui</a> para mais informações de descontos.</li> </ul></div><br><div>ℹ️ Para mais informações, acesse:<br></div><br><div><a href="https://caubr.gov.br/arquitetos-e-urbanistas-podem-obter-ate-90-de-desconto-na-anuidade-do-cau/" target="_blank"> Desconto de anuidades</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank"> Interrupção de Registro de Pessoa Jurídica</a>;<br></div><br><div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank"> Baixa de Registro de Pessoa Jurídica</a>;<br></div><br><div>Ou entre em contato através dos <a href="https://causp.gov.br/atendimento/" target="_blank"> Canais de Atendimento do CAU/SP</a>.<br></div><br><br><div>Atenciosamente,</div><div>Coordenação Técnica de Exercício Profissional – CAU/SP</div><br>`;
 document.getElementById('despacho15100').setAttribute('data-text', texto_15100);
 document.getElementById('editTextModal15100').value = texto_15100;
 
@@ -4130,22 +3829,6 @@ $('.collapse').on('hidden.bs.collapse', function (e) {
         $(function () {
         $('[data-toggle="tooltip"]').tooltip()
         })
-
-
-document.getElementById('todosButton').addEventListener('click', function () {
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  const delay = 50; // intervalo em milissegundos entre cada clique
-
-  checkboxes.forEach((checkbox, index) => {
-    setTimeout(() => {
-      // só clica se ainda não estiver marcado
-      if (!checkbox.checked) {
-        checkbox.click();
-      }
-    }, index * delay);
-  });
-});
-
             
         </script>
 
