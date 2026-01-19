@@ -78,6 +78,22 @@
             margin-top: 20px; /* Espaço entre o spinner e o texto */
         }
 
+        .label-content {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .seta {
+            margin-right: 1px;
+            transition: transform 0.2s ease;
+        }
+
+        /* gira a seta quando expandido */
+        input[type="checkbox"]:checked + label .seta {
+            transform: rotate(90deg);
+        }
+
         </style>
 
     </head>
@@ -245,6 +261,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho100000" data-toggle="collapse" href="#collapse-100000"  data-text="">
                         <label class="form-check-label" for="despacho100000">
                             <span contenteditable="false">
+                                <i class="fa fa-angle-right seta"></i>
                                 Pendências relacionadas ao Ato Constitutivo e/ou Alterações
                             </span>
                         </label>
@@ -264,10 +281,13 @@
                             <!-- checkbox composto-->
 
                             <div class="form-check mb-1 ml-2">
+
+
                                 
                                 <input type="checkbox" class="form-check-input" id="despacho3000" data-toggle="collapse" href="#collapse-3000"  data-text="">
                                 <label class="form-check-label" for="despacho3000">
                                     <span contenteditable="false">
+                                        <i class="fa fa-angle-right seta"></i>
                                         Ref. Contrato Social (JUCESP)
                                     </span>
                                 </label>
@@ -386,6 +406,7 @@
                                 <input type="checkbox" class="form-check-input" id="despacho4000" data-toggle="collapse" href="#collapse-4000"  data-text="">
                                 <label class="form-check-label" for="despacho4000">
                                     <span contenteditable="false">
+                                        <i class="fa fa-angle-right seta"></i>
                                         Ref. Requerimento de Empresário (JUCESP)
                                     </span>
                                 </label>
@@ -486,6 +507,7 @@
                                 <input type="checkbox" class="form-check-input" id="despacho5000" data-toggle="collapse" href="#collapse-5000"  data-text="">
                                 <label class="form-check-label" for="despacho5000">
                                     <span contenteditable="false">
+                                        <i class="fa fa-angle-right seta"></i>
                                         Ref. Contrato Social (CARTÓRIO)
                                     </span>
                                 </label>
@@ -623,6 +645,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho20000" data-toggle="collapse" href="#collapse-20000"  data-text="">
                         <label class="form-check-label" for="despacho20000">
                             <span contenteditable="false">
+                                <i class="fa fa-angle-right seta"></i>
                                 Pendências relacionadas ao Comprovante de Vínculo
                             </span>
                         </label>
@@ -646,6 +669,7 @@
                                 <input type="checkbox" class="form-check-input" id="despacho7000" data-toggle="collapse" href="#collapse-7000"  data-text="">
                                 <label class="form-check-label" for="despacho7000">
                                     <span contenteditable="false">
+                                        <i class="fa fa-angle-right seta"></i>
                                         Ref. CPS (Contrato de Prestação de Serviços)
                                     </span>
                                 </label>
@@ -776,6 +800,7 @@
                                 <input type="checkbox" class="form-check-input" id="despacho8000" data-toggle="collapse" href="#collapse-8000"  data-text="">
                                 <label class="form-check-label" for="despacho8000">
                                     <span contenteditable="false">
+                                        <i class="fa fa-angle-right seta"></i>
                                         Ref. CTPS (Carteira de Trabalho e Previdência Social)
                                     </span>
                                 </label>
@@ -864,6 +889,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho9000" data-toggle="collapse" href="#collapse-9000"  data-text="">
                         <label class="form-check-label" for="despacho9000">
                             <span contenteditable="false">
+                                <i class="fa fa-angle-right seta"></i>
                                 Pendências relacionadas ao Registro de Responsabilidade Técnica (RRT)
                             </span>
                         </label>
@@ -880,6 +906,7 @@
                                 <input type="checkbox" class="form-check-input" id="despacho9100" data-toggle="collapse" href="#collapse-9100"  data-text="">
                                 <label class="form-check-label" for="despacho9100">
                                     <span contenteditable="false">
+                                        <i class="fa fa-angle-right seta"></i>
                                         Orientação para Retificar RRT
                                     </span>
                                 </label>
@@ -1036,6 +1063,7 @@
                                         <input type="checkbox" class="form-check-input" id="despacho9193" data-toggle="collapse" href="#collapse-9193"  data-text="">
                                         <label class="form-check-label" for="despacho9193">
                                             <span contenteditable="false">
+                                                <i class="fa fa-angle-right seta"></i>
                                                 Links Úteis de RRTs
                                             </span>
                                         </label>
@@ -1172,6 +1200,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho11000" data-toggle="collapse" href="#collapse-11000"  data-text="">
                         <label class="form-check-label" for="despacho11000">
                             <span contenteditable="false">
+                                <i class="fa fa-angle-right seta"></i>
                                 Pendências relacionadas ao CNPJ (Cadastro Nacional de Pessoa Jurídica)
                             </span>
                         </label>
@@ -1296,6 +1325,7 @@
                         <input type="checkbox" class="form-check-input" id="despacho16000" data-toggle="collapse" href="#collapse-16000"  data-text="">
                         <label class="form-check-label" for="despacho16000">
                             <span contenteditable="false">
+                                <i class="fa fa-angle-right seta"></i>
                                 Desativação, Reativação e Despachos Específicos
                             </span>
                         </label>
@@ -1330,7 +1360,7 @@
                                 <div class="form-check mb-1">
                                     <input type="checkbox" class="form-check-input" id="despacho16300" data-text="">
                                     <label class="form-check-label" for="despacho16300">
-                                        <span contenteditable="false">Solicitação de Registro com Número do CNPJ Incorreto. (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
+                                        <span contenteditable="false">Solicitação de Registro com Número de CNPJ Incorreto. (<strong>Texto a definir</strong>)</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16300"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16300"></i>
@@ -1341,7 +1371,7 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="despacho16400" data-text="">
                                     <label class="form-check-label" for="despacho16400">
-                                        <span contenteditable="false">Responsável Técnico por mais de três empresas.  (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
+                                        <span contenteditable="false">Responsável Técnico por mais de três empresas.  (<strong>Texto a definir</strong>)</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16400"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16400"></i>
@@ -1352,7 +1382,7 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="despacho16500" data-text="">
                                     <label class="form-check-label" for="despacho16500">
-                                        <span contenteditable="false">Solicitação sumiu do SICCAU.  (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
+                                        <span contenteditable="false">Solicitação sumiu do SICCAU.  (<strong>Texto a definir</strong>)</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16500"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16500"></i>
@@ -1363,10 +1393,21 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="despacho16600" data-text="">
                                     <label class="form-check-label" for="despacho16600">
-                                        <span contenteditable="false">Outros....  (<strong style="color: red;">DEFINIR TEXTO</strong>)</span>
+                                        <span contenteditable="false">RRT de Cargo ou Função Baixado  (<strong>Texto a definir</strong>)</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16600"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16600"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-check mt-1 p-0">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="despacho16700" data-text="">
+                                    <label class="form-check-label" for="despacho16700">
+                                        <span contenteditable="false">Outros....  (<strong>Texto a definir</strong>)</span>
+                                    </label>
+                                    <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16700"></i>
+                                    <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16700"></i>
                                 </div>
                             </div>
 
@@ -3253,7 +3294,7 @@
             </div>
         </div>
 
-                <div class="modal" id="editModal16500">  
+        <div class="modal" id="editModal16500">  
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -3267,6 +3308,46 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(16500)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="modal" id="editModal16600">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal16600" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(16600)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="modal" id="editModal16700">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal16700" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(16700)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -3897,6 +3978,16 @@ var texto_16500 =
 `<div>.</div><br>`;
 document.getElementById('despacho16500').setAttribute('data-text', texto_16500);
 document.getElementById('editTextModal16500').value = texto_16500;
+
+var texto_16600 = 
+`<div>.</div><br>`;
+document.getElementById('despacho16600').setAttribute('data-text', texto_16600);
+document.getElementById('editTextModal16600').value = texto_16600;
+
+var texto_16700 = 
+`<div>.</div><br>`;
+document.getElementById('despacho16700').setAttribute('data-text', texto_16700);
+document.getElementById('editTextModal16700').value = texto_16700;
 
 
           
