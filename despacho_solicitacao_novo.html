@@ -1313,6 +1313,16 @@
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal15100"></i>
                     </div>
 
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho15200" data-text="">
+                        <label class="form-check-label" for="despacho15200">
+                            <span contenteditable="false">Responsável Técnico com Vínculo Definido (<strong>Informação do Protocolo</strong>)</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal15200"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal15200"></i>
+                    </div>
+
                     
                     <hr class="my-2">
 
@@ -3195,6 +3205,25 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="editModal15200">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal15200" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(15200)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                 
         
         <div class="modal" id="editModal16000">  
@@ -3944,8 +3973,20 @@ var texto_15100 =
 <div><a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">Interrupção de Registro de Pessoa Jurídica</a>;<br></div>
 <div><a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">Baixa de Registro de Pessoa Jurídica</a>;<br></div><br>
 <div>Ou entre em contato através dos <a href="https://causp.gov.br/atendimento/" target="_blank">Canais de Atendimento do CAU/SP</a>.<br></div><br><br>
-<div>Atenciosamente,</div><div>Coordenação Técnica de Exercício Profissional – CAU/SP</div><br>`;document.getElementById('despacho15100').setAttribute('data-text', texto_15100);
+<div>Atenciosamente,</div><div>Coordenação Técnica de Exercício Profissional – CAU/SP</div><br>`;
+document.getElementById('despacho15100').setAttribute('data-text', texto_15100);
 document.getElementById('editTextModal15100').value = texto_15100;
+
+var texto_15200 = 
+`<div>Olá!</div><br>
+<div>✅ Informamos que o(a) profissional <strong>XXXXXXXXXX</strong> foi incluído(a) como <strong>responsável técnico(a)</strong> da empresa <strong>XXXXXXXXXXXXXX</strong> conforme o Comprovante de Vínculo e o RRT nº <strong>XXXXXXXXXX</strong> apresentados.</div><br>
+<div>A responsabilidade técnica do(a) profissional tem vigência inicial em <strong>XXXXXXX</strong> e data fim em <strong>XXXXXXXXXXXX</strong>.</div><br>
+<div>ℹ️ Ser responsável técnico(a) pela empresa significa que o(a) profissional irá se responsabilizar por toda a parte técnica de Arquitetura e Urbanismo da Pessoa Jurídica perante o CAU/SP, não havendo limitação dessa responsabilidade.</div><br>
+<div>Conforme a <a href="https://transparencia.caubr.gov.br/resolucao28/" target>Resolução 28 do CAU/BR</a>, a empresa deverá contar com pelo menos um responsável técnico registrado para exercer as atividades de arquitetos e urbanistas relacionadas nos objetivos sociais e manter-se regular perante o CAU/SP.</div><br><br>
+<div>Em caso de dúvidas, entre em contato através dos <a href="https://causp.gov.br/atendimento/" target="_blank">Canais de Atendimento</a> do CAU/SP.<br></div><br><br>
+<div>Atenciosamente,</div><div>Coordenação Técnica de Exercício Profissional – CAU/SP</div><br>`;
+document.getElementById('despacho15200').setAttribute('data-text', texto_15200);
+document.getElementById('editTextModal15200').value = texto_15200;
 
 
 var texto_16000 = 
@@ -4032,12 +4073,14 @@ document.getElementById('editTextModal16700').value = texto_16700;
 
                 let input_registro_concluido = document.getElementById("despacho15000");
                 let despacho15100 = document.getElementById("despacho15100");
+                let despacho15200 = document.getElementById("despacho15200");
        
 
                 // condição para incluir a div pre (casos de protocolo)
                 if (
                     (despacho15000 && despacho15000.checked) ||
-                    (despacho15100 && despacho15100.checked)
+                    (despacho15100 && despacho15100.checked) ||
+                    (despacho15200 && despacho15200.checked)
                 ) {
 
                     let selectedDataText = $('#selectedDataText').val(); // Obtém o texto do textarea
