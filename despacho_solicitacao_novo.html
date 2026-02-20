@@ -365,6 +365,15 @@
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3165"></i>
                                     </div>
 
+                                    <div class="form-check mb-1">
+                                        <input type="checkbox" class="form-check-input" id="despacho3168" data-text="">
+                                        <label class="form-check-label" for="despacho3168">
+                                            <span contenteditable="false">Validação do Rodapé da Certidão de Inteiro Teor não Substitui a Certificação<span class="badge badge-success" data-toggle="tooltip" title="Incluído 20/02/2026"> Novo</span></span>
+                                        </label>
+                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3168"></i>
+                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3168"></i>
+                                    </div>
+
 
                                     <div class="form-check mb-1">
                                         <input type="checkbox" class="form-check-input" id="despacho3170" data-text="">
@@ -463,6 +472,15 @@
                                         </label>
                                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4150"></i>
                                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4150"></i>
+                                    </div>
+
+                                    <div class="form-check mb-1">
+                                        <input type="checkbox" class="form-check-input" id="despacho4153" data-text="">
+                                        <label class="form-check-label" for="despacho4153">
+                                            <span contenteditable="false">Validação do Rodapé da Certidão de Inteiro Teor não Substitui a Certificação<span class="badge badge-success" data-toggle="tooltip" title="Incluído 20/02/2026"> Novo</span></span>
+                                        </label>
+                                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal4153"></i>
+                                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal4153"></i>
                                     </div>
 
                                     <div class="form-check mb-1">
@@ -1659,6 +1677,25 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="editModal3168">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal3168" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(3168)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                 
         
         <div class="modal" id="editModal3170">  
@@ -1836,6 +1873,25 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(4150)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="editModal4153">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal4153" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(4153)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -3491,6 +3547,11 @@ var texto_3165 =
 document.getElementById('despacho3165').setAttribute('data-text', texto_3165);
 document.getElementById('editTextModal3165').value = texto_3165;
 
+var texto_3168 = 
+`<div>Informamos que a validação mencionada no rodapé da Certidão, utilizando o código de autenticação, não substitui a Certificação Digital, que é uma exigência da Resolução nº 48 do CAU/BR (Art. 3º Parágrafo único). <a href="https://transparencia.caubr.gov.br/resolucao48/" target="_blank">Resolução nº 48 do CAU/BR</a> (Art. 3º, Parágrafo único).</div><br>`;
+document.getElementById('despacho3168').setAttribute('data-text', texto_3168);
+document.getElementById('editTextModal3168').value = texto_3168;
+
 
 var texto_3170 = 
 `<div>❌ A certificação digital do documento <strong>não está válida pelo</strong> <i><a href="https://validar.iti.gov.br" target="_blank">VALIDAR</a></i> (serviço oficial de verificação de assinaturas do Governo Federal).</div><br><div>Solicitamos que a certificação digital seja <strong>efetuada novamente</strong> no arquivo contendo o documento.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para mais informações sobre como realizar corretamente a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
@@ -3545,6 +3606,11 @@ var texto_4150 =
 `<div><strong>Observação</strong>: A certificação digital é dispensada em caso de apresentação da <i>Certidão de Inteiro Teor</i> com certificação digital <strong><u>válida</u></strong> da JUCESP ou da empresa/responsável legal.</div><br><div>Para verificar se um dos documentos possui certificação digital válida, é necessário que, ao inserir o arquivo no site <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a>, apareçam as <strong>informações e assinatura(s) aprovada(s)</strong> da empresa, do responsável legal ou do profissional do órgão de registro (JUCESP). </div><br>`;
 document.getElementById('despacho4150').setAttribute('data-text', texto_4150);
 document.getElementById('editTextModal4150').value = texto_4150;
+
+var texto_4153 = 
+`<div>Informamos que a validação mencionada no rodapé da Certidão, utilizando o código de autenticação, não substitui a Certificação Digital, que é uma exigência da Resolução nº 48 do CAU/BR (Art. 3º Parágrafo único). <a href="https://transparencia.caubr.gov.br/resolucao48/" target="_blank">Resolução nº 48 do CAU/BR</a> (Art. 3º, Parágrafo único).</div><br>`;
+document.getElementById('despacho4153').setAttribute('data-text', texto_4153);
+document.getElementById('editTextModal4153').value = texto_4153;
 
 var texto_4155 = 
 `<div>❌ A certificação digital do documento <strong>não está válida pelo</strong> <i><a href="https://validar.iti.gov.br" target="_blank">VALIDAR</a></i> (serviço oficial de verificação de assinaturas do Governo Federal).</div><br><div>Solicitamos que a certificação digital seja <strong>efetuada novamente</strong> no arquivo contendo o documento.</div><br><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br </strong><a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para mais informações sobre como realizar corretamente a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br>`;
