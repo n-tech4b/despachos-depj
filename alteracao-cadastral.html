@@ -287,7 +287,7 @@
                                 <div class="form-check mb-1">
                                     <input type="checkbox" class="form-check-input" id="despacho7100" data-text="">
                                     <label class="form-check-label" for="despacho7100">
-                                        <span contenteditable="false">Alteração Contratual.</span>
+                                        <span contenteditable="false">Alteração Contratual. <span class="badge badge-primary" data-toggle="tooltip" title="Atualizado 25/02/2026">Atualizado</span></span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7100"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7100"></i>
@@ -346,6 +346,17 @@
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7600"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7600"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-check mt-1 p-0">
+                                <div class="form-check mb-1">
+                                    <input type="checkbox" class="form-check-input" id="despacho7650" data-text="">
+                                    <label class="form-check-label" for="despacho7650">
+                                        <span contenteditable="false">Emissão de RRT Derivado. <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 25/02/2026">Novo</span></span>
+                                    </label>
+                                    <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7650"></i>
+                                    <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7650"></i>
                                 </div>
                             </div>
 
@@ -692,6 +703,26 @@
                 </div>
             </div>
         </div>
+
+        
+        <div class="modal" id="editModal7650">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal7650" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(7650)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                 
 
         <div class="modal" id="editModal7700">  
@@ -920,25 +951,25 @@ document.getElementById('editTextModal7000').value = texto_7000;
 
 
 var texto_7100 = 
-`<div>XX) a última alteração consolidada do contrato social, devidamente registrada em órgão competente, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a>  da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).  Observação: O certificado da empresa ou do sócio administrador é dispensado em caso de apresentação da Certidão de Inteiro Teor (JUCESP) com certificação digital válida da JUCESP.</div>`;
+`<div>XX) A <strong>última alteração consolidada do contrato social</strong>, devidamente <strong>registrada</strong> em órgão competente, em um arquivo PDF salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><div><br></div>`;
 document.getElementById('despacho7100').setAttribute('data-text', texto_7100);
 document.getElementById('editTextModal7100').value = texto_7100;
 
 
 var texto_7200 = 
-`<div>XX) Cartão CNPJ.</div>`;
+`<div>XX) Cartão CNPJ.</div><div><br></div>`;
 document.getElementById('despacho7200').setAttribute('data-text', texto_7200);
 document.getElementById('editTextModal7200').value = texto_7200;
 
 
 var texto_7300 = 
-`<div>XX) Contrato de prestação de serviços, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div>`;
+`<div>XX) Contrato de prestação de serviços, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div>`;
 document.getElementById('despacho7300').setAttribute('data-text', texto_7300);
 document.getElementById('editTextModal7300').value = texto_7300;
 
 
 var texto_7400 = 
-`<div>XX) A CTPS do profissional, contendo as páginas de identificação, qualificação, registro e anotações gerais (com alterações salariais), em um arquivo PDF único salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) (no caso de CTPS digital, anexar também documento de identificação do profissional).</div>`;
+`<div>XX) A CTPS do profissional, contendo as páginas de identificação, qualificação, registro e anotações gerais (com alterações salariais), em um arquivo PDF único salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) (no caso de CTPS digital, anexar também documento de identificação do profissional).</div><div><br></div>`;
 document.getElementById('despacho7400').setAttribute('data-text', texto_7400);
 document.getElementById('editTextModal7400').value = texto_7400;
 
@@ -950,9 +981,14 @@ document.getElementById('editTextModal7500').value = texto_7500;
 
 
 var texto_7600 = 
-`<div>XX) O RRT de Desempenho de Cargo ou Função Técnica nº xxxxxxx.</div>`;
+`<div>XX) O RRT de Desempenho de Cargo ou Função Técnica nº xxxxxxx.</div><div><br></div>`;
 document.getElementById('despacho7600').setAttribute('data-text', texto_7600);
 document.getElementById('editTextModal7600').value = texto_7600;
+
+var texto_7650 = 
+`<div>Caso o profissional responsável técnico pela empresa possua a <strong>ART de Cargo ou Função do CREA</strong> é possível realizar a emissão do <strong>RRT Derivado de Desempenho de Cargo ou Função Técnica</strong>.</div><div><br></div><div>O RRT DERIVADO é <strong>isento</strong> de taxas. Para verificar como emitir um RRT derivado, <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf" target="_blank">clique aqui</a> para acessar o tutorial.</div><div><br></div>`;
+document.getElementById('despacho7650').setAttribute('data-text', texto_7650);
+document.getElementById('editTextModal7650').value = texto_7650;
 
 
 var texto_7700 = 
