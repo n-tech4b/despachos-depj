@@ -408,6 +408,16 @@
                         </div>
 
                     </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho7950" data-text="">
+                        <label class="form-check-label" for="despacho7950">
+                            <span contenteditable="false">RT sem RRT e sem Atualização Cadastral Obrigatória. <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 07/04/2026">Novo</span></span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7950"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7950"></i>
+                    </div>
                                         
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
@@ -795,6 +805,25 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="editModal7950">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal7950" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(7950)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                 
 
         <div class="modal" id="editModal8000">  
@@ -1019,6 +1048,11 @@ var texto_7900 =
 `<div>Link da Resolução 48 do CAU/BR, que dispõe sobre atualização cadastral:<div><a href="https://transparencia.caubr.gov.br/resolucao48/" target="blank">https://transparencia.caubr.gov.br/resolucao48/</a>    </div><div><br></div>`;
 document.getElementById('despacho7900').setAttribute('data-text', texto_7900);
 document.getElementById('editTextModal7900').value = texto_7900;
+
+var texto_7950 = 
+`<div>Identificamos que não há RRT vinculado na responsabilidade técnica do(a) profissional XXXXXXX e não houve atualização cadastral obrigatória da empresa.</div><br><div>Em conformidade com o estabelecido na <a href="https://transparencia.caubr.gov.br/resolucao48/" target="_blank">Resolução nº 48/2013 - CAU/BR</a>, haverá <strong>restrição às funcionalidades do SICCAU</strong> até que a situação da empresa seja <strong><u>regularizada</u></strong>.</div><br><div>ℹ️ <strong>Como regularizar a empresa</strong>:</div><div><ol><li style="list-style: none;">1. <strong>RRT de Cargo e Função</strong>: Para manutenção da responsabilidade técnica, é necessária a emissão do RRT de Cargo e Função. Caso já tenha emitido a ART desta atividade no período de registro do CREA, o(a) profissional deverá emitir o <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf" target="_blank">RRT Derivado</a>.</li><li style="list-style: none; margin-top: 5px;">🔗 Para acessar o manual de preenchimento do RRT de Cargo e Função, <a href="https://causp.gov.br/wp-content/uploads/2025/11/RRT-de-Cargo-e-Funcao.pdf" target="_blank">clique aqui</a>.</li></ol></div><div><ol><li style="list-style: none;">2. <strong>Atualização Cadastral Obrigatória</strong>: Para efetuação, deverão ser anexados os seguintes documentos neste protocolo:</li><li style="list-style: none; margin-top: 5px; margin-left: 10px;">a) ato constitutivo, devidamente registrado no órgão competente, incluindo as alterações, ou, se for o caso, a consolidação e as alterações posteriores (<strong>com certificação digital</strong>);</li><li style="list-style: none; margin-left: 10px;">b) comprovante de inscrição no Cadastro Nacional de Pessoas Jurídicas (CNPJ);</li><li style="list-style: none; margin-left: 10px;">c) Registro de Responsabilidade Técnica (RRT) de Cargo ou Função do arquiteto e urbanista indicado como responsável técnico (devidamente registrado);</li><li style="list-style: none; margin-left: 10px;">d) comprovante de vínculo do responsável técnico com a pessoa jurídica registrada, mediante contrato social, carteira de trabalho e previdência social, portaria de nomeação ou contrato de prestação de serviços e, se for o caso, observância do salário-mínimo profissional (<strong>com certificação digital</strong>).</li></ol></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para mais informações sobre como realizar corretamente a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.</div><br><div>⏳ <strong>Prazo para manifestação</strong>: A empresa possui <strong>30 (trinta)</strong> dias para se manifestar e regularizar a situação. Caso contrário, este protocolo será arquivado e as funcionalidades do SICCAU permanecerão bloqueadas.</div><br><div>Em caso de dúvidas, acesse a <a href="https://causp.gov.br/cadastro-pessoa-juridica/" target="_blank">página de registro de Pessoa Jurídica</a>.</div><div>Se for necessário, acesse o <a href="https://causp.gov.br/atendimento/" target="_blank">Canal de Atendimento</a> do CAU/SP.</div>`;
+document.getElementById('despacho7950').setAttribute('data-text', texto_7950);
+document.getElementById('editTextModal7950').value = texto_7950;
 
 
 var texto_8000 = 
