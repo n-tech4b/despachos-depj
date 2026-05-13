@@ -1402,7 +1402,7 @@
                                 <div class="form-check mb-1">
                                     <input type="checkbox" class="form-check-input" id="despacho16300" data-text="">
                                     <label class="form-check-label" for="despacho16300">
-                                        <span contenteditable="false">Solicitação de Registro com Número de CNPJ Incorreto. (<strong>Texto a definir</strong>)</span>
+                                        <span contenteditable="false">Informação para não anexar relatório do VALIDAR <span class="badge badge-success" data-toggle="tooltip" title="Incluído 13/05/2026">Novo</span></span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16300"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16300"></i>
@@ -1446,7 +1446,7 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="despacho16700" data-text="">
                                     <label class="form-check-label" for="despacho16700">
-                                        <span contenteditable="false">Outros....  (<strong>Texto a definir</strong>)</span>
+                                        <span contenteditable="false">Solicitação de Registro com Número de CNPJ Incorreto. (<strong>Texto a definir</strong>)</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal16700"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal16700"></i>
@@ -4087,7 +4087,7 @@ document.getElementById('despacho16200').setAttribute('data-text', texto_16200);
 document.getElementById('editTextModal16200').value = texto_16200;
 
 var texto_16300 = 
-`<div>.</div><br>`;
+`<div>.<strong>Observação</strong>: após a verificação NÃO ANEXEM ao arquivo PDF o relatório gerado pelo site pois, ao efetuar alteração no arquivo PDF original assinado, as chaves criptografadas da certificação são invalidadas.</div><br>`;
 document.getElementById('despacho16300').setAttribute('data-text', texto_16300);
 document.getElementById('editTextModal16300').value = texto_16300;
 
