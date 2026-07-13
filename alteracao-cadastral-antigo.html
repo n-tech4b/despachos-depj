@@ -213,9 +213,6 @@
                         
                     </div>
 
-
-                    <h6 class="w-auto mt-2" style="font-size: 1.0rem;">Destinatário:</h6>
-
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho1000" data-text="" checked>
@@ -226,10 +223,6 @@
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal1000"></i>
                     </div>
 
-                    <hr class="my-2">
-
-                    <h6 class="w-auto mt-2" style="font-size: 1.0rem;">Alteração Cadastral Deferida:</h6>
-
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho2000" data-text="">
@@ -239,11 +232,6 @@
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2000"></i>
                     </div>
-
-                    <hr class="my-2">
-
-                    <h6 class="w-auto mt-2" style="font-size: 1.0rem;">Pendências de Alteração Cadastral:</h6>
-
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
@@ -284,21 +272,6 @@
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal6000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6000"></i>
                     </div>
-
-                    <!-- checkbox simples-->
-                    <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho6500" data-text="">
-                        <label class="form-check-label" for="despacho6500">
-                            <span contenteditable="false">Erro no aruivo após segunda tentativa de envio. <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 13/07/2026">Novo</span></span>
-                        </label>
-                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal6500"></i>
-                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6500"></i>
-                    </div>
-
-                    <hr class="my-2">
-
-                    <h6 class="w-auto mt-2" style="font-size: 1.0rem;">Atualização Cadastral Obrigatória não atendida:</h6>
-
                        
                     <!-- checkbox composto-->
                     <div class="form-check mb-1 ml-2">
@@ -318,7 +291,7 @@
                                 <div class="form-check mb-1">
                                     <input type="checkbox" class="form-check-input" id="despacho7100" data-text="">
                                     <label class="form-check-label" for="despacho7100">
-                                        <span contenteditable="false">Alteração Contratual.</span>
+                                        <span contenteditable="false">Alteração Contratual. <span class="badge badge-primary" data-toggle="tooltip" title="Atualizado 25/02/2026">Atualizado</span></span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7100"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7100"></i>
@@ -362,7 +335,7 @@
                                 <div class="form-check mb-1">
                                     <input type="checkbox" class="form-check-input" id="despacho7500" data-text="">
                                     <label class="form-check-label" for="despacho7500">
-                                        <span contenteditable="false">Tipo de vínculo é desconhecido.</span>
+                                        <span contenteditable="false">Quando o tipo de vínculo é desconhecido.</span>
                                     </label>
                                     <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7500"></i>
                                     <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7500"></i>
@@ -380,6 +353,16 @@
                                 </div>
                             </div>
 
+                            <div class="form-check mt-1 p-0">
+                                <div class="form-check mb-1">
+                                    <input type="checkbox" class="form-check-input" id="despacho7650" data-text="">
+                                    <label class="form-check-label" for="despacho7650">
+                                        <span contenteditable="false">Emissão de RRT Derivado. <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 25/02/2026">Novo</span></span>
+                                    </label>
+                                    <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7650"></i>
+                                    <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7650"></i>
+                                </div>
+                            </div>
 
                             <div class="form-check mt-1 p-0">
                                 <div class="form-check mb-1">
@@ -427,10 +410,6 @@
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal7950"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal7950"></i>
                     </div>
-
-                    <hr class="my-2">
-
-                    <h6 class="w-auto mt-2" style="font-size: 1.0rem;">Informações complementares e prazo para manifestação:</h6>
                                         
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
@@ -598,25 +577,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal" id="editModal6500">  
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar Despacho</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control editor" rows="12" id="editTextModal6500" style="line-height: 1;">
-                        </textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="saveEdit(6500)">Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
                 
 
         <div class="modal" id="editModal7000">  
@@ -758,7 +718,25 @@
             </div>
         </div>
 
-
+        
+        <div class="modal" id="editModal7650">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal7650" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(7650)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                 
 
         <div class="modal" id="editModal7700">  
@@ -964,19 +942,19 @@
    
 
 var texto_1000 = 
-`<div>Olá! </div><div><br></div>`;
+`<div>Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXXXXXX,</div><div><br></div>`;
 document.getElementById('despacho1000').setAttribute('data-text', texto_1000);
 document.getElementById('editTextModal1000').value = texto_1000;
 
 
 var texto_2000 = 
-`<div>✅ Informamos que <strong>os dados cadastrais da empresa foram atualizados</strong> perante o CAU/SP, conforme alteração contratual registrada em <strong>XXXXXXXX</strong>.</div><div><br></div>`;
+`<div>✅ Informamos que <strong>o cadastro da empresa foi atualizado</strong> perante o CAU, conforme alteração contratual registrada em <strong>XXXXXXXX</strong>.</div><div><br></div>`;
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
 
 var texto_3000 = 
-`<div>Para a atualização cadastral da empresa, é necessária a abertura de protocolo no SICCAU. </div><div><br></div><div>📌 <strong>Como realizar</strong>:  </div><div><br></div><div>1. Acesse o <a href="https://acesso.caubr.gov.br/" target="blank">SICCAU</a> da empresa (login CNPJ) e cadastre um protocolo com o assunto: “<strong>CADASTRO DE EMPRESA</strong> > <strong>ATUALIZAÇÃO CADASTRAL PJ</strong>”.  </div><div>2. Anexe no protocolo a última alteração contratual da empresa, devidamente registrada em órgão competente. </div><div><br></div>`;
+`<div>Para atualização cadastral da empresa, é necessário realizar a abertura de Protocolo de atualização no SICCAU da empresa,</div><div><br></div><div>Para realizar a abertura de Protocolo:</div><div><br></div><div>Acessar: https://www.causp.gov.br (login com o CNPJ) e na página inicial, clique Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: ATUALIZAÇÃO CADASTRAL PJ</div><div><br></div><div>No Protocolo anexar a ultima alteração contratual da empresa, devidamente registrada em órgão competente.</div><div><br></div>`;
 document.getElementById('despacho3000').setAttribute('data-text', texto_3000);
 document.getElementById('editTextModal3000').value = texto_3000;
 
@@ -988,80 +966,78 @@ document.getElementById('editTextModal4000').value = texto_4000;
 
 
 var texto_5000 = 
-`<div>❌ Verificamos que houve tentativa de envio de documentos em XXXXXXXX, porém, os arquivos <strong>não foram anexados</strong> ao protocolo por erro do sistema. </div><div><br></div><div>Por gentileza, <strong>anexe os documentos novamente</strong> e aguarde a conclusão do carregamento, antes de clicar no botão para enviar. </div><div><br></div><div>ℹ️ O tamanho máximo permitido é de <strong>2MB</strong> e não devem ser utilizados <strong>caracteres especiais</strong> no nome do arquivo. </div><div><br></div>`;
+`<div>Verificamos que houve tentativa de envio de documentos em xxxxxxx, porém <strong>nenhum arquivo foi anexado ao protocolo para análise</strong>. Por gentileza, realizem novamente a tentativa de envio dos documentos para análise.</div><div><br></div><div>Ressaltamos que o <strong>tamanho máximo permitido é de 2MB e não devem ser utilizados caracteres especiais no nome do arquivo</strong>.</div><div><br></div>`;
 document.getElementById('despacho5000').setAttribute('data-text', texto_5000);
 document.getElementById('editTextModal5000').value = texto_5000;
 
 
 var texto_6000 = 
-`<div>❌ Verificamos que houve tentativa de envio de documentos em XXXXXXXX, porém, houve <strong>falha no carregamento</strong> do arquivo anexado.   </div><div><br></div><div>Por gentileza, <strong>anexe os documentos novamente</strong> e aguarde a conclusão do carregamento, antes de clicar no botão para enviar. </div><div><br></div><div>ℹ️ O tamanho máximo permitido é de <strong>2MB</strong> e não devem ser utilizados <strong>caracteres especiais</strong> no nome do arquivo. </div><div><br></div>`;
+`<div>Verificamos que houve novamente tentativa de envio de documentos em xxxxx, porém novamente houve falha no carregamento do arquivo anexado. Por gentileza, solicitamos que os documentos sejam anexados e enviados via e-mail para o endereço empresa@causp.gov.br. Por gentileza, informar no e-mail que é referente ao protocolo nº xxxxxxx.</div><div><br></div>`;
 document.getElementById('despacho6000').setAttribute('data-text', texto_6000);
 document.getElementById('editTextModal6000').value = texto_6000;
 
-var texto_6500 = 
-`<div>❌ Verificamos que há dificuldades no envio dos documentos.  </div><div><br></div><div>Por gentileza, encaminhe os documentos completos para: <a href="mailto:empresa@causp.gov.br">empresa@causp.gov.br</a>, informando o número deste protocolo.   </div><div><br></div>`;
-document.getElementById('despacho6500').setAttribute('data-text', texto_6500);
-document.getElementById('editTextModal6500').value = texto_6500;
-
 
 var texto_7000 = 
-`<div>❌ Informamos que há uma <strong>atualização cadastral obrigatória ainda não atendida</strong> pela empresa.</div><div><br></div><div>Para prosseguir com a atualização cadastral é necessário anexar ao protocolo:</div><div><br></div>`;
+`<div>Informamos que há uma <strong>atualização cadastral obrigatória ainda não atendida</strong> pela empresa.</div><div><br></div><div>Para prosseguir com a atualização cadastral é necessário anexar ao protocolo:</div><div><br></div>`;
 document.getElementById('despacho7000').setAttribute('data-text', texto_7000);
 document.getElementById('editTextModal7000').value = texto_7000;
 
 
 var texto_7100 = 
-`<div>XX) <strong><u>Última alteração consolidada do contrato social</u></strong>: devidamente <strong>registrada</strong> em órgão competente, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><div><br></div>`;
+`<div>XX) A <strong>última alteração consolidada do contrato social</strong>, devidamente <strong>registrada</strong> em órgão competente, em um arquivo PDF salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><div><br></div>`;
 document.getElementById('despacho7100').setAttribute('data-text', texto_7100);
 document.getElementById('editTextModal7100').value = texto_7100;
 
 
 var texto_7200 = 
-`<div>XX) <strong><u>Cartão CNPJ</u></strong>: atualizado.</div><div><br></div>`;
+`<div>XX) Cartão CNPJ.</div><div><br></div>`;
 document.getElementById('despacho7200').setAttribute('data-text', texto_7200);
 document.getElementById('editTextModal7200').value = texto_7200;
 
 
 var texto_7300 = 
-`<div>XX) <strong><u>Contrato de prestação de serviços</u></strong>: em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div>`;
+`<div>XX) Contrato de prestação de serviços, em um arquivo PDF salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div>`;
 document.getElementById('despacho7300').setAttribute('data-text', texto_7300);
 document.getElementById('editTextModal7300').value = texto_7300;
 
 
 var texto_7400 = 
-`<div>XX) <strong><u>CTPS do(a) profissional</u></strong>: Com páginas de identificação, qualificação, registro e anotações gerais (com alterações salariais), em um arquivo PDF único com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) ou a CTPS Digital com certificação digital<div><div><br></div>`;
+`<div>XX) A CTPS do profissional, contendo as páginas de identificação, qualificação, registro e anotações gerais (com alterações salariais), em um arquivo PDF único salvo com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) (no caso de CTPS digital, anexar também documento de identificação do profissional).</div><div><br></div>`;
 document.getElementById('despacho7400').setAttribute('data-text', texto_7400);
 document.getElementById('editTextModal7400').value = texto_7400;
 
 
 var texto_7500 = 
-`<div>XX) <strong><u>Comprovante de vínculo</u></strong>: vinculação do(a) responsável técnico(a) com a empresa, podendo ser: :</div><div>    <ul>        <li><strong>Se sócio(a)</strong>: Ato constitutivo ou consolidação, devidamente registrado no órgão competente, e suas alterações; </li><li><strong>Se contratado(a)</strong>: Carteira de Trabalho e Previdência Social (com certificação digital), Portaria de Nomeação ou Contrato de Prestação de Serviços (com certificação digital ou firma reconhecida), devendo observar a aplicação do piso salarial; </li></ul></div>`;
+`<div>XX) O comprovante de vínculo do profissional arquiteto e urbanista junto à empresa, de acordo com o tipo do vínculo:</div><div>- caso seja empregado (registro CLT): as páginas de identificação, qualificação civil, registro e alterações salariais (se houver) da CTPS;</div><div>- prestador de serviços: contrato de prestação de serviços.</div><div><br></div><div>O comprovante de vínculo deve ser anexado em um arquivo PDF único salvo com certificação digital da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div>`;
 document.getElementById('despacho7500').setAttribute('data-text', texto_7500);
 document.getElementById('editTextModal7500').value = texto_7500;
 
 
 var texto_7600 = 
-`<div>XX) <strong><u>RRT de Cargo ou Função</u></strong>: Anexar o RRT nº XXXXXXXX. </div><div><br></div>`;
+`<div>XX) O RRT de Desempenho de Cargo ou Função Técnica nº xxxxxxx.</div><div><br></div>`;
 document.getElementById('despacho7600').setAttribute('data-text', texto_7600);
 document.getElementById('editTextModal7600').value = texto_7600;
 
-
+var texto_7650 = 
+`<div>Caso o profissional responsável técnico pela empresa possua a <strong>ART de Cargo ou Função do CREA</strong> é possível realizar a emissão do <strong>RRT Derivado de Desempenho de Cargo ou Função Técnica</strong>.</div><div><br></div><div>O RRT DERIVADO é <strong>isento</strong> de taxas. Para verificar como emitir um RRT derivado, <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf" target="_blank">clique aqui</a> para acessar o tutorial.</div><div><br></div>`;
+document.getElementById('despacho7650').setAttribute('data-text', texto_7650);
+document.getElementById('editTextModal7650').value = texto_7650;
 
 
 var texto_7700 = 
-`<div>XX) <strong><u>RRT</u></strong>: Com a atividade de <a href="https://causp.gov.br/wp-content/uploads/2025/11/RRT-de-Cargo-e-Funcao.pdf" target="blank">Cargo ou Função</a> emitido pelo(a) profissional(a) responsável técnico(a) pela empresa, em um arquivo PDF único com certificação digital da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><div><br></div><div>🔗 Para verificar como emitir um RRT derivado, <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf" target="_blank">clique aqui</a> para acessar o tutorial.</div><div><br></div>`;
+`<div>XX) O RRT de desempenho de cargo ou função emitido pelo(a) profissional xxxxx.<div><br></div><div>Caso o(a) profissional responsável técnico(a) pela empresa possua o ART de Cargo ou Função do CREA é possível realizar a emissão do RRT Derivado de Desempenho de Cargo ou Função Técnica.<div><br></div><div>O RRT DERIVADO não possui taxa a ser paga. Para emissão do RRT derivado, siga o tutorial disponível no link <a href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf" target="_blank">https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_rrt_derivado_r03.pdf</a>.<div><br></div>`;
 document.getElementById('despacho7700').setAttribute('data-text', texto_7700);
 document.getElementById('editTextModal7700').value = texto_7700;
 
 
 var texto_7800 = 
-`<div>A  <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil (listadas em <a href="http://estrutura.iti.gov.br" target="blank">http://estrutura.iti.gov.br</a>), ou pelo portal Gov.br.</div><div><br></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>.</div><div>🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>. </div><div><br></div>`;
+`<div>A  <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> deve ser emitida por uma Autoridade Certificadora vinculada à ICP-Brasil (listadas em <a href="http://estrutura.iti.gov.br" target="blank">http://estrutura.iti.gov.br</a>), ou pelo portal Gov.br.</div><div><br></div>`;
 document.getElementById('despacho7800').setAttribute('data-text', texto_7800);
 document.getElementById('editTextModal7800').value = texto_7800;
 
 
 var texto_7900 = 
-`<div>🔗 <a href="https://transparencia.caubr.gov.br/resolucao48/" target="blank">Clique aqui</a> para acessar a Resolução nº 48/2013, que dispõe sobre atualização cadastral de PJ </div><div><br></div>`;
+`<div>Link da Resolução 48 do CAU/BR, que dispõe sobre atualização cadastral:<div><a href="https://transparencia.caubr.gov.br/resolucao48/" target="blank">https://transparencia.caubr.gov.br/resolucao48/</a>    </div><div><br></div>`;
 document.getElementById('despacho7900').setAttribute('data-text', texto_7900);
 document.getElementById('editTextModal7900').value = texto_7900;
 
@@ -1072,19 +1048,19 @@ document.getElementById('editTextModal7950').value = texto_7950;
 
 
 var texto_8000 = 
-`<div>📌 <strong>Após atender ao solicitado, acesse este protocolo no SICCAU da empresa (CNPJ como login) e informe que a solicitação foi atendida</strong>.  </div><div><br></div><div>Para isso, siga o caminho:  </div><div><br></div><div>"<strong><i>SICCAU</i></strong> > <strong><i>Protocolo</i></strong> > <strong><i>Pesquisar Protocolo</i></strong> > <strong><i>Ver todos os dados</i></strong> > <strong><i>Responder Protocolo</i></strong>" </div><div><br></div>`;
+`<div>Ao atender as orientações, por favor, responda o protocolo. Acesse o SICCAU da empresa (usando o CNPJ como login), clique em Protocolo - Pesquisar Protocolo, insira o número do protocolo e clique em “<strong><i>Responder Protocolo</i></strong>”.</div><div><br></div>`;
 document.getElementById('despacho8000').setAttribute('data-text', texto_8000);
 document.getElementById('editTextModal8000').value = texto_8000;
 
 
 var texto_9000 = 
-`<div>⏳ Este protocolo permanecerá aberto por <strong>10 dias corridos</strong>. Após esse prazo, será indeferido e arquivado, caso não haja manifestação.  </div><div><br></div>`;
+`<div>PRAZO PARA MANIFESTAÇÃO: 10 DIAS (sob pena de ter o protocolo indeferido e arquivado).</div><div><br></div>`;
 document.getElementById('despacho9000').setAttribute('data-text', texto_9000);
 document.getElementById('editTextModal9000').value = texto_9000;
 
 
 var texto_9500 = 
-`<div>Em caso de dúvidas, acesse a <a href="https://causp.gov.br/cadastro-pessoa-juridica/" target="blank">página de registro de Pessoa Jurídica</a>.</div><div>Se for necessário, acesse o <a href="https://causp.gov.br/atendimento/" target="blank">Canal de Atendimento</a> do CAU/SP.</div><div><br></div>`;
+`<div>Em caso de dúvidas, entre em contato através dos  <a href="https://causp.gov.br/atendimento/" target="blank">Canais de Atendimento</a> do CAU/SP.</div><div><br></div>`;
 document.getElementById('despacho9500').setAttribute('data-text', texto_9500);
 document.getElementById('editTextModal9500').value = texto_9500;
 
