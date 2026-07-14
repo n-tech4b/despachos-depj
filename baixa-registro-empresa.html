@@ -125,10 +125,10 @@
                             <a class="dropdown-item" href="alteracao-cadastral.html">Alteração Cadastral <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="alteracao_cadastral.html">Alteração Cadastral <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="inclusao-email.html">Inclusão de email</a>
+                            <a class="dropdown-item" href="inclusao-email.html">Inclusão de email <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="inclusao_email.html">Inclusão de email <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="baixa-registro-empresa.html">Baixa de Registro de Empresa</a>
+                            <a class="dropdown-item" href="baixa-registro-empresa.html">Baixa de Registro de Empresa <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="baixa_registro_empresa.html">Baixa de Registro de Empresa <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
                             <a class="dropdown-item" href="baixa-registro-empresa-oficio.html">Baixa de Registro de Empresa de Ofício</a>
@@ -216,7 +216,7 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho1000" data-text="" >
+                        <input type="checkbox" class="form-check-input" id="despacho1000" data-text="" checked>
                         <label class="form-check-label" for="despacho1000">
                             <span contenteditable="false">Destinatário.</span>
                         </label>
@@ -252,6 +252,16 @@
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3500"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3500"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho3750" data-text="" >
+                        <label class="form-check-label" for="despacho3750">
+                            <span contenteditable="false">Com atividades de arquitetura e urbanismo no objeto social. <span class="badge badge-success" data-toggle="tooltip" title="Incluído 14/07/2026">Novo</span></span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3750"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3750"></i>
                     </div>
 
                     <!-- checkbox simples-->
@@ -516,6 +526,25 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(3500)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="editModal3750">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal3750" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(3750)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -923,130 +952,136 @@
 
 
 var texto_1000 = 
-`<div>Prezados responsáveis pela empresa XXXXXXXXXXXXXXXXXXXXX,</div><div><br></div>`;
+`<div>Olá!</div><div><br></div>`;
 document.getElementById('despacho1000').setAttribute('data-text', texto_1000);
 document.getElementById('editTextModal1000').value = texto_1000;
 
 
 var texto_2000 = 
-`<div>Para prosseguir com a baixa do registro da empresa, é necessário anexar ao protocolo:</div><div><ol><li>O distrato social, devidamente registrado em órgão competente;</li><li>A certidão de baixa do CNPJ.</li></ol></div>`;
+`<div>📌 Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário anexar ao protocolo: </div><div><ol>    <li>O distrato social, devidamente registrado em órgão competente;</li>    <li>A certidão de baixa do CNPJ.</li>  </ol></div>`;
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
 
 var texto_3000 = 
-`<div>Para prosseguir com a baixa do registro da empresa, é necessário anexar ao protocolo o distrato social, devidamente registrado em órgão competente.</div><div><br></div>`;
+`<div>📌  Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário anexar ao protocolo o <strong>distrato social</strong>, devidamente registrado em órgão competente.</div><div><br></div>`;
 document.getElementById('despacho3000').setAttribute('data-text', texto_3000);
 document.getElementById('editTextModal3000').value = texto_3000;
 
 var texto_3500 = 
-`<div>Para prosseguir com a baixa do registro da empresa, é necessário anexar ao protocolo a última alteração do contratro social, devidamente registrado em órgão competente, para a análise do objeto social.</div><div><br></div>`;
+`<div>📌 Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário anexar ao protocolo a <strong>última alteração do contratro social</strong>, devidamente registrado em órgão competente, para a análise do objeto social.</div><div><br></div>`;
 document.getElementById('despacho3500').setAttribute('data-text', texto_3500);
 document.getElementById('editTextModal3500').value = texto_3500;
 
+var texto_3750 = 
+`<div>De acordo com a <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução 28 do CAU/BR</a>, caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada <strong>após a retirada das citadas expressões</strong>. </div><div><br></div><div>Conforme a última alteração do contrato social da empresa datada de <strong>XXXXXXX</strong> o objeto social da empresa contém a atividade "<strong>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</strong>". Dessa forma, <strong>a baixa do registro da empresa somente poderá ser efetuada após a retirada da expressão do objeto social</strong>. </div><div><br></div><div>Caso seja de interesse, é possível solicitar a interrupção do registro que também interrompe a cobrança das anuidades (após a conclusão da interrupção) enquanto as atividades de arquitetura e urbanismo não estiverem sendo exercidas. </div><div><br></div><div>Para realizar abertura de Protocolo de interrupção de registro: </div><div><br></div><div>Acessar o <a href="https://acesso.caubr.gov.br/" target="_blank">SICCAU</a> da empresa (usando o CNPJ como login) e na página inicial, clique em Protocolo > Cadastrar Protocolo > Grupo de Assunto: Cadastro de Empresa > Assunto: Interrupção do Registro de Pessoa Jurídica. </div><div><br></div><div>🔗 <a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">Clique aqui</a> para acessar informações sobre interrupção de registro de empresa. </div><div>🔗 <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="blank">Clique aqui</a> para acessar informações sobre baixa de registro de empresa. </div><div><br></div>`;
+document.getElementById('despacho3750').setAttribute('data-text', texto_3750);
+document.getElementById('editTextModal3750').value = texto_3750;
+
 
 var texto_4000 = 
-`<div>Constam RRTs emitidos em nome da empresa em aberto. Para prosseguir com a baixa do registro, é necessário que o(a) profissional XXXXX efetue a baixa dos RRTs xxxxxxxxxxx.</div><div><br></div>`;
+`<div>📌 Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário que o(a) profissional <strong>XXXXXXXXXX</strong> efetue a baixa do(s) RRT(s) <strong>XXXXXXXXXX</strong>, pois está(ão) vinculado(s) às atividades da empresa. </div><div><br> </div><div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/11/Status-de-RRT.pdf" target="_blank">Clique aqui</a> para acessar o manual de alteração de status de RRT. </div><div><br> </div>`;
 document.getElementById('despacho4000').setAttribute('data-text', texto_4000);
 document.getElementById('editTextModal4000').value = texto_4000;
 
 
 var texto_5000 = 
-`<div>Constam RRTs emitidos em nome da empresa em aberto. Para prosseguir com a baixa do registro, é necessário que o(a) profissional XXXXX efetue a baixa do RRT de cargo ou função nº xxxx bem como de todos os RRTs emitidos com os dados da empresa informados no campo "Empresa Contratada" e que estejam em aberto e aptos à baixa.</div><div><br></div>`;
+`<div>📌 Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário que o(a) profissional <strong>XXXXXXXXXX</strong> efetue a baixa do RRT de Cargo ou Função nº <strong>XXXXXXXXXX</strong>, bem como de todos os RRTs emitidos com a empresa vinculada no campo “Empresa Contratada”, pois está(ão) vinculado(s) às atividades da empresa. </div><div><br> </div><div>🔗 <a href="https://causp.gov.br/wp-content/uploads/2025/11/Status-de-RRT.pdf" target="_blank">Clique aqui</a> para acessar o manual de alteração de status de RRT. </div><div><br> </div>`;
 document.getElementById('despacho5000').setAttribute('data-text', texto_5000);
 document.getElementById('editTextModal5000').value = texto_5000;
 
 
 var texto_6000 = 
-`<div>O(a) profissional XXXXXXXXXXXXXXXX ainda está vinculado(a) como responsável técnico(a) pela empresa. Para efetuar a sua baixa, é necessário anexar ao protocolo o comprovante de desvinculação do(a) profissional, de acordo com o seu tipo de vínculo:</div><div><ul><li>Prestador de serviços: anexar o distrato do contrato de prestação de serviços, devidamente assinado por ambas as partes e com firma reconhecida das assinaturas ou assinado digitalmente por ambas as partes e com  <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br);</li><li>Registro CLT: anexar o termo de homologação de rescisão, devidamente assinado por ambas as partes, ou as páginas da CTPS do profissional contendo a identificação, qualificação, registro (com a baixa devidamente lançada) e anotações gerais.</li></ul><div>`;
+`<div>Identificamos que o(a) profissional <strong>XXXXXXXXXXXXXXXX</strong> ainda está vinculado(a) como responsável técnico(a) pela empresa.  </div><div><br></div> <div>📌 Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário anexar ao protocolo o comprovante de desvinculação do(a) profissional, de acordo com o seu tipo de vínculo: </div><div><ul>  <li><div><strong>Prestador de serviços</strong>: distrato do contrato de prestação de serviços, devidamente assinado digitalmente por ambas as partes e com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) ou com firmas reconhecidas; </div></li><li><div><strong>Registro CLT</strong>: anexar o "Termo de Rescisão do Contrato de Trabalho (TRCT)", devidamente assinado por ambas as partes, ou as páginas da CTPS do profissional contendo a identificação, qualificação, registro (com a baixa devidamente lançada) e anotações gerais ou a CTPS Digital, ambos com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL</a>  </div></li></ul></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.  </div><div><br></div>`;
 document.getElementById('despacho6000').setAttribute('data-text', texto_6000);
 document.getElementById('editTextModal6000').value = texto_6000;
 
 
 var texto_7000 = 
-`<div>O(a) profissional XXXXXXXXXXXXXXXX ainda está vinculado(a) como responsável técnico(a) pela empresa. Para efetuar a sua baixa, é necessário anexar ao protocolo o distrato do contrato de prestação de serviços, devidamente assinado por ambas as partes:</div><div><ul><li>Assinar fisicamente o contrato e reconhecer as firmas das assinaturas; ou</li><li>Assinar digitalmente e após, efetuar a certificação digital no arquivo pdf. A certificação digital deve emitida em nome da empresa ou do sócio administrador e deverá ser emitida por uma autoridade certificadora vinculada à ICP-Brasil (listadas em <a href="https://estrutura.iti.gov.br" target="_blank">https://estrutura.iti.gov.br</a>), ou pelo portal Gov.br.</li></ul></div>`;
+`<div>Identificamos que o(a) profissional <strong>XXXXXXXXXXXXXXXX</strong> ainda está vinculado(a) como responsável técnico(a) pela empresa.</div><div><br></div><div>📌 Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário anexar ao protocolo o <strong>distrato do contrato de prestação de serviços</strong>, devidamente assinado por ambas as partes. Aceitaremos as seguintes formas de assinatura: </div><div><ul>  <li><div><strong>Assinatura física</strong>: Obrigatório o reconhecimento de firma das assinaturas. </div></li><li><div><strong>Assinatura digital</strong>: Obrigatória a <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br). </div></li></ul></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.  </div><div><br></div>`;
 document.getElementById('despacho7000').setAttribute('data-text', texto_7000);
 document.getElementById('editTextModal7000').value = texto_7000;
 
 
 var texto_8000 = 
-`<div>O(a) profissional XXXXXXXXXXXXXXXX ainda está vinculado(a) como responsável técnico(a) pela empresa. Para efetuar a sua baixa, é necessário anexar ao protocolo o termo de homologação de rescisão, devidamente assinado por ambas as partes, ou as páginas da CTPS do(a) profissional contendo a identificação, qualificação, registro (com a baixa devidamente lançada) e anotações gerais.</div><div><br></div>`;
+`<div>Identificamos que o(a) profissional <strong>XXXXXXXXXXXXXXXX</strong> ainda está vinculado(a) como responsável técnico(a) pela empresa.</div><div><br></div> <div>📌 Para prosseguir com a <strong>baixa do registro da empresa</strong>, é necessário <strong>anexar ao protocolo um dos documentos abaixo</strong>: </div><div>  <ol>    <li>      <div><strong>Termo de Rescisão do Contrato de Trabalho (TRCT)</strong>: Devidamente assinado por ambas as partes e com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br), ou  </div>    </li>    <li>      <div><strong>Carteira de Trabalho e Providência Social (CTPS)</strong>: Páginas contendo a identificação do(a) profissional, qualificação, registro (com a baixa lançada) e anotações gerais, sendo duas opções: </div>    </li>    <li style="list-style: none;">      <div>        <ul>          <li><strong>Digital</strong>: Apresentar documento original com validação digital </li>          <li><strong>Cópia da carteira Física</strong>: Com <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">CERTIFICAÇÃO DIGITAL</a> da empresa ou do sócio administrador (emitida pela ICP-Brasil ou pelo portal Gov.br) </li>        </ul>      </div>    </li>  </ol></div><div>🔗 Para realizar a certificação digital <strong>gratuitamente</strong> pelo <strong>Gov.br</strong> <a href="https://assinador.iti.br/assinatura/index.xhtml" target="_blank">clique aqui</a>. </div><div>🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf" target="_blank">clique aqui</a>.  </div><div><br></div>`;
 document.getElementById('despacho8000').setAttribute('data-text', texto_8000);
 document.getElementById('editTextModal8000').value = texto_8000;
 
 
 var texto_9000 = 
-`<div>Prezado XXXXXXXXXXXXXXX</div><div><br></div><div>Informamos que a data de término das atividades do RRT XXXXXXXXX fora retificada para XXXXXXXXX, conforme determinado no art. 46 da Resolução nº 91 do CAU/BR e data de término do comprovante de vínculo junto à empresa XXXXXXXXX.</div><div><br></div><div>• Resolução nº 91 disponível no link <a href="https://transparencia.caubr.gov.br/resolucao91/"target="blank">https://transparencia.caubr.gov.br/resolucao91/</a>.</div><div><br></div><div><br></div><div>Atenciosamente,</div><div>Equipe CAU/SP.</div>`;
+`<div>Informamos que a data de término das atividades do RRT <strong>XXXXXXXXXX</strong> foi retificada para <strong>XXXXXXXXX</strong>, sendo compatibilizada com a data de término do comprovante de vínculo junto à empresa <strong>XXXXXXXXX</strong>. </div><div><br></div><div>🔗 <a href="https://transparencia.caubr.gov.br/resolucao91/" target="_blank">Resolução 91</a> do CAU/BR. </div><div><br></div>`;
 document.getElementById('despacho9000').setAttribute('data-text', texto_9000);
 document.getElementById('editTextModal9000').value = texto_9000;
 
 
 var texto_10000 = 
-`<div>Conforme protocolo XXXXXX e Resolução CAU/BR 193, art.3º</div>`;
+`<div>Conforme protocolo <strong>XXXXXX</strong> e Resolução CAU/BR 193, art.3º</div>`;
 document.getElementById('despacho10000').setAttribute('data-text', texto_10000);
 document.getElementById('editTextModal10000').value = texto_10000;
 
 
 var texto_11000 = 
-`<div>✅ O <strong>registro desta empresa foi baixado perante o CAU/SP</strong> conforme os documentos anexados.</div><div><br></div><div>Favor acessar o SICCAU e emitir a <strong>Certidão Negativa de Débitos</strong>.</div><div><br></div>`;
+`<div>✅ Informamos que o <strong>registro da empresa foi baixado perante o CAU/SP</strong>. </div><div><br></div><div>Já é possível emitir a <a href="https://transparencia.causp.gov.br/?page_id=25236" target="_blank">Certidão Negativa de Débitos</a> no <a href="https://acesso.caubr.gov.br/" target="_blank">SICCAU</a>, comprovando que a empresa não está mais ativa e está sem débitos perante o CAU. </div><div><br></div>
+`;
 document.getElementById('despacho11000').setAttribute('data-text', texto_11000);
 document.getElementById('editTextModal11000').value = texto_11000;
 
 
 var texto_12000 = 
-`<div>✅ O <strong>registro desta empresa foi baixado perante o CAU/SP</strong> conforme os documentos anexados.</div><div><br></div><div>Lembramos que <strong>a baixa do registro não exime a empresa dos débitos anteriores</strong>, conforme previsto na Resolução CAU/BR Nº 193, Art. 3º.</div><div><br></div><div>Favor acessar o SICCAU para <strong>regularizar as pendências</strong>.</div><div><br></div>`;
+`<div>✅ Informamos que o <strong>registro da empresa foi baixado perante o CAU/SP</strong>. </div><div><br></div><div>Lembramos que <strong>a baixa do registro não exime a empresa dos débitos anteriores</strong>, conforme previsto na <a href="https://transparencia.caubr.gov.br/resolucao193/" target="_blank">Resolução CAU/BR Nº 193</a>. </div><div><br></div> <div>Para <strong>regularizar</strong> <strong>as pendências</strong>, acesse o <a href="https://acesso.caubr.gov.br/" target="_blank">SICCAU</a>. </div><div><br></div>`;
 document.getElementById('despacho12000').setAttribute('data-text', texto_12000);
 document.getElementById('editTextModal12000').value = texto_12000;
 
 
 var texto_13000 = 
-`<div>O <strong>CANCELAMENTO</strong> é um procedimento administrativo interno, por isso não será possível atender esta solicitação.</div><div><br></div><div>Para a empresa realizar a <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank"><strong>BAIXA DE REGISTRO</strong></a> perante o CAU, ela deverá se enquadrar nas condições dispostas no art. 26 da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução 28/2012 do CAU/BR</a>, encaminhando a documentação correspondente ao seu caso:</div><div><br></div><div>⮕ <strong>Empresa encerrada na Receita Federal</strong>: Encaminhar o <u>distrato social</u> (ou <u>requerimento de empresário de cancelamento</u>) e a <u>certidão de baixa do CNPJ</u>;</div><div>⮕ <strong>Atividades relativas à arquitetura e urbanismo retiradas do objeto social</strong>: Encaminhar <u>alteração contratual contendo a exclusão das atividades</u>, devidamente <u>registrada</u> em órgão competente;</div><div>⮕ <strong>Objeto social com atividades compartilhadas e responsável técnico(a) ativo em outro conselho</strong>: Neste caso, a empresa deverá ser registrada no conselho correspondente, sujeita à fiscalização pelos órgãos/conselhos competentes. Encaminhar a <u>última alteração contratual consolidada</u>. </div><div><br></div><div>ℹ️ <strong><i>Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada de tais termos.</i></strong></div><div><br></div><div><strong>COMO SOLICITAR</strong></div><div>A <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">Baixa de Registro</a> deverá ser solicitada mediante protocolo no <strong>SICCAU da Pessoa Jurídica</strong> (utilizando o CNPJ como login), encaminhando os documentos sublinhados acima, de acordo com a condição da empresa.</div><div><br></div><div><strong>INTERRUPÇÃO DE REGISTRO</strong></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro e não esteja exercendo atividades de arquitetura e urbanismo temporariamente, deverá optar pela <a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank"><strong>INTERRUPÇÃO DO REGISTRO</strong></a>.</div>`;
+`<div>O <strong>CANCELAMENTO</strong> é um procedimento administrativo interno, por isso não será possível atender esta solicitação.</div><div><br></div><div>Para a empresa realizar a <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">BAIXA DE REGISTRO</a> perante o CAU, ela deverá se enquadrar nas condições dispostas no art. 26 da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução 28/2012 do CAU/BR</a>, encaminhando a documentação correspondente ao seu caso:</div><div><br></div><div>⮕ <strong>Empresa encerrada na Receita Federal</strong>: Encaminhar o <u>distrato social</u> (ou <u>requerimento de empresário de cancelamento</u>) e a <u>certidão de baixa do CNPJ</u>;</div><div>⮕ <strong>Atividades relativas à arquitetura e urbanismo retiradas do objeto social</strong>: Encaminhar <u>alteração contratual contendo a exclusão das atividades</u>, devidamente <u>registrada</u> em órgão competente;</div><div>⮕ <strong>Objeto social com atividades compartilhadas e responsável técnico(a) ativo em outro conselho</strong>: Neste caso, a empresa deverá ser registrada no conselho correspondente, sujeita à fiscalização pelos órgãos/conselhos competentes. Encaminhar a <u>última alteração contratual consolidada</u>. </div><div><br></div><div>ℹ️ <strong><i>Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada de tais termos.</i></strong></div><div><br></div><div><strong>COMO SOLICITAR</strong></div><div>A <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">Baixa de Registro</a> deverá ser solicitada mediante protocolo no <strong>SICCAU da Pessoa Jurídica</strong> (utilizando o CNPJ como login), encaminhando os documentos sublinhados acima, de acordo com a condição da empresa.</div><div><br></div><div><strong>INTERRUPÇÃO DE REGISTRO</strong></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro e não esteja exercendo atividades de arquitetura e urbanismo temporariamente, deverá optar pela <a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">INTERRUPÇÃO DO REGISTRO</a>.</div>`;
 document.getElementById('despacho13000').setAttribute('data-text', texto_13000);
 document.getElementById('editTextModal13000').value = texto_13000;
 
 
 var texto_14000 = 
-`<div>Ao atender as orientações, por favor, responda o protocolo. Acesse o SICCAU da empresa (usando o CNPJ como login), clique em Protocolo - Pesquisar Protocolo, insira o número do protocolo e clique em “Responder Protocolo”.<div><br></div></div>`;
+`<div>📌 <strong>Após atender ao solicitado, acesse este protocolo no SICCAU da empresa (CNPJ como login) e informe que a solicitação foi atendida</strong>.  </div><div><br></div><div>Para isso, siga o caminho:  </div><div><br></div><div>"<strong>SICCAU</strong> > <strong>Protocolo</strong> > <strong>Pesquisar Protocolo</strong> > <strong>Ver todos os dados</strong> > <strong>Responder Protocolo</strong>" </div><div><br></div>`;
 document.getElementById('despacho14000').setAttribute('data-text', texto_14000);
 document.getElementById('editTextModal14000').value = texto_14000;
 
 
 var texto_15000 = 
-`<div>PRAZO PARA MANIFESTAÇÃO: 10 DIAS (sob pena de ter o protocolo indeferido e arquivado).<div><div><br></div>`;
+`<div>⏳ Este protocolo permanecerá aberto por <strong>10 dias corridos</strong>. Após esse prazo, será indeferido e arquivado, caso não haja manifestação.  </div><div><br></div>`;
 document.getElementById('despacho15000').setAttribute('data-text', texto_15000);
 document.getElementById('editTextModal15000').value = texto_15000;
 
 
 var texto_16000 = 
-`<div>Em caso de dúvidas, entre em contato através dos  <a href="https://causp.gov.br/atendimento/" target="blank">Canais de Atendimento</a> do CAU/SP.</div><div><br></div>`;
+`<div>Em caso de dúvidas, acesse a <a href="https://causp.gov.br/cadastro-pessoa-juridica/" target="_blank">página de registro de Pessoa Jurídica</a>. </div><div>Se for necessário, acesse o <a href="https://causp.gov.br/atendimento/" target="_blank">Canal de Atendimento</a> do CAU/SP. </div><div><br></div>`;
 document.getElementById('despacho16000').setAttribute('data-text', texto_16000);
 document.getElementById('editTextModal16000').value = texto_16000;
 
 
 var texto_16500 = 
-`<div><br></div><div>Atenciosamente,</div><div>Coordenação Técnica do Exercício Profissional – CAU/SP.</div><div><br></div>`;
+`<div><br></div><div>Atenciosamente, </div><div>Coordenação Técnica do Exercício Profissional – CAU/SP. </div><div><br></div>`;
 document.getElementById('despacho16500').setAttribute('data-text', texto_16500);
 document.getElementById('editTextModal16500').value = texto_16500;
 
 
 var texto_17000 = 
-`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data da baixa do CNPJ em XXXXXXXXXXXX</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
+`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data da baixa do CNPJ em <strong>XXXXXXXXXXXX</strong></div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
 document.getElementById('despacho17000').setAttribute('data-text', texto_17000);
 document.getElementById('editTextModal17000').value = texto_17000;
 
 
 var texto_18000 = 
-`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do registro da alteração contratual em XXXXXXXXXXXX</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
+`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do registro da alteração contratual em <strong>XXXXXXXXXXXX</strong></div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
 document.getElementById('despacho18000').setAttribute('data-text', texto_18000);
 document.getElementById('editTextModal18000').value = texto_18000;
 
 var texto_19000 = 
-`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do protocolo de solicitação de baixa em XXXXXX.</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
+`<div>Prezados colegas do Setor de inadimplência, encaminho registro baixado da empresa, conforme data do protocolo de solicitação de baixa em <strong>XXXXXX</strong>.</div><div><br></div><div>Prints anexo,</div><div>Atenciosamente.</div>`;
 document.getElementById('despacho19000').setAttribute('data-text', texto_19000);
 document.getElementById('editTextModal19000').value = texto_19000;
 
 var texto_20000 = 
-`<div>Para a empresa realizar a <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank"><strong>BAIXA DE REGISTRO</strong></a> perante o CAU, ela deverá se enquadrar nas condições dispostas no art. 26 da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução 28/2012 do CAU/BR</a>, encaminhando a documentação correspondente ao seu caso:</div><div><br></div><div>⮕ <strong>Empresa encerrada na Receita Federal</strong>: Encaminhar o <u>distrato social</u> (ou <u>requerimento de empresário de cancelamento</u>) e a <u>certidão de baixa do CNPJ</u>;</div><div>⮕ <strong>Atividades relativas à arquitetura e urbanismo retiradas do objeto social</strong>: Encaminhar <u>alteração contratual contendo a exclusão das atividades</u>, devidamente <u>registrada</u> em órgão competente;</div><div>⮕ <strong>Objeto social com atividades compartilhadas e responsável técnico(a) ativo em outro conselho</strong>: Neste caso, a empresa deverá ser registrada no conselho correspondente, sujeita à fiscalização pelos órgãos/conselhos competentes. Encaminhar a <u>última alteração contratual consolidada</u>. </div><div><br></div><div>ℹ️ <strong><i>Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada de tais termos.</i></strong></div><div><br></div><div><strong>COMO SOLICITAR</strong></div><div>A <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">Baixa de Registro</a> deverá ser solicitada mediante protocolo no <strong>SICCAU da Pessoa Jurídica</strong> (utilizando o CNPJ como login), encaminhando os documentos sublinhados acima, de acordo com a condição da empresa.</div><div><br></div><div><strong>INTERRUPÇÃO DE REGISTRO</strong></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro e não esteja exercendo atividades de arquitetura e urbanismo temporariamente, deverá optar pela <a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank"><strong>INTERRUPÇÃO DO REGISTRO</strong></a>.</div>`;
+`<div>Para a empresa realizar a <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">BAIXA DE REGISTRO</a> perante o CAU, ela deverá se enquadrar nas condições dispostas no art. 26 da <a href="https://transparencia.caubr.gov.br/resolucao28/" target="_blank">Resolução 28/2012 do CAU/BR</a>, encaminhando a documentação correspondente ao seu caso:</div><div><br></div><div>⮕ <strong>Empresa encerrada na Receita Federal</strong>: Encaminhar o <u>distrato social</u> (ou <u>requerimento de empresário de cancelamento</u>) e a <u>certidão de baixa do CNPJ</u>;</div><div>⮕ <strong>Atividades relativas à arquitetura e urbanismo retiradas do objeto social</strong>: Encaminhar <u>alteração contratual contendo a exclusão das atividades</u>, devidamente <u>registrada</u> em órgão competente;</div><div>⮕ <strong>Objeto social com atividades compartilhadas e responsável técnico(a) ativo em outro conselho</strong>: Neste caso, a empresa deverá ser registrada no conselho correspondente, sujeita à fiscalização pelos órgãos/conselhos competentes. Encaminhar a <u>última alteração contratual consolidada</u>. </div><div><br></div><div>ℹ️ <strong><i>Caso a pessoa jurídica tenha as expressões “Arquitetura” ou “Urbanismo”, ou designação similar, na razão social, no nome fantasia ou nos objetivos sociais, a baixa somente poderá ser efetuada após a retirada de tais termos.</i></strong></div><div><br></div><div><strong>COMO SOLICITAR</strong></div><div>A <a href="https://transparencia.causp.gov.br/baixa-de-registro-de-pessoa-juridica/" target="_blank">Baixa de Registro</a> deverá ser solicitada mediante protocolo no <strong>SICCAU da Pessoa Jurídica</strong> (utilizando o CNPJ como login), encaminhando os documentos sublinhados acima, de acordo com a condição da empresa.</div><div><br></div><div><strong>INTERRUPÇÃO DE REGISTRO</strong></div><div>Caso a empresa não se enquadre nas condições de Baixa de Registro e não esteja exercendo atividades de arquitetura e urbanismo temporariamente, deverá optar pela <a href="https://transparencia.causp.gov.br/interrupcao-de-registro-de-pessoa-juridica/" target="_blank">INTERRUPÇÃO DO REGISTRO</a>.</div>`;
 document.getElementById('despacho20000').setAttribute('data-text', texto_20000);
 document.getElementById('editTextModal20000').value = texto_20000;
 
