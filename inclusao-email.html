@@ -224,9 +224,9 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
-                        <input type="checkbox" class="form-check-input" id="despacho2000" data-text="" checked>
+                        <input type="checkbox" class="form-check-input" id="despacho2000" data-text="">
                         <label class="form-check-label" for="despacho2000">
-                            <span contenteditable="false">Inclusão de e-mail.</span>
+                            <span contenteditable="false">Inclusão e alteração de e-mail (<strong>Tramitação e-mail</strong>)</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2000"></i>
@@ -234,9 +234,19 @@
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho2500" data-text="">
+                        <label class="form-check-label" for="despacho2500">
+                            <span contenteditable="false">Inclusão e alteração de e-mail (<strong>Via protocolo</strong>) (<strong style="color: red;">Texto a definir</strong>)</span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2500"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2500"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho3000" data-text="">
                         <label class="form-check-label" for="despacho3000">
-                            <span contenteditable="false">Alteração de e-mail.</span>
+                            <span contenteditable="false">Orientações sobre alteração de e-mail (<strong>Tramitação e-mail</strong>) (<strong style="color: red;">Texto a definir</strong>).</span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal3000"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal3000"></i>
@@ -297,6 +307,26 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="editModal2500">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal2500" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(2500)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
                 
 
         <div class="modal" id="editModal3000">  
@@ -392,9 +422,14 @@ var texto_2000 =
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
+var texto_2500 = 
+`<div>XXXXXXXXXXXXXXXXXXXX</div><div><br></div>`;
+document.getElementById('despacho2500').setAttribute('data-text', texto_2500);
+document.getElementById('editTextModal2500').value = texto_2500;
+
 
 var texto_3000 = 
-`<div>📌 <strong>Acessar o SICCAU</strong>: </div><div><br></div><div><a href="https://acesso.caubr.gov.br/usuario/senha/email" target="blank">Clique aqui</a> e insira o CNPJ para receber o link de (re)definição da senha do SICCAU no e-mail.</div><div><br></div><div>⚠️ <strong>Não tem mais acesso à senha</strong>? </div><div><br></div><div>Clique em <strong><i>“Esqueci minha Senha”</i></strong> e uma nova senha irá para o e-mail <strong>XXXXXXXXXXXXXXXXX</strong>. </div><div><br></div><div>Caso queira mudar o e-mail cadastrado, preencha a solicitação anexa e encaminhe devidamente preenchida e assinada, para o e-mail: <strong>atendimento@causp.gov.br</strong> </div><div><br></div>`;
+`<div>XXXXXXXXXXXXXXXXXXXX</div><div><br></div>`;
 document.getElementById('despacho3000').setAttribute('data-text', texto_3000);
 document.getElementById('editTextModal3000').value = texto_3000;
 
