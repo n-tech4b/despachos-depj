@@ -130,28 +130,28 @@
                             <a class="dropdown-item" href="baixa-registro-empresa.html">Baixa de Registro de Empresa <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="baixa_registro_empresa.html">Baixa de Registro de Empresa <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="baixa-registro-empresa-oficio.html">Baixa de Registro de Empresa de Ofício</a>
+                            <a class="dropdown-item" href="baixa-registro-empresa-oficio.html">Baixa de Registro de Empresa de Ofício <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="baixa_registro_empresa_oficio.html">Baixa de Registro de Empresa de Ofício <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="interrupcao-registro-empresa.html">Interrupção de Registro de Empresa</a>
+                            <a class="dropdown-item" href="interrupcao-registro-empresa.html">Interrupção de Registro de Empresa <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="interrupcao_registro_empresa.html">Interrupção de Registro de Empresa <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="inclusao-responsavel-tecnico.html">Inclusão de Responsável Técnico</a>
+                            <a class="dropdown-item" href="inclusao-responsavel-tecnico.html">Inclusão de Responsável Técnico <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="inclusao_responsavel_tecnico.html">Inclusão de Responsável Técnico <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="baixa-responsavel-tecnico.html">Baixa de Responsável Técnico</a>
+                            <a class="dropdown-item" href="baixa-responsavel-tecnico.html">Baixa de Responsável Técnico <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="baixa_responsavel_tecnico.html">Baixa de Responsável Técnico <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
                             <a class="dropdown-item" href="desconto-anuidade.html">Desconto de Anuidade <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="desconto_anuidade.html">Desconto de Anuidade <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="crq-pj.html">CRQPJ</a>
+                            <a class="dropdown-item" href="crq-pj.html">CRQPJ <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="crqpj.html">CRQPJ <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="visto-previo.html">Visto Prévio</a>
+                            <a class="dropdown-item" href="visto-previo.html">Visto Prévio <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="visto_previo.html">Visto Prévio <span class="badge badge-danger">Versão Antiga</span></a> -->
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="despachos-gerais.html">Despachos Gerais</a>
+                            <a class="dropdown-item" href="despachos-gerais.html">Despachos Gerais <span class="badge badge-success">Despachos atualizados</span></a>
                             <!-- <a class="dropdown-item" href="despachos_gerais.html">Despachos Gerais <span class="badge badge-danger">Versão Antiga</span></a> -->
                             
                         </div>
@@ -244,6 +244,15 @@
 
                     <h6 class="w-auto mt-2" style="font-size: 1.0rem;">Pendências de Alteração Cadastral:</h6>
 
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho2500" data-text="">
+                        <label class="form-check-label" for="despacho2500">
+                            <span contenteditable="false">RRT de CF baixado por engano.<strong></strong></span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal2500"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal2500"></i>
+                    </div>
 
                     <!-- checkbox simples-->
                     <div class="form-check mb-1 ml-2">
@@ -289,7 +298,7 @@
                     <div class="form-check mb-1 ml-2">
                         <input type="checkbox" class="form-check-input" id="despacho6500" data-text="">
                         <label class="form-check-label" for="despacho6500">
-                            <span contenteditable="false">Erro no aruivo após segunda tentativa de envio. <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 13/07/2026">Novo</span></span>
+                            <span contenteditable="false">Erro no arquivo após segunda tentativa de envio. <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 13/07/2026">Novo</span></span>
                         </label>
                         <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal6500"></i>
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6500"></i>
@@ -514,6 +523,25 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(2000)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="editModal2500">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal2500" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(2500)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -974,6 +1002,10 @@ var texto_2000 =
 document.getElementById('despacho2000').setAttribute('data-text', texto_2000);
 document.getElementById('editTextModal2000').value = texto_2000;
 
+var texto_2500 = 
+`<div>O RRT de desempenho de cargo ou função técnica encontra-se baixado. Caso a baixa tenha sido realizada por engano, é necessário que o(a) profissional acesse o SICCAU profissional e, na página inicial, clique em <strong>Protocolo &gt; Cadastrar Protocolo &gt; Grupo de Assunto: ATENDIMENTO &gt; Assunto: DÚVIDAS SOBRE RRT</strong>. No campo "Descrição do protocolo" deve <strong>informar o número do RRT e solicitar a remoção da baixa</strong> realizada por engano. </div><div><br></div>`;
+document.getElementById('despacho2500').setAttribute('data-text', texto_2500);
+document.getElementById('editTextModal2500').value = texto_2500;
 
 var texto_3000 = 
 `<div>Para a atualização cadastral da empresa, é necessária a abertura de protocolo no SICCAU. </div><div><br></div><div>📌 <strong>Como realizar</strong>:  </div><div><br></div><div>1. Acesse o <a href="https://acesso.caubr.gov.br/" target="blank">SICCAU</a> da empresa (login CNPJ) e cadastre um protocolo com o assunto: “<strong>CADASTRO DE EMPRESA</strong> > <strong>ATUALIZAÇÃO CADASTRAL PJ</strong>”.  </div><div>2. Anexe no protocolo a última alteração contratual da empresa, devidamente registrada em órgão competente. </div><div><br></div>`;
@@ -1035,7 +1067,7 @@ document.getElementById('editTextModal7400').value = texto_7400;
 
 
 var texto_7500 = 
-`<div>XX) <strong><u>Comprovante de vínculo</u></strong>: vinculação do(a) responsável técnico(a) com a empresa, podendo ser: :</div><div>    <ul>        <li><strong>Se sócio(a)</strong>: Ato constitutivo ou consolidação, devidamente registrado no órgão competente, e suas alterações; </li><li><strong>Se contratado(a)</strong>: Carteira de Trabalho e Previdência Social (com certificação digital), Portaria de Nomeação ou Contrato de Prestação de Serviços (com certificação digital ou firma reconhecida), devendo observar a aplicação do piso salarial; </li></ul></div>`;
+`<div>XX) <strong><u>Comprovante de vínculo</u></strong>: vinculação do(a) responsável técnico(a) com a empresa, podendo ser: :</div><div>    <ul>        <li><strong>Se sócio(a)</strong>: Ato constitutivo ou alterações posteriores do contrato social, devidamente registrado no órgão competente; </li><li><strong>Se contratado(a)</strong>: Carteira de Trabalho e Previdência Social ou Contrato de Prestação de Serviços (ambos com certificação digital da empresa ou do sócio administrador), devendo observar a aplicação do piso salarial; </li><li><strong>Se funcionário público(a)</strong>: Portaria de nomeação; </li></ul></div>`;
 document.getElementById('despacho7500').setAttribute('data-text', texto_7500);
 document.getElementById('editTextModal7500').value = texto_7500;
 
@@ -1084,7 +1116,7 @@ document.getElementById('editTextModal9000').value = texto_9000;
 
 
 var texto_9500 = 
-`<div>Em caso de dúvidas, acesse a <a href="https://causp.gov.br/cadastro-pessoa-juridica/" target="blank">página de registro de Pessoa Jurídica</a>.</div><div>Se for necessário, acesse o <a href="https://causp.gov.br/atendimento/" target="blank">Canal de Atendimento</a> do CAU/SP.</div><div><br></div>`;
+`<div>Em caso de dúvidas, acesse o <a href="https://causp.gov.br/atendimento/" target="blank">Canal de Atendimento</a> do CAU/SP.</div><div><br></div>`;
 document.getElementById('despacho9500').setAttribute('data-text', texto_9500);
 document.getElementById('editTextModal9500').value = texto_9500;
 
