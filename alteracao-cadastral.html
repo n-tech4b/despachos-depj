@@ -304,6 +304,26 @@
                         <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6500"></i>
                     </div>
 
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho6600" data-text="">
+                        <label class="form-check-label" for="despacho6600">
+                            <span contenteditable="false">RT ativa com RRT de Cargo e Função baixado. <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 29/10/2026">Novo</span></span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal6600"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6600"></i>
+                    </div>
+
+                    <!-- checkbox simples-->
+                    <div class="form-check mb-1 ml-2">
+                        <input type="checkbox" class="form-check-input" id="despacho6700" data-text="">
+                        <label class="form-check-label" for="despacho6700">
+                            <span contenteditable="false">RT ativa mas sócio saiu da empresa (único RT). <span class="badge badge-success" data-toggle="tooltip" title="Atualizado 29/10/2026">Novo</span></span>
+                        </label>
+                        <i class="edit-icon fa fa-pencil" data-toggle="modal" data-target="#editModal6700"></i>
+                        <i class="info-icon fa fa-info" data-toggle="modal" data-target="#infoModal6700"></i>
+                    </div>
+
                     <hr class="my-2">
 
                     <h6 class="w-auto mt-2" style="font-size: 1.0rem;">Atualização Cadastral Obrigatória não atendida:</h6>
@@ -641,6 +661,44 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary" onclick="saveEdit(6500)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="editModal6600">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal6600" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(6600)">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="editModal6700">  
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editar Despacho</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control editor" rows="12" id="editTextModal6700" style="line-height: 1;">
+                        </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveEdit(6700)">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -1034,6 +1092,16 @@ var texto_6500 =
 `<div>❌ Verificamos que há dificuldades no envio dos documentos.  </div><div><br></div><div>Por gentileza, encaminhe os documentos completos para: <a href="mailto:empresa@causp.gov.br">empresa@causp.gov.br</a>, informando o número deste protocolo.   </div><div><br></div>`;
 document.getElementById('despacho6500').setAttribute('data-text', texto_6500);
 document.getElementById('editTextModal6500').value = texto_6500;
+
+var texto_6600 = 
+`<div>Olá!  </div><div><br></div><div>  Identificamos que o RRT de Desempenho de Cargo ou Função Técnica nº XXXXXXXXXX, do(a) profissional XXXXXXXXXXX, encontra-se baixado, ou seja, a atividade consta como concluída.Por isso, solicitamos a regularização da situação e informamos que foi incluído <strong><u>bloqueio de emissão de documentos no SICCAU da empresa</u></strong>, até que a situação seja <strong><u>regularizada</u></strong>.</div><div><br></div><div>Veja abaixo qual situação se aplica ao seu caso:</div><div><br></div><div style="color: #1e53a3;"><strong>SITUAÇÃO 1 – BAIXA FEITA POR ENGANO</strong></div><div>O(A) profissional deverá solicitar a remoção da baixa por meio de protocolo em seu SICCAU profissional (Pessoa Física):</div><div>Protocolo &gt; Cadastrar Protocolo &gt; Grupo de Assunto: ATENDIMENTO &gt; Assunto: DÚVIDAS SOBRE RRT.</div><div>Deverá constar no campo "Descrição do protocolo":</div><div style="margin-left: 25px;"><em>“Solicito remoção de baixa do RRT XXXX, pois foi baixado por engano e permaneço responsável técnico(a) pela empresa.”</em></div><div><br></div><div style="color: #1e53a3;"><strong>SITUAÇÃO 2 – PROFISSIONAL SAIU DA EMPRESA</strong></div><div>A empresa deverá regularizar o desligamento do(a) profissional, observando as orientações abaixo:</div><div>  1️⃣ <strong>Anexar Documento de Desvinculação</strong>: Assinado por ambas as partes e com firma reconhecida ou assinatura eletrônica, podendo ser:</div><div style="margin-left: 25px;"><strong>Se sócio(a)</strong>: Última alteração do contrato social, devidamente registrada no órgão competente, retirando o(a) profissional do quadro societário;</div><div style="margin-left: 25px;"><strong>Se contratado(a)</strong>: Distrato do contrato de prestação de serviços; Termo de Rescisão do Contrato de Trabalho (TRCT) ou as páginas da CTPS física ou digital com o registro do desligamento;</div><div><br></div><div>  2️⃣ <strong>Baixa de RRTs:</strong> O(A) profissional deverá dar a baixa em todos os RRTs em que a empresa conste como “<strong>Empresa Contratada</strong>”;</div><div>  <br />  <strong>3️⃣ Indicação de Novo(a) Responsável Técnico(a) se o(a) profissional era o(a) único(a) RT ativo:</strong>  </div><div>  a) <strong>Comprovante de vínculo</strong>: com <a target="_blank" title="https://causp.gov.br/wp-content/uploads/2025/03/certificacao-digital.pdf" href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">certificação digital</a> da empresa ou do sócio administrador, podendo ser:</div><div style="margin-left: 25px;"><strong>Se sócio(a)</strong>: Última alteração do contrato social, devidamente registrada no órgão competente;</div><div style="margin-left: 25px;">  <strong>Se contratado(a)</strong>: Carteira de Trabalho e Previdência Social ou Contrato de Prestação de Serviços (com certificação digital* ou firma reconhecida), devendo observar a aplicação do <a target="_blank" title="https://n-tech4b.github.io/despachos-pj/piso-diario" href="https://n-tech4b.github.io/despachos-pj/piso-diario">piso salarial</a>;</div><div style="margin-left: 25px;"><strong>Se funcionário público</strong>: Portaria de nomeação.</div><div>b) <strong>RRT de Cargo e/ou Função Técnica: </strong>emitido pelo(a) profissional indicado(a) como responsável técnico(a).</div><div><br></div><div>  🔗 Para obter a certificação digital <strong>gratuitamente </strong>pelo <strong>Gov.br</strong> <a target="_blank" title="https://assinador.iti.br/assinatura/index.xhtml" href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div>  🔗 Para consultar <strong>outras formas</strong> de realizar a certificação digital <a target="_blank" title="https://causp.gov.br/wp-content/uploads/2025/03/certificacao-digital.pdf" href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div><div>  <br />  ⚠️ A baixa do(a) profissional <strong>XXXXXXXX </strong>somente será efetuada <strong><u>após</u></strong> concluída a substituição pelo(a) novo(a) responsável técnico(a), se somente houver um(a) único(a) responsável técnico(a).</div><div style="color: #1e53a3;">  <br />  <strong>SITUAÇÃO 3 – EMPRESA NÃO ESTÁ MAIS ATUANDO COM ATIVIDADES DE ARQUITETURA E URBANISMO</strong></div><div>Há duas alternativas:</div><div>  1️⃣ <strong>Interrupção de Registro</strong>: empresa parou temporariamente com atividades de Arquitetura e Urbanismo. A empresa deve cadastrar um protocolo com o assunto “<strong>CADASTRO EMPRESA &gt; INTERRUPÇÃO DE REGISTRO DE PESSOA JURÍDICA</strong>”. Todos os RRTs vinculados à empresa deverão estar baixados, inclusive o RRT de desempenho de cargo ou função técnica, e a empresa não deverá estar respondendo processos perante o CAU.</div><div><br></div><div>  🔗 <a target="_blank" title="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_interrupcao_de_registro_de_empresa_r00.pdf" href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_interrupcao_de_registro_de_empresa_r00.pdf">Clique aqui</a> para acessar o tutorial de Interrupção de Registro PJ</div><div><br></div><div>  2️⃣ <strong>Baixa do Registro</strong>: empresa <strong>encerrada </strong>ou seu objetivo social foi alterado, retirando as <strong>atividades de Arquitetura e Urbanismo</strong>.  A empresa deve cadastrar um protocolo com o assunto “<strong>CADASTRO EMPRESA &gt; BAIXA DE REGISTRO DE EMPRESA</strong>”, devendo encaminhar:</div><div ><strong>a) Encerramento da empresa</strong>: distrato social ou instrumento válido comprovando o encerramento da empresa</div><div><strong>b) Alteração contratual</strong>: última alteração contratual da empresa registrada, onde há a remoção das atividades de Arquitetura e Urbanismo do objeto social.</div><div>A razão social, nome fantasia ou objetivo social não pode conter os termos “Arquitetura”, “Urbanismo” ou similares.</div><div>    <br />  🔗 <a target="_blank" title="https://transparencia.causp.gov.br/?page_id=25193" href="https://transparencia.causp.gov.br/?page_id=25193">Clique aqui</a> para saber mais sobre a baixa de PJ</div><div><br></div><div>  ⏳ <strong>Prazo para manifestação</strong>: A empresa possui <strong>30 (trinta) dias</strong> para se manifestar e sanar as pendências. Esgotado o prazo sem regularização, o processo será encaminhado à Fiscalização.</div><div><br></div><div>  Em caso de dúvidas, acesse a <a target="_blank" title="https://causp.gov.br/cadastro-pessoa-juridica/" href="https://causp.gov.br/cadastro-pessoa-juridica/">página de registro de Pessoa Jurídica</a>.<br />  Se for necessário, acesse o <a target="_blank" title="https://causp.gov.br/atendimento/" href="https://causp.gov.br/atendimento/">Canal de Atendimento</a> do CAU/SP.</div><div><br></div><div>  Atenciosamente,<br />  Coordenação Técnica do Exercício Profissional – CAU/SP</div>`;
+document.getElementById('despacho6600').setAttribute('data-text', texto_6600);
+document.getElementById('editTextModal6600').value = texto_6600;
+
+var texto_6700 = 
+`<div>Olá!  </div><div><br></div><div>Identificamos que o(a) profissional XXXXXX, responsável técnico(a) da empresa, não consta mais em seu quadro societário. Por isso, foi incluído o <strong><u>bloqueio de emissão de documentos no SICCAU da empresa</u></strong>, que permanecerá até a regularização da situação.</div><div><br></div><div>Solicitamos que a empresa apresente, conforme o caso:</div><div><br></div><div>1️⃣ <strong style="color: #1e53a3;"><u>Profissional saiu da empresa:</u></strong> a alteração contratual, devidamente registrada no órgão competente, com a saída do(a) sócio(a), para a baixa de responsabilidade técnica; ou</div><div><br></div><div>2️⃣ <strong style="color: #1e53a3;"><u>Profissional contratado(a) e permanece na empresa:</u></strong> novo comprovante de vínculo, que pode ser Contrato de Prestação de Serviços (com <a target="_blank" title="https://causp.gov.br/wp-content/uploads/2025/03/certificacao-digital.pdf" href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">certificação digital </a>ou firma reconhecida) ou a Carteira de Trabalho e Previdência Social, observando o <strong><u>piso salarial</u></strong>.</div><div><br></div><div>⚠️ Atenção: Com a baixa da responsabilidade técnica, a empresa estará <strong>sem responsável técnico(a) ativo(a)</strong>, configurando a infração “<strong>Ausência de responsável técnico registrado</strong>”, conforme estabelecido na <a target="_blank" title="https://transparencia.caubr.gov.br/resolucao198/" href="https://transparencia.caubr.gov.br/resolucao198/">Resolução nº 198/2020 – CAU/BR</a>. Nesse caso, a empresa deverá indicar um(a) novo(a) responsável técnico(a), apresentando:</div><div>a) Comprovante de vínculo, com <a target="_blank" title="https://causp.gov.br/wp-content/uploads/2025/03/certificacao-digital.pdf" href="https://causp.gov.br/wp-content/uploads/2025/03/certificacao-digital.pdf">certificação digital</a> da empresa ou sócio administrador, podendo ser:</div><div style="margin-left: 25px;"><strong>Se sócio(a)</strong>: Última alteração do contrato social, devidamente registrada no órgão competente;</div><div style="margin-left: 25px;"><strong>Se contratado(a)</strong>: Carteira de Trabalho e Previdência Social ou Contrato de Prestação de Serviços (com certificação digital* ou firma reconhecida), devendo observar a aplicação do <a target="_blank" title="https://n-tech4b.github.io/despachos-pj/piso-diario" href="https://n-tech4b.github.io/despachos-pj/piso-diario">piso salarial</a>;</div><div style="margin-left: 25px;"><strong>Se funcionário público</strong>: Portaria de nomeação.</div><div>b) <strong>RRT de Cargo e/ou Função Técnica: </strong>emitido pelo(a) profissional indicado(a) como responsável técnico(a).</div><div><br></div><div><br></div><div><strong style="color: #1e53a3;"><u>CASO A EMPRESA NÃO ESTEJA MAIS ATUANDO EM ARQUITETURA E URBANISMO:</u></strong></div><div><br></div><div>Há duas alternativas:</div><div><br></div><div>1️⃣ <strong>Interrupção de Registro</strong>: empresa parou temporariamente com atividades de Arquitetura e Urbanismo. A empresa deve cadastrar um protocolo com o assunto “<strong>CADASTRO EMPRESA &gt; INTERRUPÇÃO DE REGISTRO DE PESSOA JURÍDICA</strong>”. Todos os RRTs vinculados à empresa deverão estar baixados, inclusive o RRT de desempenho de cargo ou função técnica, e a empresa não deverá estar respondendo processos perante o CAU.</div><div><br></div><div>🔗 <a target="_blank" title="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_interrupcao_de_registro_de_empresa_r00.pdf" href="https://servicos.caubr.gov.br/helpdesk/lib/exe/fetch.php/tut_interrupcao_de_registro_de_empresa_r00.pdf">Clique aqui</a> para acessar o tutorial de Interrupção de Registro PJ</div><div><br></div><div>2️⃣ <strong>Baixa do Registro</strong>: empresa <strong>encerrada </strong>ou seu objetivo social foi alterado, retirando as <strong>atividades de Arquitetura e Urbanismo</strong>.  A empresa deve cadastrar um protocolo com o assunto “<strong>CADASTRO EMPRESA &gt; BAIXA DE REGISTRO DE EMPRESA</strong>”, devendo encaminhar:</div><div><strong>a) Encerramento da empresa</strong>: distrato social ou instrumento válido comprovando o encerramento da empresa</div><div><strong>b) Alteração contratual</strong>: última alteração contratual da empresa registrada, onde há a remoção das atividades de Arquitetura e Urbanismo do objeto social.</div><div>A razão social, nome fantasia ou objetivo social não pode conter os termos “Arquitetura”, “Urbanismo” ou similares.</div><div> </div><div><br></div><div><strong><u>Enquanto a pendência não é sanada, o registro da empresa estará bloqueado, sendo liberado após a regularização.</u></strong></div><div><br></div><div><br />🔗 <a target="_blank" title="https://transparencia.causp.gov.br/?page_id=25193" href="https://transparencia.causp.gov.br/?page_id=25193">Clique aqui</a> para saber mais sobre a baixa de PJ</div><div><br></div><div>⏳ <strong>Prazo para manifestação</strong>: A empresa possui <strong>10 (dez) dias</strong> para se manifestar e sanar as pendências. Caso não regularize as pendências dentro desse prazo, o protocolo será encaminhado à Fiscalização.</div><div><br></div><div>Em caso de dúvidas, acesse a <a target="_blank" title="https://causp.gov.br/cadastro-pessoa-juridica/" href="https://causp.gov.br/cadastro-pessoa-juridica/">página de registro de Pessoa Jurídica</a>.<br />Se for necessário, acesse o <a target="_blank" title="https://causp.gov.br/atendimento/" href="https://causp.gov.br/atendimento/">Canal de Atendimento</a> do CAU/SP.</div><div><br></div><div>Atenciosamente,<br />Coordenação Técnica do Exercício Profissional – CAU/SP</div>`;
+document.getElementById('despacho6700').setAttribute('data-text', texto_6700);
+document.getElementById('editTextModal6700').value = texto_6700;
 
 
 var texto_7000 = 
